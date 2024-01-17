@@ -4035,6 +4035,7 @@
 #include "ModularTegustation\tegu_items\workshop\mods\sharp.dm"
 #include "ModularTegustation\tegu_items\workshop\mods\split.dm"
 #include "ModularTegustation\tegu_items\workshop\mods\throwforce.dm"
+#include "ModularTegustation\tegu_items\workshop\mods\toxic.dm"
 #include "ModularTegustation\tegu_items\workshop\templates\axe.dm"
 #include "ModularTegustation\tegu_items\workshop\templates\basic.dm"
 #include "ModularTegustation\tegu_items\workshop\templates\chargeblade.dm"

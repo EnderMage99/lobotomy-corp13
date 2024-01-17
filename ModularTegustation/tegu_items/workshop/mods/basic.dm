@@ -130,3 +130,44 @@ Rendcore - reduces target defense slightly*/
 	weaponcolor = "#80c8ff"
 	damagetype = PALE_DAMAGE
 
+/obj/item/workshop_mod/draining
+	name = ""
+	desc = ""
+	forcemod = 1.5
+
+//Drains both physical and mental health.
+/obj/item/workshop_mod/draining/ActivateEffect(obj/item/ego_weapon/template/T, special_count = 0, mob/living/target, mob/living/carbon/human/user)
+	if(!(target.status_flags & GODMODE) && target.stat != DEAD)
+		var/drain_amt = T.force*0.05
+		user.adjustBruteLoss(drain_amt)
+		user.adjustSanityLoss(drain_amt)
+
+// various drain mods go here .........
+
+/obj/item/workshop_mod/superheavy
+	name = ""
+	desc = ""
+	forcemod = 1.7
+	attackspeedmod = 1.5
+
+/obj/item/workshop_mod/superheavy/InstallationEffect(obj/item/ego_weapon/template/T)
+	modded_temp = T
+	T.slowdown += 1
+	..()
+
+// various superheavy mods go here .........
+
+/obj/item/workshop_mod/blunt
+	name = ""
+	desc = ""
+	forcemod = 0.75
+
+/obj/item/workshop_mod/blunt/ActivateEffect(obj/item/ego_weapon/template/T, special_count = 0, mob/living/target, mob/living/carbon/human/user)
+	if(!(target.status_flags & GODMODE) && target.stat != DEAD)
+		if (ishuman(target))
+			var/mob/living/carbon/human/H = target
+			H.adjustStaminaLoss(T.force)
+
+// various blunt mods go here .........
+
+
