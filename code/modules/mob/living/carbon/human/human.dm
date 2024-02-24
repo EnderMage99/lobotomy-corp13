@@ -1557,3 +1557,21 @@
 
 /mob/living/carbon/human/species/shrimp //for the funnies only
 	race = /datum/species/shrimp
+
+/mob/living/carbon/human/species/resurgence
+	race = /datum/species/resurgence
+	var/charge = 0
+	var/recharge_rate = 0.5
+	var/max_charge = 100
+
+/mob/living/carbon/human/species/resurgence/Life()
+	. = ..()
+	//Updates the charge
+	handle_resurgence()
+
+//todo generalize this and move hud out
+/mob/living/carbon/human/species/resurgence/proc/handle_resurgence()
+	 if(mind && hud_used?.resurgencechargedisplay)
+		charge = min(max(0, charge + recharge_rate), max_charge)
+		hud_used.resurgencechargedisplay.invisibility = 0
+		hud_used.resurgencechargedisplay.maptext = MAPTEXT("<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='#dd66dd'>[round(charge)]</font></div>")

@@ -52,6 +52,14 @@
 	icon_state = "power_display"
 	screen_loc = ui_lingchemdisplay
 
+/atom/movable/screen/resurgencecharge
+	icon = 'icons/hud/screen_changeling.dmi'
+	invisibility = INVISIBILITY_ABSTRACT
+	name = "charge"
+	icon_state = "power_display"
+	screen_loc = ui_lingchemdisplay
+
+
 /datum/hud/human/New(mob/living/carbon/human/owner)
 	..()
 
@@ -307,6 +315,10 @@
 	lingstingdisplay = new /atom/movable/screen/ling/sting()
 	lingstingdisplay.hud = src
 	infodisplay += lingstingdisplay
+
+	resurgencechargedisplay = new /atom/movable/screen/resurgencecharge()
+	resurgencechargedisplay.hud = src
+	infodisplay += resurgencechargedisplay
 
 	zone_select =  new /atom/movable/screen/zone_sel()
 	zone_select.icon = ui_style

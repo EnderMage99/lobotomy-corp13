@@ -2664,6 +2664,7 @@
 #include "code\modules\mob\living\carbon\human\species_types\mushpeople.dm"
 #include "code\modules\mob\living\carbon\human\species_types\plasmamen.dm"
 #include "code\modules\mob\living\carbon\human\species_types\podpeople.dm"
+#include "code\modules\mob\living\carbon\human\species_types\resurgence.dm"
 #include "code\modules\mob\living\carbon\human\species_types\sephirah.dm"
 #include "code\modules\mob\living\carbon\human\species_types\shadowpeople.dm"
 #include "code\modules\mob\living\carbon\human\species_types\shrimp.dm"
