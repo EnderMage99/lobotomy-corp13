@@ -1,9 +1,9 @@
 /mob/living/simple_animal/hostile/humanoid/fixer/priest
 	name = "Priest Fixer"
-	desc = "A powerful fixer with the ability to create lifelinks and absorb damage for allies."
-	icon_state = "metal_fixer"
-	icon_living = "metal_fixer"
-	icon_dead = "metal_fixer"
+	desc = "Too young to be called a man, but too mature to be called a boy. He had white hair and white skin. His eyes are calm and he had stubborn lips."
+	icon_state = "priest_fixer"
+	icon_living = "priest_fixer"
+	icon_dead = "priest_fixer"
 	maxHealth = 2500
 	health = 2500
 	damage_coeff = list(BRUTE = 1, RED_DAMAGE = 0.5, WHITE_DAMAGE = 0.5, BLACK_DAMAGE = 0.5, PALE_DAMAGE = 0.8)

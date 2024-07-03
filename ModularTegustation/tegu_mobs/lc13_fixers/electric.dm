@@ -1,9 +1,9 @@
 /mob/living/simple_animal/hostile/humanoid/fixer/electric
 	name = "Electric Fixer"
-	desc = "A fast and dangerous fixer that manipulates electricity."
-	icon_state = "metal_fixer"
-	icon_living = "metal_fixer"
-	icon_dead = "metal_fixer"
+	desc = "Feminine guy, dressed in mainly black with neon accents, with bright amber eyes."
+	icon_state = "electric_fixer"
+	icon_living = "electric_fixer"
+	icon_dead = "electric_fixer"
 	maxHealth = 1500
 	health = 1500
 	rapid_melee = 2
