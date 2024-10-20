@@ -7,7 +7,7 @@
 /datum/map_template/random_room/nest_template
 	name = "Regular Nest Template"
 	room_id = "nest_template"
-	mappath = "_maps/RandomRooms/nestlayout/template_nest_layout.dmm"
+	mappath = "_maps/RandomRooms/nestlayout/kcorp_nest.dmm"
 	centerspawner = FALSE
 	template_width = 155
 	template_height = 100

@@ -67,6 +67,9 @@ endmap
 map cityfixers
 endmap
 
+map city
+endmap
+
 #Need testing
 map iotacorp
 endmap
