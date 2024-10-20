@@ -2432,9 +2432,9 @@
 /turf/open/floor/mineral/titanium,
 /area/city/house)
 "zm" = (
-/obj/machinery/body_preservation_unit,
-/turf/open/floor/facility,
-/area/city/shop)
+/obj/structure/lootcrate/money,
+/turf/closed/indestructible/rock,
+/area/space)
 "zo" = (
 /obj/structure/table/wood/bar,
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
@@ -4600,6 +4600,10 @@
 	},
 /obj/structure/rack,
 /obj/item/soap,
+/turf/open/floor/facility,
+/area/city/shop)
+"Sk" = (
+/obj/machinery/body_preservation_unit,
 /turf/open/floor/facility,
 /area/city/shop)
 "Sl" = (
@@ -20469,7 +20473,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+zm
 Oq
 Oq
 Oq
@@ -34014,7 +34018,7 @@ og
 HA
 tk
 Dj
-zm
+Sk
 Dj
 KK
 OT
