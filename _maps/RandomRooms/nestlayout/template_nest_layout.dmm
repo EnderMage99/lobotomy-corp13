@@ -422,10 +422,10 @@
 /turf/open/floor/plating/airless,
 /area/city/fixers)
 "dQ" = (
-/obj/item/storage/backpack/duffelbag/med/surgery{
+/obj/structure/table/greyscale,
+/obj/item/storage/backpack/duffelbag/med/upgradedsurgery{
 	pixel_y = 5
 	},
-/obj/structure/table/greyscale,
 /turf/open/indestructible/white,
 /area/city/shop)
 "dV" = (
@@ -1412,6 +1412,9 @@
 /area/city/fixers)
 "oQ" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
+/obj/item/krevive,
+/obj/item/krevive,
+/obj/item/krevive,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
 "oR" = (
@@ -2276,6 +2279,9 @@
 /obj/item/vending_refill/drugs,
 /obj/item/vending_refill/drugs,
 /obj/item/vending_refill/drugs,
+/obj/item/storage/backpack/duffelbag/med/surgery{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
 "xe" = (
