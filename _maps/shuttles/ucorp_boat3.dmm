@@ -1,0 +1,100 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/space/basic,
+/area/city)
+"m" = (
+/turf/open/space/basic,
+/area/space)
+"n" = (
+/obj/docking_port/mobile{
+	name = "ucorp shuttle";
+	id = "ucorp_boat3";
+	port_direction = 2;
+	dwidth = 4;
+	height = 7;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/city)
+
+(1,1,1) = {"
+m
+a
+a
+a
+a
+a
+m
+"}
+(2,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+a
+a
+a
+n
+"}
+(6,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(8,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+"}
+(9,1,1) = {"
+m
+a
+a
+a
+a
+a
+m
+"}

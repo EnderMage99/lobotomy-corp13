@@ -67,6 +67,16 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
 /area/city)
+"v" = (
+/obj/machinery/computer/shuttle/mining{
+	name = "ship console";
+	shuttleId = "ucorp_boat";
+	possible_destinations = "main_port;backstreets_port";
+	dir = 1;
+	resistance_flags = 64
+	},
+/turf/open/floor/wood,
+/area/city)
 "y" = (
 /obj/structure/chair/pew/left{
 	dir = 1
@@ -82,6 +92,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/pew,
 /turf/open/floor/wood,
+/area/city)
+"B" = (
+/obj/docking_port/mobile{
+	name = "ucorp shuttle";
+	id = "ucorp_boat";
+	port_direction = 2;
+	dwidth = 2;
+	height = 9;
+	width = 7
+	},
+/turf/closed/indestructible/wood,
 /area/city)
 "D" = (
 /turf/open/floor/wood,
@@ -114,6 +135,10 @@
 	icon_state = "wood-broken"
 	},
 /area/city)
+"P" = (
+/obj/structure/chair/pew,
+/turf/open/floor/wood,
+/area/city)
 "X" = (
 /turf/open/space/basic,
 /area/space)
@@ -121,6 +146,7 @@
 (1,1,1) = {"
 X
 k
+c
 c
 c
 H
@@ -132,6 +158,7 @@ X
 k
 k
 p
+D
 t
 h
 g
@@ -144,33 +171,48 @@ r
 z
 D
 D
+D
 z
 J
 H
 "}
 (4,1,1) = {"
 c
+P
+D
+D
+D
+D
+D
+v
+B
+"}
+(5,1,1) = {"
+c
 A
 f
+D
 i
 D
 z
 D
 a
 "}
-(5,1,1) = {"
+(6,1,1) = {"
 k
 k
 m
+D
 y
 D
 N
 k
 k
 "}
-(6,1,1) = {"
+(7,1,1) = {"
 X
 k
+c
 c
 c
 M

@@ -1,0 +1,247 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/indestructible/opshuttle{
+	color = "#6ced2f";
+	name = "shipping container"
+	},
+/area/city)
+"e" = (
+/turf/closed/indestructible/opshuttle{
+	color = "#ed2f5f";
+	name = "shipping container"
+	},
+/area/city)
+"i" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
+"j" = (
+/turf/open/floor/carpet/red,
+/area/city)
+"l" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/facility{
+	color = "#8f8f8f"
+	},
+/area/city)
+"o" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/facility,
+/area/city)
+"p" = (
+/obj/machinery/door/airlock/grunge{
+	name = "ucorp boat"
+	},
+/turf/open/floor/carpet/red,
+/area/city)
+"u" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/facility{
+	color = "#8f8f8f"
+	},
+/area/city)
+"v" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/grunge{
+	name = "ucorp boat"
+	},
+/obj/docking_port/mobile{
+	name = "ucorp shuttle";
+	id = "ucorp_boat2";
+	port_direction = 2;
+	dwidth = 4;
+	height = 7;
+	width = 9
+	},
+/turf/open/floor/carpet/green,
+/area/city)
+"w" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/red,
+/area/city)
+"z" = (
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
+"A" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
+"C" = (
+/turf/open/space/basic,
+/area/space)
+"D" = (
+/turf/open/floor/facility,
+/area/city)
+"G" = (
+/obj/machinery/door/airlock/grunge{
+	name = "ucorp boat"
+	},
+/turf/open/floor/carpet/green,
+/area/city)
+"H" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/airlock/grunge{
+	name = "ucorp boat"
+	},
+/turf/open/floor/carpet/red,
+/area/city)
+"J" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/facility{
+	color = "#8f8f8f"
+	},
+/area/city)
+"K" = (
+/turf/closed/indestructible/fakeglass,
+/area/city)
+"L" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility,
+/area/city)
+"N" = (
+/turf/open/floor/carpet/green,
+/area/city)
+"O" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
+"P" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/carpet/green,
+/area/city)
+"Q" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/grille_or_trash,
+/turf/open/floor/facility,
+/area/city)
+"R" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
+"T" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/turf/open/floor/facility{
+	color = "#8f8f8f"
+	},
+/area/city)
+"X" = (
+/turf/open/floor/facility{
+	color = "#8f8f8f"
+	},
+/area/city)
+
+(1,1,1) = {"
+C
+a
+a
+K
+a
+a
+C
+"}
+(2,1,1) = {"
+e
+e
+A
+w
+A
+a
+a
+"}
+(3,1,1) = {"
+K
+u
+J
+j
+A
+R
+K
+"}
+(4,1,1) = {"
+H
+z
+P
+j
+Q
+z
+G
+"}
+(5,1,1) = {"
+p
+j
+j
+X
+N
+N
+v
+"}
+(6,1,1) = {"
+H
+D
+L
+N
+w
+D
+G
+"}
+(7,1,1) = {"
+K
+i
+O
+P
+T
+O
+K
+"}
+(8,1,1) = {"
+e
+e
+l
+P
+o
+a
+a
+"}
+(9,1,1) = {"
+C
+e
+e
+K
+e
+e
+C
+"}

@@ -9,6 +9,17 @@
 /obj/effect/turf_decal/siding/brown,
 /turf/open/floor/carpet/orange,
 /area/facility_hallway/manager)
+"aB" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "side_port??";
+	name = "sideport3";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat3;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
 "aC" = (
 /turf/open/space,
 /area/space)
@@ -609,6 +620,17 @@
 	},
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"iR" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "side_port????";
+	name = "sideport3";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat2;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
 "iU" = (
 /obj/structure/chair/office,
 /turf/open/floor/carpet/red,
@@ -1429,6 +1451,17 @@
 	},
 /turf/open/floor/carpet/black,
 /area/facility_hallway/manager)
+"vF" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "side_port??????";
+	name = "sideport3";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
 "vP" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -10229,7 +10262,7 @@ XL
 XL
 XL
 XL
-XL
+aB
 XL
 XL
 XL
@@ -11759,7 +11792,7 @@ XL
 XL
 XL
 XL
-XL
+iR
 XL
 XL
 XL
@@ -11844,7 +11877,7 @@ XL
 XL
 XL
 XL
-XL
+vF
 XL
 XL
 XL
