@@ -2321,6 +2321,16 @@
 /obj/structure/chair/comfy,
 /turf/open/floor/carpet/black,
 /area/city/fixers)
+"qN" = (
+/obj/effect/light_emitter{
+	light_power = 4;
+	light_range = 25;
+	set_cap = 3;
+	set_luminosity = 24
+	},
+/obj/effect/landmark/observer_start,
+/turf/open/floor/plating/ashplanet/rocky,
+/area/city)
 "qO" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/telecomms/relay/preset/telecomms,
@@ -15582,7 +15592,7 @@ IB
 IB
 IB
 IB
-yE
+qN
 IB
 IB
 IB
