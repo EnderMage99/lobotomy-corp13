@@ -725,3 +725,18 @@
 /datum/map_template/shuttle/snowdin/excavation
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
+
+/datum/map_template/shuttle/ucorp_boat
+	suffix = "ucorp_boat"
+	name = "U-Corp Boat 1"
+	can_be_bought = FALSE
+
+/datum/map_template/shuttle/ucorp_boat2
+	suffix = "ucorp_boat"
+	name = "U-Corp Boat 2"
+	can_be_bought = FALSE
+
+/datum/map_template/shuttle/ucorp_boat3
+	suffix = "ucorp_boat"
+	name = "U-Corp Boat 3"
+	can_be_bought = FALSE
