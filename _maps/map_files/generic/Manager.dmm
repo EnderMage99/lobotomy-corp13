@@ -627,6 +627,18 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
+"jT" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "???";
+	name = "sideport1";
+	roundstart_template = /datum/map_template/shuttle/boat2_elevator;
+	width = 9;
+	dir = 2
+	},
+/turf/open/space/basic,
+/area/space)
 "jZ" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -718,8 +730,7 @@
 	max_integrity = 25000000;
 	name = "Arcade Secure Storage";
 	normal_integrity = 25000000;
-	req_access_txt = "69";
-	whitelist_door = null
+	req_access_txt = "69"
 	},
 /turf/open/floor/plasteel/dark,
 /area/facility_hallway/manager)
@@ -1806,6 +1817,17 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
+"An" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "?";
+	name = "sideport3";
+	roundstart_template = /datum/map_template/shuttle/boat3_elevator;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
 "Ao" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 6
@@ -2803,6 +2825,17 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"Su" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 9;
+	id = "??";
+	name = "main port";
+	roundstart_template = /datum/map_template/shuttle/boat1_elevator;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "Sx" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -9824,7 +9857,7 @@ XL
 XL
 XL
 XL
-XL
+An
 XL
 XL
 XL
@@ -11846,6 +11879,7 @@ XL
 XL
 XL
 XL
+jT
 XL
 XL
 XL
@@ -11863,8 +11897,7 @@ XL
 XL
 XL
 XL
-XL
-XL
+Su
 XL
 XL
 XL

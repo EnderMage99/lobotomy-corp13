@@ -2254,7 +2254,7 @@
 	height = 7;
 	id = "side_port3";
 	name = "sideport3";
-	roundstart_template = /datum/map_template/shuttle/ucorp_boat3;
+	roundstart_template = /datum/map_template/shuttle/boat3_elevator;
 	width = 9
 	},
 /turf/open/water/deep/saltwater{
@@ -3602,7 +3602,7 @@
 	height = 9;
 	id = "main_port";
 	name = "main port";
-	roundstart_template = /datum/map_template/shuttle/ucorp_boat;
+	roundstart_template = /datum/map_template/shuttle/boat1_elevator;
 	width = 7
 	},
 /turf/open/water/deep/saltwater{
@@ -4264,7 +4264,7 @@
 	height = 7;
 	id = "side_port1";
 	name = "sideport1";
-	roundstart_template = /datum/map_template/shuttle/ucorp_boat2;
+	roundstart_template = /datum/map_template/shuttle/boat2_elevator;
 	width = 9;
 	dir = 2
 	},

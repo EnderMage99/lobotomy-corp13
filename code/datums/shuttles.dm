@@ -174,6 +174,18 @@
 	port_id = "manager"
 	can_be_bought = FALSE
 
+/datum/map_template/shuttle/ucorp_boat
+	port_id = "boat1"
+	can_be_bought = FALSE
+
+/datum/map_template/shuttle/ucorp_boat2
+	port_id = "boat2"
+	can_be_bought = FALSE
+
+/datum/map_template/shuttle/ucorp_boat3
+	port_id = "boat3"
+	can_be_bought = FALSE
+
 /datum/map_template/shuttle/epsilon
 	port_id = "epsilon"
 	can_be_bought = FALSE
@@ -207,6 +219,18 @@
 	can_be_bought = FALSE
 
 // Shuttles start here:
+
+/datum/map_template/shuttle/ucorp_boat/elevator
+	suffix = "elevator"
+	name = "u-corp boat 2"
+
+/datum/map_template/shuttle/ucorp_boat2/elevator
+	suffix = "elevator"
+	name = "u-corp boat 2"
+
+/datum/map_template/shuttle/ucorp_boat3/elevator
+	suffix = "elevator"
+	name = "u-corp boat 3"
 
 /datum/map_template/shuttle/manager/elevator
 	suffix = "elevator"
@@ -727,16 +751,13 @@
 	name = "Snowdin Excavation Elevator"
 
 /datum/map_template/shuttle/ucorp_boat
-	suffix = "ucorp_boat"
+	suffix = "elevator"
 	name = "U-Corp Boat 1"
-	can_be_bought = FALSE
 
 /datum/map_template/shuttle/ucorp_boat2
-	suffix = "ucorp_boat"
+	suffix = "elevator"
 	name = "U-Corp Boat 2"
-	can_be_bought = FALSE
 
 /datum/map_template/shuttle/ucorp_boat3
 	suffix = "ucorp_boat"
 	name = "U-Corp Boat 3"
-	can_be_bought = FALSE
