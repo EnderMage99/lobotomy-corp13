@@ -633,7 +633,7 @@
 	height = 7;
 	id = "???";
 	name = "sideport1";
-	roundstart_template = /datum/map_template/shuttle/boat2_elevator;
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat2/elevator;
 	width = 9;
 	dir = 2
 	},
@@ -849,6 +849,16 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"mz" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 9;
+	id = "??";
+	name = "main port 5";
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "mF" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "managerlockdown";
@@ -1823,7 +1833,7 @@
 	height = 7;
 	id = "?";
 	name = "sideport3";
-	roundstart_template = /datum/map_template/shuttle/boat3_elevator;
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat3/elevator;
 	width = 9
 	},
 /turf/open/space/basic,
@@ -2073,9 +2083,29 @@
 /obj/effect/turf_decal/siding/wood/end,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
+"EM" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 9;
+	id = "main_port_3";
+	name = "main port 3";
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "EQ" = (
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
+"ER" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 9;
+	id = "??";
+	name = "main port 4";
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "Fb" = (
 /obj/machinery/facility_holomap{
 	dir = 1;
@@ -2827,11 +2857,11 @@
 /area/facility_hallway/manager)
 "Su" = (
 /obj/docking_port/stationary{
-	dwidth = 4;
+	dwidth = 3;
 	height = 9;
-	id = "??";
-	name = "main port";
-	roundstart_template = /datum/map_template/shuttle/boat1_elevator;
+	id = "main_port_1";
+	name = "main port 1";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat/elevator;
 	width = 7
 	},
 /turf/open/space/basic,
@@ -3043,6 +3073,16 @@
 	},
 /turf/open/floor/carpet/cyan,
 /area/department_main/manager)
+"Xi" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 9;
+	id = "main_port_2";
+	name = "main port 2";
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "Xl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 7
@@ -6175,7 +6215,7 @@ XL
 XL
 XL
 XL
-XL
+EM
 XL
 XL
 XL
@@ -7919,7 +7959,7 @@ XL
 XL
 XL
 XL
-XL
+Xi
 XL
 XL
 XL
@@ -9027,7 +9067,7 @@ XL
 XL
 XL
 XL
-XL
+ER
 XL
 XL
 XL
@@ -10345,7 +10385,7 @@ XL
 XL
 XL
 XL
-XL
+mz
 XL
 XL
 XL

@@ -6,32 +6,32 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/city)
+/area/shuttle)
 "c" = (
 /turf/closed/indestructible/fakeglass,
-/area/city)
+/area/shuttle)
 "f" = (
 /obj/effect/spawner/lootdrop/garbage_spawner,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "g" = (
 /obj/machinery/light,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "h" = (
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/city)
+/area/shuttle)
 "i" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood{
 	icon_state = "wood-broken7"
 	},
-/area/city)
+/area/shuttle)
 "k" = (
 /turf/closed/indestructible/wood,
-/area/city)
+/area/shuttle)
 "m" = (
 /obj/machinery/light{
 	dir = 1
@@ -42,7 +42,7 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/city)
+/area/shuttle)
 "p" = (
 /obj/structure/chair/pew/right{
 	dir = 1
@@ -53,73 +53,73 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/city)
+/area/shuttle)
 "r" = (
 /obj/structure/chair/pew,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/city)
+/area/shuttle)
 "t" = (
 /obj/structure/chair/pew/right{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "v" = (
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat";
-	possible_destinations = "main_port;backstreets_port";
+	possible_destinations = "main_port_1;main_port_2;main_port_3";
 	dir = 1;
 	resistance_flags = 64
 	},
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "y" = (
 /obj/structure/chair/pew/left{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "z" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "A" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/chair/pew,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "B" = (
 /obj/docking_port/mobile{
-	name = "ucorp shuttle";
-	id = "boat1_elevator";
+	name = "ucorp shuttle 1";
+	id = "boat1";
 	port_direction = 2;
-	dwidth = 2;
+	dwidth = 3;
 	height = 9;
 	width = 7
 	},
 /turf/closed/indestructible/wood,
-/area/city)
+/area/shuttle)
 "D" = (
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "H" = (
 /obj/machinery/door/airlock/wood{
 	name = "ucorp boat"
 	},
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "J" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/garbage_spawner,
 /turf/open/floor/wood{
 	icon_state = "wood-broken6"
 	},
-/area/city)
+/area/shuttle)
 "M" = (
 /obj/machinery/door/airlock/wood{
 	name = "ucorp boat"
@@ -127,18 +127,18 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken7"
 	},
-/area/city)
+/area/shuttle)
 "N" = (
 /obj/machinery/light,
 /obj/effect/spawner/lootdrop/garbage_spawner,
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
-/area/city)
+/area/shuttle)
 "P" = (
 /obj/structure/chair/pew,
 /turf/open/floor/wood,
-/area/city)
+/area/shuttle)
 "X" = (
 /turf/open/space/basic,
 /area/space)

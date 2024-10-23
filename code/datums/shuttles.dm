@@ -222,7 +222,7 @@
 
 /datum/map_template/shuttle/ucorp_boat/elevator
 	suffix = "elevator"
-	name = "u-corp boat 2"
+	name = "u-corp boat"
 
 /datum/map_template/shuttle/ucorp_boat2/elevator
 	suffix = "elevator"
@@ -749,15 +749,3 @@
 /datum/map_template/shuttle/snowdin/excavation
 	suffix = "excavation"
 	name = "Snowdin Excavation Elevator"
-
-/datum/map_template/shuttle/ucorp_boat
-	suffix = "elevator"
-	name = "U-Corp Boat 1"
-
-/datum/map_template/shuttle/ucorp_boat2
-	suffix = "elevator"
-	name = "U-Corp Boat 2"
-
-/datum/map_template/shuttle/ucorp_boat3
-	suffix = "ucorp_boat"
-	name = "U-Corp Boat 3"
