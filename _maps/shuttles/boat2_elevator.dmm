@@ -59,7 +59,7 @@
 	},
 /obj/docking_port/mobile{
 	name = "ucorp shuttle";
-	id = "ucorp_boat2";
+	id = "boat2_elevator";
 	port_direction = 2;
 	dwidth = 4;
 	height = 7;

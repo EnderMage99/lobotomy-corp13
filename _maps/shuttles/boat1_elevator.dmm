@@ -96,7 +96,7 @@
 "B" = (
 /obj/docking_port/mobile{
 	name = "ucorp shuttle";
-	id = "ucorp_boat";
+	id = "boat1_elevator";
 	port_direction = 2;
 	dwidth = 2;
 	height = 9;
