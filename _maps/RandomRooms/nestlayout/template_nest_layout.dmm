@@ -4862,6 +4862,10 @@
 /obj/structure/closet/crate,
 /turf/open/floor/wood,
 /area/city/fixers)
+"VA" = (
+/obj/machinery/body_preservation_unit,
+/turf/open/floor/facility,
+/area/city/shop)
 "VE" = (
 /obj/effect/turf_decal/tile/blue{
 	color = "#3234B9";
@@ -10777,7 +10781,7 @@ dd
 rY
 sh
 nU
-nU
+VA
 nU
 TZ
 BP

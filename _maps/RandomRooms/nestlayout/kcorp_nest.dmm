@@ -35,6 +35,12 @@
 /obj/structure/bookcase/random/adult,
 /turf/open/floor/wood,
 /area/city)
+"am" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "an" = (
 /obj/effect/turf_decal/siding/thinplating/dark/corner,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -46,6 +52,13 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/wood,
 /area/city/fixers)
+"at" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "av" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp,
@@ -85,6 +98,12 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
+"aP" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "aR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood{
@@ -107,6 +126,9 @@
 	dir = 1
 	},
 /obj/item/storage/toolbox/mechanical,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/stone,
 /area/city/shop)
 "bg" = (
@@ -237,11 +259,24 @@
 /obj/machinery/telecomms/bus/preset_two,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
+"cc" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/indestructible/hoteltile,
+/area/city/house)
 "cd" = (
 /obj/machinery/door/airlock/freezer{
 	name = "bathouse airlock"
 	},
 /turf/open/floor/mineral/titanium/white,
+/area/city)
+"cg" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/grass,
 /area/city)
 "ch" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -598,6 +633,7 @@
 	pixel_x = 5
 	},
 /obj/effect/turf_decal/siding/blue,
+/obj/machinery/light,
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
 "eF" = (
@@ -758,6 +794,14 @@
 	},
 /turf/open/floor/wood,
 /area/city/backstreets_checkpoint)
+"fx" = (
+/obj/structure/fence{
+	dir = 1;
+	resistance_flags = 64
+	},
+/obj/structure/railing/corner,
+/turf/open/floor/plating/grass,
+/area/city)
 "fy" = (
 /obj/structure/rack,
 /obj/effect/landmark/cityloot,
@@ -1157,9 +1201,6 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
 "in" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
 /turf/open/floor/plasteel/checker,
@@ -1276,6 +1317,7 @@
 /obj/item/hand_labeler_refill,
 /obj/item/hand_labeler,
 /obj/item/toy/crayon/spraycan/infinite,
+/obj/item/storage/bag/trash/bluespace,
 /turf/open/floor/wood,
 /area/city/fixers)
 "jm" = (
@@ -1610,6 +1652,16 @@
 /obj/machinery/door/window/westright,
 /turf/open/floor/wood,
 /area/city/fixers)
+"lS" = (
+/obj/structure/fence{
+	dir = 1;
+	resistance_flags = 64
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/water/deep/freshwater,
+/area/city)
 "lT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/lovetown/slammer,
@@ -1792,6 +1844,16 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/wood,
 /area/city/shop)
+"np" = (
+/obj/structure/headpike{
+	name = "lamp post";
+	desc = "What a nice lampost!"
+	},
+/obj/machinery/light/small{
+	pixel_y = 25
+	},
+/turf/open/floor/plating/ashplanet/rocky,
+/area/city)
 "nt" = (
 /obj/machinery/smartfridge/organ,
 /turf/closed/indestructible/wood,
@@ -1890,6 +1952,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
+"nZ" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "oa" = (
 /obj/structure/rack,
 /obj/item/storage/backpack{
@@ -2146,8 +2215,26 @@
 /obj/structure/bed,
 /turf/open/floor/carpet/donk,
 /area/city/house)
+"po" = (
+/obj/effect/light_emitter{
+	light_power = 4;
+	light_range = 25;
+	set_cap = 3;
+	set_luminosity = 24
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "pp" = (
 /turf/open/water/deep/freshwater,
+/area/city)
+"pr" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plating/ashplanet/rocky,
 /area/city)
 "pz" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2218,6 +2305,7 @@
 "qf" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/bonfire/dense,
+/obj/structure/railing,
 /turf/open/floor/plating/grass,
 /area/city)
 "qh" = (
@@ -2258,9 +2346,22 @@
 /turf/open/floor/plating/grass,
 /area/city)
 "qs" = (
-/obj/structure/timelock,
-/turf/open/floor/plating/dirt/jungle,
-/area/city/backstreets_alley)
+/obj/structure/headpike{
+	name = "lamp post";
+	desc = "What a nice lampost!"
+	},
+/obj/machinery/light/small{
+	pixel_y = 25
+	},
+/turf/open/floor/plating/grass,
+/area/city)
+"qw" = (
+/obj/machinery/hydroponics,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/city/house)
 "qy" = (
 /obj/structure/closet/crate,
 /obj/item/reagent_containers/glass/beaker,
@@ -2682,9 +2783,6 @@
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city/backstreets_checkpoint)
 "tK" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
 /turf/open/indestructible/hoteltile,
@@ -2695,6 +2793,12 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
+"tM" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "tQ" = (
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -2829,6 +2933,9 @@
 "uL" = (
 /obj/machinery/vending/forge,
 /obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 1
+	},
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/stone,
@@ -3114,6 +3221,12 @@
 	},
 /turf/open/floor/stone,
 /area/city/fixers)
+"wv" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "ww" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing,
@@ -3127,6 +3240,7 @@
 /area/city/shop)
 "wy" = (
 /obj/structure/chair/plastic,
+/obj/structure/railing/corner,
 /turf/open/floor/plating/grass,
 /area/city)
 "wz" = (
@@ -3176,6 +3290,13 @@
 	},
 /obj/structure/fence/corner{
 	dir = 8
+	},
+/turf/open/floor/plating/grass,
+/area/city)
+"wG" = (
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/railing/corner{
+	dir = 1
 	},
 /turf/open/floor/plating/grass,
 /area/city)
@@ -3273,6 +3394,11 @@
 /obj/effect/mine/shrapnel,
 /turf/open/floor/facility/dark,
 /area/city)
+"xi" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/railing/corner,
+/turf/open/floor/plating/grass,
+/area/city)
 "xj" = (
 /obj/item/toy/plush/rabbit,
 /turf/open/floor/facility/dark,
@@ -3367,8 +3493,17 @@
 /area/city/fixers)
 "xI" = (
 /obj/machinery/body_fabricator,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/carpet/royalblue,
 /area/city/shop)
+"xO" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "xP" = (
 /obj/effect/turf_decal/siding/brown{
 	dir = 8
@@ -3437,7 +3572,7 @@
 /area/city/house)
 "yk" = (
 /obj/structure/railing{
-	dir = 1
+	dir = 5
 	},
 /obj/structure/curtain/cloth/fancy,
 /obj/structure/riser/wood,
@@ -3529,7 +3664,7 @@
 /area/city/shop)
 "zj" = (
 /obj/structure/railing{
-	dir = 1
+	dir = 5
 	},
 /turf/open/floor/plating,
 /area/city)
@@ -4037,6 +4172,13 @@
 "Cx" = (
 /turf/open/floor/plasteel/grimy,
 /area/city/house)
+"Cy" = (
+/obj/structure/flora/rock/jungle,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "Cz" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
@@ -4177,6 +4319,16 @@
 /mob/living/simple_animal/hostile/cockroach/glockroach,
 /turf/open/floor/wood,
 /area/city)
+"DE" = (
+/obj/structure/headpike{
+	name = "lamp post";
+	desc = "What a nice lampost!"
+	},
+/obj/machinery/light/small{
+	pixel_y = 25
+	},
+/turf/open/floor/plating/grass,
+/area/city/backstreets_checkpoint)
 "DJ" = (
 /obj/effect/landmark/cityloot,
 /turf/open/floor/wood,
@@ -4348,6 +4500,11 @@
 /obj/structure/flora/stump,
 /turf/open/floor/plating/asteroid/basalt,
 /area/city/backstreets_alley)
+"Fc" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/railing/corner,
+/turf/open/floor/plating/grass,
+/area/city)
 "Fe" = (
 /obj/effect/turf_decal/tile/blue{
 	color = "#3234B9";
@@ -4373,6 +4530,13 @@
 	},
 /turf/open/floor/wood,
 /area/city/house)
+"Fk" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/checker,
+/area/city/house)
 "Fm" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating/airless,
@@ -4389,6 +4553,13 @@
 	},
 /turf/open/floor/facility/dark,
 /area/city/backstreets_checkpoint)
+"Fz" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "FA" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/facility/dark,
@@ -4441,6 +4612,13 @@
 	},
 /turf/open/floor/mineral/silver,
 /area/city/shop)
+"FO" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "FS" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/item/storage/backpack/duffelbag/med/upgradedsurgery{
@@ -4459,6 +4637,17 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ashplanet/wateryrock,
 /area/city)
+"Ga" = (
+/obj/structure/fluff/beach_umbrella/engine,
+/obj/structure/railing,
+/turf/open/floor/plating/grass,
+/area/city)
+"Ge" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plating/ashplanet/rocky,
+/area/city/backstreets_checkpoint)
 "Gi" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/floor/plating/grass,
@@ -4640,6 +4829,16 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"Hv" = (
+/obj/structure/fence{
+	dir = 1;
+	resistance_flags = 64
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "Hw" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 8
@@ -4742,6 +4941,20 @@
 	},
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city/backstreets_checkpoint)
+"Ih" = (
+/obj/structure/closet/cabinet,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/kitchen/knife,
+/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/kitchen/fork,
+/obj/item/kitchen/spoon,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/checker,
+/area/city/house)
 "Il" = (
 /turf/open/indestructible/hoteltile,
 /area/city/fixers)
@@ -5033,6 +5246,25 @@
 /obj/structure/bed/maint,
 /turf/open/floor/stone,
 /area/city/fixers)
+"Kg" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing{
+	dir = 9
+	},
+/turf/open/floor/plating/grass,
+/area/city)
+"Ki" = (
+/obj/effect/light_emitter{
+	light_power = 4;
+	light_range = 25;
+	set_cap = 3;
+	set_luminosity = 24
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "Kj" = (
 /obj/machinery/telecomms/server/presets/science,
 /obj/effect/turf_decal/bot,
@@ -5124,6 +5356,12 @@
 	},
 /turf/open/floor/wood,
 /area/city/shop)
+"Ky" = (
+/obj/structure/railing{
+	dir = 9
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "KA" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -5160,6 +5398,10 @@
 /mob/living/simple_animal/hostile/sweeper,
 /turf/open/floor/stone,
 /area/city/fixers)
+"KO" = (
+/obj/structure/railing,
+/turf/open/floor/plating/grass,
+/area/city)
 "KP" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
@@ -5354,6 +5596,13 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
+"Ma" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "Mb" = (
 /obj/machinery/telecomms/server/presets/service,
 /obj/effect/turf_decal/bot,
@@ -5411,6 +5660,19 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
+"Mv" = (
+/obj/structure/headpike{
+	name = "lamp post";
+	desc = "What a nice lampost!"
+	},
+/obj/machinery/light/small{
+	pixel_y = 25
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "My" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/bodypart/l_arm,
@@ -5499,7 +5761,7 @@
 "MX" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
-	dir = 1
+	dir = 5
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/facility/dark,
@@ -5542,6 +5804,13 @@
 	},
 /turf/open/floor/carpet/red,
 /area/city/fixers)
+"Nw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/stone,
+/area/city)
 "Ny" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -5603,6 +5872,15 @@
 /obj/machinery/telecomms/server/presets/common,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
+"NR" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/city/house)
 "NW" = (
 /turf/open/floor/wood,
 /area/city/shop)
@@ -5655,6 +5933,43 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone,
 /area/city)
+"Or" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/grass,
+/area/city)
+"Os" = (
+/obj/structure/headpike{
+	name = "lamp post";
+	desc = "What a nice lampost!"
+	},
+/obj/machinery/light/small{
+	pixel_y = 25
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/grass,
+/area/city)
+"Ot" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood{
+	color = "#ccc8c0"
+	},
+/area/city/shop)
 "Ox" = (
 /obj/structure/chair/pew/right{
 	dir = 1
@@ -5678,6 +5993,13 @@
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ashplanet/rocky,
+/area/city)
+"OH" = (
+/obj/structure/flora/ausbushes/grassybush,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plating/grass,
 /area/city)
 "OK" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5769,11 +6091,20 @@
 /turf/open/floor/wood,
 /area/city/fixers)
 "Pq" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/open/floor/carpet/donk,
 /area/city/house)
 "Pw" = (
@@ -5997,6 +6328,12 @@
 /obj/structure/flora/ash/fern,
 /turf/open/floor/plating/dirt/jungle,
 /area/city/backstreets_alley)
+"Rf" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "Rg" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 4
@@ -6030,6 +6367,10 @@
 	color = "#ccc8c0"
 	},
 /area/city/fixers)
+"Rz" = (
+/obj/structure/railing/corner,
+/turf/open/floor/plating/grass,
+/area/city)
 "RC" = (
 /turf/closed/indestructible/rock,
 /area/space)
@@ -6077,6 +6418,13 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"RO" = (
+/obj/structure/flora/ausbushes,
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "RP" = (
 /obj/machinery/light{
 	dir = 8
@@ -6143,6 +6491,15 @@
 /obj/item/reagent_containers/spray/chemsprayer/janitor,
 /turf/open/floor/wood,
 /area/city/fixers)
+"SA" = (
+/obj/machinery/light,
+/obj/machinery/light,
+/obj/machinery/light,
+/obj/machinery/light,
+/turf/open/floor/wood{
+	color = "#ccc8c0"
+	},
+/area/city/shop)
 "SB" = (
 /obj/structure/rack,
 /obj/item/clothing/gloves/color/black,
@@ -6237,6 +6594,19 @@
 	},
 /turf/open/floor/carpet/black,
 /area/city/fixers)
+"Tw" = (
+/obj/structure/headpike{
+	name = "lamp post";
+	desc = "What a nice lampost!"
+	},
+/obj/machinery/light/small{
+	pixel_y = 25
+	},
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "Tx" = (
 /turf/open/floor/carpet/donk,
 /area/city/house)
@@ -6251,6 +6621,12 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/wood,
 /area/city/house)
+"Tz" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "TA" = (
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city/backstreets_checkpoint)
@@ -6423,6 +6799,12 @@
 "UH" = (
 /turf/open/space/basic,
 /area/space)
+"UN" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plating/ashplanet/rocky,
+/area/city)
 "UO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/suit/hooded/chaplain_hoodie/leader,
@@ -6520,6 +6902,9 @@
 "VV" = (
 /obj/structure/chair/wood{
 	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/carpet/royalblue,
 /area/city/shop)
@@ -6694,6 +7079,28 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/city/shop)
+"Xg" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/wood{
+	color = "#ccc8c0"
+	},
+/area/city/shop)
+"Xk" = (
+/obj/structure/flora/tree/jungle/small,
+/obj/structure/railing,
+/turf/open/floor/plating/grass,
+/area/city)
 "Xl" = (
 /obj/machinery/photocopier,
 /turf/open/floor/wood,
@@ -6723,6 +7130,26 @@
 	},
 /turf/open/floor/facility/dark,
 /area/city/backstreets_room)
+"Xu" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 8;
+	alpha = 0
+	},
+/turf/open/floor/wood,
+/area/city)
+"Xw" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 4;
+	alpha = 0
+	},
+/turf/open/floor/wood,
+/area/city)
 "XA" = (
 /obj/machinery/door/airlock/glass_large{
 	name = "Long-Term Sleep Centre"
@@ -6751,6 +7178,21 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone,
 /area/city)
+"Ya" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/water/deep/freshwater,
+/area/city)
 "Yc" = (
 /obj/structure/rack,
 /obj/item/clothing/under/rank/cargo/miner{
@@ -6767,6 +7209,18 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"Yg" = (
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/plating/grass,
+/area/city)
+"Yi" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plating/ashplanet/rocky,
+/area/city)
 "Yj" = (
 /obj/machinery/griddle,
 /turf/open/indestructible/hoteltile,
@@ -6799,7 +7253,7 @@
 "Ys" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing{
-	dir = 1
+	dir = 5
 	},
 /obj/item/paper_bin,
 /obj/item/pen,
@@ -6836,6 +7290,12 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"YB" = (
+/obj/machinery/light,
+/turf/open/floor/wood{
+	color = "#ccc8c0"
+	},
+/area/city/shop)
 "YC" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
@@ -6848,6 +7308,13 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
+/area/city)
+"YH" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing{
+	dir = 5
+	},
+/turf/open/floor/plating/grass,
 /area/city)
 "YK" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -6911,6 +7378,9 @@
 /obj/item/hand_labeler,
 /obj/item/hand_labeler_refill,
 /obj/item/hand_labeler_refill,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
 "YX" = (
@@ -7052,6 +7522,13 @@
 /obj/structure/railing,
 /turf/open/floor/wood,
 /area/city/fixers)
+"ZH" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/plating/grass,
+/area/city)
 "ZI" = (
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
@@ -9274,10 +9751,10 @@ jm
 jm
 jm
 jm
+Nw
 jm
 jm
 jm
-RZ
 jm
 jm
 jm
@@ -10716,7 +11193,7 @@ bM
 Od
 IB
 IB
-IB
+UN
 IB
 IB
 IB
@@ -11074,6 +11551,12 @@ jM
 jM
 jM
 jM
+tV
+jM
+jM
+jM
+jM
+tV
 jM
 jM
 jM
@@ -11090,13 +11573,7 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11179,41 +11656,41 @@ jM
 jM
 jM
 jM
+tV
+jM
+jM
+jM
+tV
+jM
+jM
+tV
+jM
+tV
+jM
+jM
+tV
+jM
+jM
+jM
+tV
+jM
+jM
+jM
+tV
+jM
+jM
+jM
+tV
 jM
 jM
 jM
 jM
 jM
+tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11228,23 +11705,23 @@ jM
 jM
 jM
 jM
+tV
+tV
 jM
 jM
 jM
 jM
 jM
+tV
+jM
+jM
+tV
+tV
 jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11276,79 +11753,79 @@ em
 jM
 tV
 jM
+tV
+jM
+jM
+jM
+tV
+jM
+jM
+tV
+jM
+jM
+tV
+tV
 jM
 jM
 jM
 jM
 jM
+tV
+tV
 jM
 jM
 jM
 jM
+tV
+tV
 jM
 jM
+tV
+tV
 jM
 jM
+tV
+tV
+tV
 jM
 jM
+tV
 jM
 jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 Ml
 Ml
 Ml
 jM
+tV
+jM
+jM
+tV
+jM
+jM
+tV
+jM
+jM
+jM
+tV
+tV
+jM
+tV
+tV
 jM
 jM
 jM
 jM
 jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11387,54 +11864,18 @@ jM
 jM
 jM
 jM
+tV
 jM
 jM
+tV
+tV
+jM
+tV
+jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-Ml
-Ml
-Ml
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11444,6 +11885,42 @@ jM
 tV
 jM
 jM
+tV
+jM
+jM
+jM
+jM
+tV
+jM
+jM
+jM
+tV
+jM
+jM
+jM
+jM
+jM
+Ml
+Ml
+Ml
+jM
+jM
+tV
+jM
+tV
+jM
+jM
+tV
+jM
+tV
+jM
+jM
+jM
+jM
+tV
+tV
+jM
+tV
 jM
 jM
 jM
@@ -11482,19 +11959,19 @@ tV
 jM
 jM
 Rc
+tV
+jM
+jM
+tV
+jM
+jM
+jM
+tV
 jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11507,6 +11984,7 @@ jM
 Oa
 jM
 jM
+tV
 jM
 jM
 jM
@@ -11514,11 +11992,10 @@ jM
 jM
 jM
 jM
+tV
 jM
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11534,9 +12011,7 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -11545,14 +12020,16 @@ jM
 jM
 tV
 jM
+tV
 jM
 jM
 jM
+tV
 jM
 jM
-jM
-jM
-jM
+tV
+tV
+tV
 jM
 jM
 jM
@@ -11650,7 +12127,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -11963,7 +12440,7 @@ Oa
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 tV
@@ -12066,11 +12543,11 @@ oC
 oC
 jM
 IO
+tV
 jM
 jM
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -12086,7 +12563,7 @@ RC
 jM
 jM
 em
-jM
+tV
 tV
 jM
 tV
@@ -12171,13 +12648,13 @@ tV
 jM
 jM
 jM
+tV
 jM
 jM
 jM
 jM
 jM
-jM
-jM
+tV
 LG
 RC
 RC
@@ -12238,12 +12715,12 @@ tz
 tz
 tz
 tz
-tz
+fx
+lS
 uZ
 uZ
-uZ
-tz
-tz
+fx
+Hv
 tz
 tz
 tz
@@ -12274,7 +12751,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -12287,9 +12764,9 @@ RC
 RC
 "}
 (52,1,1) = {"
+tV
 jM
-jM
-jM
+tV
 jM
 jM
 tV
@@ -12340,12 +12817,12 @@ Gi
 oc
 af
 oc
-oc
-oc
+Rf
+Yg
 pp
 pp
-pp
-oc
+Ya
+xO
 oc
 oc
 oc
@@ -12375,11 +12852,11 @@ jM
 tV
 jM
 jM
+tV
 jM
 jM
 jM
-jM
-jM
+tV
 jM
 jM
 LG
@@ -12443,11 +12920,11 @@ oc
 oc
 oc
 iX
-oc
+KO
 pp
 pp
 pp
-oc
+xO
 Dr
 oc
 iX
@@ -12482,7 +12959,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 LG
 RC
@@ -12491,8 +12968,8 @@ RC
 RC
 "}
 (54,1,1) = {"
-jM
-jM
+tV
+tV
 jM
 jM
 tV
@@ -12545,11 +13022,11 @@ oc
 Rk
 oc
 oc
-oc
+KO
 pp
 pp
 pp
-oc
+xO
 oc
 oc
 oc
@@ -12580,7 +13057,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -12647,11 +13124,11 @@ fD
 oc
 oc
 oc
-QI
+Xk
 pp
 pp
 pp
-oc
+xO
 oc
 oc
 oc
@@ -12683,10 +13160,10 @@ jM
 jM
 jM
 jM
+tV
 jM
 jM
-jM
-jM
+tV
 jM
 LG
 RC
@@ -12743,24 +13220,24 @@ IB
 IB
 IB
 Dr
+qs
 oc
 oc
 oc
 oc
 oc
-oc
-oc
+KO
 pp
 pp
 pp
-oc
+xO
 iX
 oc
 uV
 oc
 oc
 oc
-oc
+qs
 oc
 oc
 oc
@@ -12785,7 +13262,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -12852,9 +13329,9 @@ IB
 IB
 IB
 jZ
-jZ
-jZ
-jZ
+Xu
+Xu
+Xu
 jZ
 IB
 IB
@@ -12890,7 +13367,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 LG
 RC
@@ -12900,8 +13377,8 @@ RC
 "}
 (58,1,1) = {"
 jM
-jM
-jM
+tV
+tV
 jM
 ei
 te
@@ -12988,8 +13465,8 @@ tV
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -13018,9 +13495,9 @@ oc
 oc
 oc
 oc
-Gi
-oc
-oc
+IB
+IB
+IB
 oc
 oc
 Gi
@@ -13056,10 +13533,10 @@ IB
 IB
 IB
 VQ
+Xw
+Xw
+Xw
 VQ
-VQ
-VQ
-VQ
 IB
 IB
 IB
@@ -13079,7 +13556,7 @@ IB
 IB
 IB
 IB
-oc
+qs
 oc
 vD
 kI
@@ -13120,9 +13597,9 @@ oc
 oc
 oc
 oc
-uv
-Wa
-oc
+hI
+IB
+IB
 oc
 oc
 oc
@@ -13150,19 +13627,19 @@ wj
 IB
 IB
 IB
-oc
+qs
 oc
 oc
 Rk
 oc
-Dr
-Su
-oc
+xi
+Ki
+wv
 pp
 pp
 pp
-Rk
-oc
+RO
+aP
 iX
 IB
 IB
@@ -13207,8 +13684,8 @@ RC
 (61,1,1) = {"
 jM
 jM
-jM
-jM
+tV
+tV
 fM
 fM
 aK
@@ -13222,9 +13699,9 @@ fM
 fM
 af
 oc
-oc
-oc
-oc
+IB
+IB
+IB
 oc
 oc
 oc
@@ -13256,19 +13733,19 @@ Bg
 oc
 Gi
 oc
-af
-iX
+Fc
+FO
 pp
 pp
 pp
 pp
 pp
 pp
-oc
-oc
+tM
+aP
 IB
 IB
-oc
+qs
 oc
 oc
 QI
@@ -13296,8 +13773,8 @@ jM
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 LG
@@ -13308,7 +13785,7 @@ RC
 "}
 (62,1,1) = {"
 jM
-jM
+tV
 jM
 jM
 fM
@@ -13323,17 +13800,17 @@ Vq
 eQ
 fM
 TA
-oc
-oc
-fD
-oc
+qs
+IB
+IB
+IB
 iX
 oc
 oc
 oc
 oc
 Su
-oc
+qs
 oc
 iX
 oc
@@ -13358,7 +13835,7 @@ oc
 af
 oc
 oc
-oc
+KO
 pp
 pp
 pp
@@ -13367,7 +13844,7 @@ pp
 pp
 pp
 pp
-oc
+xO
 IB
 IB
 oc
@@ -13397,8 +13874,8 @@ jM
 tV
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -13410,8 +13887,8 @@ RC
 "}
 (63,1,1) = {"
 jM
-jM
-jM
+tV
+tV
 jM
 fM
 uO
@@ -13460,7 +13937,7 @@ Wa
 oc
 af
 oc
-oc
+KO
 pp
 pp
 pp
@@ -13469,7 +13946,7 @@ pp
 pp
 pp
 pp
-Dr
+Cy
 IB
 IB
 af
@@ -13477,7 +13954,7 @@ oc
 oc
 uv
 oc
-oc
+qs
 IB
 IB
 wj
@@ -13512,7 +13989,7 @@ RC
 "}
 (64,1,1) = {"
 jM
-jM
+tV
 jM
 jM
 fM
@@ -13562,16 +14039,16 @@ oc
 oc
 oc
 fD
-oc
-iX
+Rf
+Fz
 pp
 pp
 pp
 pp
 pp
-oc
-oc
-oc
+Ky
+Tz
+am
 IB
 IB
 IB
@@ -13665,16 +14142,16 @@ oc
 oc
 oc
 oc
+Rf
+Tz
+Tz
+Tz
+Tz
+Tz
+Or
 oc
 oc
-oc
-oc
-oc
-oc
-fD
-oc
-oc
-oc
+qs
 IB
 IB
 IB
@@ -13705,7 +14182,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 LG
@@ -13732,7 +14209,7 @@ fM
 fM
 TA
 TA
-oc
+qs
 oc
 Su
 oc
@@ -13748,7 +14225,7 @@ oc
 Lw
 oc
 oc
-oc
+qs
 IB
 IB
 IB
@@ -13806,7 +14283,7 @@ Oa
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -13885,7 +14362,7 @@ oc
 oc
 oc
 Lw
-oc
+qs
 IB
 IB
 wj
@@ -13910,7 +14387,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 LG
 RC
@@ -13981,7 +14458,7 @@ IB
 IB
 IB
 IB
-oc
+qs
 oc
 oc
 Dr
@@ -14166,7 +14643,7 @@ nM
 IB
 oc
 oc
-oc
+qs
 IB
 IB
 IB
@@ -14212,8 +14689,8 @@ jM
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -14377,7 +14854,7 @@ IB
 IB
 yE
 IB
-oc
+qs
 fM
 wH
 In
@@ -14519,11 +14996,11 @@ tV
 jM
 jM
 jM
+tV
+tV
 jM
 jM
-jM
-jM
-jM
+tV
 LG
 RC
 RC
@@ -14570,14 +15047,14 @@ oc
 oc
 Lw
 oc
-oc
-oc
-Lw
-oc
-oc
+qs
 oc
 Lw
 oc
+oc
+oc
+Lw
+qs
 IB
 IB
 IB
@@ -14589,7 +15066,7 @@ oc
 Lw
 oc
 oc
-oc
+qs
 IB
 IB
 uN
@@ -14609,7 +15086,7 @@ wj
 Lw
 IB
 IB
-oc
+qs
 oc
 vD
 oC
@@ -14735,7 +15212,7 @@ RC
 RC
 "}
 (76,1,1) = {"
-tV
+jM
 fM
 ES
 Tg
@@ -14803,7 +15280,7 @@ Hl
 xf
 uN
 Dr
-oc
+qs
 IB
 IB
 oc
@@ -14826,7 +15303,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -15041,7 +15518,7 @@ RC
 RC
 "}
 (79,1,1) = {"
-tV
+jM
 Qa
 FA
 Cp
@@ -15114,11 +15591,11 @@ oc
 Rk
 uV
 iX
-oc
+qs
 Ny
 Dc
 oc
-oc
+qs
 oc
 oc
 vD
@@ -15134,7 +15611,7 @@ tV
 jM
 jM
 jM
-jM
+tV
 jM
 LG
 RC
@@ -15233,7 +15710,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -15397,7 +15874,7 @@ oc
 IB
 IB
 IB
-oc
+qs
 oc
 wj
 wj
@@ -15408,11 +15885,11 @@ oc
 oc
 IB
 oc
-oc
+qs
 IB
 IB
 IB
-oc
+qs
 oc
 iX
 oc
@@ -15449,8 +15926,8 @@ RC
 RC
 "}
 (83,1,1) = {"
-Wj
-qs
+RM
+jM
 Wj
 Wj
 Wj
@@ -15467,7 +15944,7 @@ TA
 TA
 TA
 TA
-TA
+Ge
 TA
 TA
 TA
@@ -15478,7 +15955,7 @@ IB
 IB
 IB
 IB
-IB
+pr
 IB
 IB
 IB
@@ -15540,8 +16017,8 @@ ho
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 LG
@@ -15551,8 +16028,8 @@ RC
 RC
 "}
 (84,1,1) = {"
-Wj
 RM
+Wj
 Wj
 jM
 Wj
@@ -15642,7 +16119,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -15653,8 +16130,8 @@ RC
 RC
 "}
 (85,1,1) = {"
-Wj
-qs
+RM
+jM
 Wj
 Wj
 Wj
@@ -15742,8 +16219,8 @@ tV
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -15767,12 +16244,12 @@ iV
 Vd
 OO
 Qa
-om
+DE
 Zg
 TA
 TA
 TA
-om
+DE
 yb
 om
 om
@@ -15788,7 +16265,7 @@ IB
 Wa
 oc
 oc
-oc
+qs
 oc
 oc
 Bg
@@ -15797,7 +16274,7 @@ oc
 iX
 IB
 IB
-oc
+qs
 oc
 oc
 oc
@@ -15805,11 +16282,11 @@ Lw
 oc
 Dr
 oc
-oc
+qs
 IB
 IB
 IB
-oc
+qs
 oc
 wj
 wj
@@ -15828,7 +16305,7 @@ oc
 tq
 fN
 YT
-hB
+Ih
 Ub
 cC
 xa
@@ -15883,7 +16360,7 @@ om
 oc
 oc
 oc
-oc
+qs
 IB
 IB
 IB
@@ -15946,7 +16423,7 @@ tV
 tV
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -16046,12 +16523,12 @@ jM
 jM
 tV
 tV
+tV
 jM
 jM
+tV
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 LG
@@ -16150,7 +16627,7 @@ tV
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -16254,7 +16731,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -16273,7 +16750,7 @@ tV
 tV
 tV
 tV
-tV
+jM
 tV
 tV
 fM
@@ -16290,7 +16767,7 @@ Vq
 Vq
 Ri
 dW
-IB
+Yi
 IB
 IB
 IB
@@ -16337,7 +16814,7 @@ IB
 iX
 xa
 wq
-wq
+qw
 wq
 xa
 bA
@@ -16355,7 +16832,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -16369,15 +16846,15 @@ RC
 (92,1,1) = {"
 tV
 tV
+jM
+jM
+jM
+jM
+jM
 tV
 tV
 tV
-tV
-tV
-tV
-tV
-tV
-tV
+jM
 fM
 ER
 Vq
@@ -16421,7 +16898,7 @@ IB
 IB
 IB
 IB
-oc
+qs
 xa
 PB
 Et
@@ -16436,7 +16913,7 @@ oc
 IB
 IB
 IB
-oc
+qs
 xa
 xa
 xa
@@ -16469,17 +16946,17 @@ RC
 RC
 "}
 (93,1,1) = {"
+jM
 tV
 tV
 tV
+jM
+tV
+jM
+jM
 tV
 tV
-tV
-tV
-tV
-tV
-tV
-tV
+jM
 fM
 Dn
 aq
@@ -16561,7 +17038,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 LG
@@ -16573,11 +17050,11 @@ RC
 (94,1,1) = {"
 tV
 tV
+jM
 tV
+jM
 tV
-tV
-tV
-tV
+jM
 tV
 tV
 tV
@@ -16659,10 +17136,10 @@ tV
 jM
 ho
 tV
+tV
 jM
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -16677,11 +17154,11 @@ tV
 tV
 tV
 tV
+jM
+jM
 tV
 tV
-tV
-tV
-tV
+jM
 tV
 tV
 zP
@@ -16699,7 +17176,7 @@ Vq
 Wk
 UG
 oc
-oc
+qs
 IB
 IB
 IB
@@ -16723,7 +17200,7 @@ In
 sS
 Th
 oc
-oc
+qs
 IB
 yE
 IB
@@ -16738,7 +17215,7 @@ Cx
 du
 Zr
 xa
-oc
+qs
 IB
 yE
 IB
@@ -16747,7 +17224,7 @@ PA
 Ja
 Ja
 gN
-gN
+cc
 tK
 xa
 dL
@@ -16765,7 +17242,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 LG
@@ -16780,11 +17257,11 @@ jM
 jM
 jM
 jM
+tV
+tV
 jM
 jM
-jM
-jM
-jM
+tV
 jM
 zP
 oc
@@ -16800,7 +17277,7 @@ Vq
 Vq
 Ri
 dW
-IB
+Yi
 IB
 IB
 IB
@@ -16863,7 +17340,7 @@ IO
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -16878,13 +17355,13 @@ RC
 "}
 (97,1,1) = {"
 jM
+tV
+jM
+tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -16966,9 +17443,9 @@ em
 jM
 jM
 jM
+tV
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -16983,10 +17460,10 @@ jM
 jM
 jM
 jM
+tV
 jM
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -17009,7 +17486,7 @@ IB
 IB
 IB
 IB
-oc
+qs
 uN
 nw
 Cc
@@ -17067,7 +17544,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -17084,20 +17561,20 @@ RC
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
 tV
 jM
 jM
+tV
+tV
+tV
+jM
+tV
 zP
 fD
 oc
 oc
 oc
-oc
+qs
 fM
 HF
 LK
@@ -17107,7 +17584,7 @@ Vq
 hv
 UG
 oc
-oc
+qs
 IB
 IB
 IB
@@ -17135,7 +17612,7 @@ Wa
 IB
 IB
 IB
-oc
+qs
 xa
 xa
 xa
@@ -17150,7 +17627,7 @@ oc
 IB
 IB
 IB
-oc
+qs
 xa
 xa
 xa
@@ -17171,9 +17648,9 @@ jM
 jM
 jM
 jM
+tV
 jM
-jM
-jM
+tV
 jM
 jM
 LG
@@ -17183,16 +17660,16 @@ RC
 RC
 "}
 (100,1,1) = {"
+tV
+tV
 jM
 jM
 jM
+tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
+tV
 jM
 zP
 oc
@@ -17273,7 +17750,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -17287,14 +17764,14 @@ RC
 (101,1,1) = {"
 jM
 jM
+tV
+tV
 jM
 jM
 jM
 jM
 jM
-jM
-jM
-jM
+tV
 jM
 zP
 oc
@@ -17389,13 +17866,13 @@ RC
 (102,1,1) = {"
 jM
 jM
+tV
 jM
 jM
+tV
 jM
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 zP
@@ -17461,7 +17938,7 @@ PA
 Ja
 Ja
 yh
-yh
+Fk
 in
 xa
 dL
@@ -17476,10 +17953,10 @@ tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
+tV
 jM
 jM
 LG
@@ -17489,15 +17966,15 @@ RC
 RC
 "}
 (103,1,1) = {"
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+OO
+OO
+OO
+OO
+OO
+OO
+OO
+OO
+OO
 zP
 zP
 zP
@@ -17539,7 +18016,7 @@ uN
 uN
 uN
 fD
-oc
+qs
 IB
 IB
 IB
@@ -17576,13 +18053,13 @@ IO
 tV
 tV
 tV
+tV
 jM
 jM
 jM
+tV
 jM
-jM
-jM
-jM
+tV
 jM
 LG
 RC
@@ -17591,12 +18068,12 @@ RC
 RC
 "}
 (104,1,1) = {"
+tV
+jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
+tV
 tV
 tV
 jM
@@ -17617,7 +18094,7 @@ Rg
 na
 Wz
 Bg
-oc
+qs
 IB
 IB
 IB
@@ -17648,7 +18125,7 @@ IB
 IB
 xa
 jD
-Fi
+NR
 KY
 Tx
 Pq
@@ -17682,8 +18159,8 @@ jM
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 LG
@@ -17697,7 +18174,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 tV
 tV
@@ -17716,7 +18193,7 @@ mr
 ww
 lL
 HE
-Ks
+SA
 ZS
 IB
 IB
@@ -17737,7 +18214,7 @@ uN
 uN
 uN
 uN
-Ks
+Ot
 Ks
 Ks
 Ks
@@ -17781,8 +18258,8 @@ tV
 tV
 tV
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -17797,8 +18274,8 @@ RC
 (106,1,1) = {"
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -17860,7 +18337,7 @@ wj
 wj
 wj
 oc
-oc
+qs
 IB
 IB
 IB
@@ -17900,9 +18377,9 @@ RC
 jM
 jM
 jM
+tV
 jM
-jM
-jM
+tV
 jM
 tV
 jM
@@ -17920,7 +18397,7 @@ LP
 ww
 lL
 HE
-Ks
+YB
 ZS
 IB
 IB
@@ -17986,7 +18463,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -17999,10 +18476,10 @@ RC
 RC
 "}
 (108,1,1) = {"
+tV
 jM
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -18025,7 +18502,7 @@ HE
 na
 Wz
 oc
-oc
+qs
 IB
 IB
 IB
@@ -18090,8 +18567,8 @@ jM
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 LG
@@ -18131,7 +18608,7 @@ iX
 IB
 IB
 IB
-oc
+qs
 vc
 vc
 vc
@@ -18194,7 +18671,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 LG
 RC
@@ -18205,8 +18682,8 @@ RC
 (110,1,1) = {"
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -18294,7 +18771,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -18326,7 +18803,7 @@ pW
 WN
 PD
 zC
-Ks
+Xg
 Ks
 na
 Wz
@@ -18391,12 +18868,12 @@ oC
 tV
 tV
 jM
-jM
+tV
 jM
 GY
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -18464,14 +18941,14 @@ IB
 IB
 Hm
 oc
-oc
+qs
 mC
 ZJ
 oc
 ok
 mC
 ZJ
-oc
+qs
 oc
 oc
 oc
@@ -18494,10 +18971,10 @@ tV
 tV
 jM
 jM
+tV
+tV
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -18512,7 +18989,7 @@ RC
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -18565,17 +19042,17 @@ IB
 IB
 IB
 oc
-oc
-oc
-oc
-oc
-fD
-oc
-oc
-oc
-Gi
-oc
-oc
+Rz
+cg
+cg
+cg
+at
+cg
+cg
+cg
+OH
+cg
+aP
 oc
 IB
 IB
@@ -18612,7 +19089,7 @@ RC
 "}
 (114,1,1) = {"
 jM
-jM
+tV
 jM
 jM
 jM
@@ -18659,15 +19136,15 @@ oc
 vc
 oc
 oc
-oc
+qs
 IB
 IB
 IB
 IB
 IB
 Gi
-oc
-fD
+Rz
+ZH
 pp
 pp
 pp
@@ -18677,12 +19154,12 @@ pp
 pp
 pp
 pp
-fD
-oc
+YH
+aP
 Gi
 IB
 IB
-oc
+qs
 uN
 Wc
 TX
@@ -18700,7 +19177,7 @@ jM
 tV
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -18714,7 +19191,7 @@ RC
 "}
 (115,1,1) = {"
 jM
-jM
+tV
 jM
 jM
 jM
@@ -18740,7 +19217,7 @@ oc
 oc
 oc
 oc
-oc
+qs
 Bg
 oc
 oc
@@ -18768,7 +19245,7 @@ IB
 IB
 IB
 wy
-oc
+wv
 pp
 pp
 pp
@@ -18780,8 +19257,8 @@ pp
 pp
 pp
 pp
-fD
-oc
+YH
+aP
 IB
 IB
 IB
@@ -18800,12 +19277,12 @@ tV
 Oa
 jM
 ho
+tV
 jM
 jM
+tV
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 LG
@@ -18817,10 +19294,10 @@ RC
 (116,1,1) = {"
 jM
 jM
+tV
+tV
 jM
-jM
-jM
-jM
+tV
 jM
 jM
 tV
@@ -18869,7 +19346,7 @@ uN
 Wc
 IB
 IB
-mC
+Ga
 pp
 pp
 pp
@@ -18883,7 +19360,7 @@ pp
 pp
 pp
 pp
-oc
+xO
 oc
 IB
 IB
@@ -18952,7 +19429,7 @@ oc
 oc
 oc
 oc
-oc
+qs
 oc
 oc
 oc
@@ -18985,7 +19462,7 @@ pp
 pp
 pp
 pp
-oc
+Mv
 oc
 oc
 IB
@@ -19007,10 +19484,10 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
+tV
 jM
 LG
 RC
@@ -19020,7 +19497,7 @@ RC
 "}
 (118,1,1) = {"
 jM
-jM
+tV
 jM
 jM
 jM
@@ -19073,7 +19550,7 @@ NW
 uN
 IB
 IB
-oc
+KO
 pp
 pp
 pp
@@ -19087,7 +19564,7 @@ pp
 pp
 pp
 pp
-oc
+xO
 Gi
 oc
 oc
@@ -19107,7 +19584,7 @@ jM
 tV
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -19160,7 +19637,7 @@ Wa
 oc
 oc
 oc
-oc
+qs
 Gi
 oc
 Su
@@ -19175,8 +19652,8 @@ QZ
 uN
 IB
 IB
-oc
-oc
+Rf
+Tw
 pp
 pp
 pp
@@ -19188,8 +19665,8 @@ pp
 pp
 pp
 pp
-oc
-oc
+Ky
+am
 oc
 oc
 oc
@@ -19209,11 +19686,11 @@ jM
 tV
 jM
 jM
+tV
 jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
 jM
 jM
 LG
@@ -19227,7 +19704,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 tV
 jM
@@ -19278,8 +19755,8 @@ Wc
 IB
 IB
 oc
-Su
-fD
+po
+nZ
 pp
 pp
 pp
@@ -19289,8 +19766,8 @@ pp
 pp
 pp
 pp
-fD
-Gi
+Kg
+wG
 oc
 oc
 oc
@@ -19310,12 +19787,12 @@ tV
 jM
 tV
 jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
+tV
+tV
+tV
 jM
 jM
 LG
@@ -19353,7 +19830,7 @@ oc
 af
 oc
 oc
-oc
+qs
 oc
 oc
 oc
@@ -19381,17 +19858,17 @@ IB
 IB
 Gi
 oc
-oc
-oc
-oc
-fD
-oc
-oc
-oc
-fD
-oc
-oc
-oc
+Rf
+Tz
+Tz
+Ma
+Os
+Tz
+Tz
+Ma
+Tz
+Tz
+am
 oc
 Hm
 oc
@@ -19411,13 +19888,13 @@ oC
 Rc
 jM
 ho
+tV
+tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
+tV
+tV
 jM
 jM
 LG
@@ -19429,7 +19906,7 @@ RC
 (122,1,1) = {"
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -19514,12 +19991,12 @@ tV
 jM
 jM
 jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
 jM
 jM
 LG
@@ -19533,7 +20010,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 tV
 tV
@@ -19617,8 +20094,8 @@ tV
 jM
 jM
 jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -19636,7 +20113,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -19720,9 +20197,9 @@ jM
 jM
 jM
 jM
+tV
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -19734,9 +20211,9 @@ RC
 "}
 (125,1,1) = {"
 jM
+tV
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -19821,11 +20298,11 @@ jM
 tV
 jM
 jM
+tV
 jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
 jM
 jM
 LG
@@ -19836,7 +20313,7 @@ RC
 "}
 (126,1,1) = {"
 jM
-jM
+tV
 jM
 jM
 jM
@@ -19923,9 +20400,9 @@ jM
 jM
 jM
 jM
+tV
 jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -19939,7 +20416,7 @@ RC
 (127,1,1) = {"
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -20007,7 +20484,7 @@ em
 tV
 jM
 jM
-jM
+tV
 jM
 jM
 tV
@@ -20023,12 +20500,12 @@ tV
 tV
 jM
 jM
+tV
+jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20108,9 +20585,9 @@ jM
 jM
 tV
 tV
+tV
 jM
-jM
-jM
+tV
 tV
 jM
 tV
@@ -20126,10 +20603,10 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
+tV
+tV
+tV
+tV
 jM
 jM
 jM
@@ -20143,6 +20620,25 @@ RC
 (129,1,1) = {"
 jM
 jM
+tV
+jM
+jM
+jM
+tV
+tV
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+tV
+jM
+jM
+jM
+jM
+tV
 jM
 jM
 jM
@@ -20155,26 +20651,7 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20209,30 +20686,30 @@ bq
 tV
 jM
 jM
+tV
+jM
+jM
+tV
+jM
+tV
 jM
 jM
 jM
 jM
 jM
+tV
 jM
+tV
 jM
+tV
 jM
+tV
 jM
+tV
+tV
+tV
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20246,6 +20723,34 @@ RC
 jM
 jM
 jM
+tV
+jM
+jM
+jM
+jM
+jM
+jM
+jM
+tV
+jM
+jM
+jM
+jM
+jM
+jM
+tV
+jM
+jM
+tV
+jM
+jM
+tV
+jM
+tV
+jM
+jM
+jM
+tV
 jM
 jM
 jM
@@ -20254,35 +20759,7 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20311,6 +20788,11 @@ bq
 jM
 jM
 jM
+tV
+jM
+jM
+jM
+tV
 jM
 jM
 jM
@@ -20321,18 +20803,13 @@ jM
 jM
 jM
 jM
+tV
+jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
+tV
 jM
 jM
 jM
@@ -20348,6 +20825,15 @@ RC
 jM
 jM
 jM
+tV
+jM
+tV
+jM
+jM
+jM
+jM
+jM
+tV
 jM
 jM
 jM
@@ -20358,24 +20844,7 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20390,12 +20859,20 @@ jM
 jM
 jM
 tV
+tV
+jM
+jM
+jM
+tV
+tV
+jM
+tV
 jM
 jM
 oc
 Wa
 vD
-IB
+np
 IB
 IB
 IB
@@ -20414,27 +20891,27 @@ jM
 jM
 jM
 jM
+tV
+tV
+jM
+jM
+tV
+tV
+tV
+tV
+tV
+jM
+tV
 jM
 jM
 jM
 jM
+tV
+jM
+tV
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20455,6 +20932,14 @@ jM
 jM
 jM
 jM
+tV
+jM
+jM
+jM
+jM
+jM
+jM
+tV
 jM
 jM
 jM
@@ -20465,6 +20950,14 @@ jM
 jM
 jM
 jM
+tV
+jM
+jM
+tV
+jM
+jM
+tV
+tV
 jM
 jM
 jM
@@ -20472,23 +20965,7 @@ jM
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20514,28 +20991,28 @@ xE
 bq
 jM
 jM
+tV
+tV
 jM
 jM
 jM
 jM
+tV
+jM
+jM
+tV
 jM
 jM
 jM
+tV
+tV
+tV
+jM
+tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20564,6 +21041,14 @@ jM
 jM
 jM
 jM
+tV
+jM
+tV
+jM
+jM
+jM
+tV
+tV
 jM
 jM
 jM
@@ -20571,19 +21056,11 @@ jM
 jM
 jM
 jM
+tV
 jM
 jM
 jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20615,22 +21092,22 @@ xE
 xE
 bq
 jM
+tV
 jM
 jM
 jM
 jM
 jM
+tV
+tV
 jM
 jM
+tV
 jM
 jM
+tV
 jM
-jM
-jM
-jM
-jM
-jM
-jM
+tV
 jM
 jM
 jM
@@ -20733,7 +21210,7 @@ jM
 jM
 jM
 jM
-jM
+tV
 jM
 jM
 jM
@@ -21316,7 +21793,7 @@ vD
 IB
 IB
 yQ
-IB
+yE
 sj
 xE
 yV
@@ -22027,7 +22504,7 @@ jM
 oc
 oc
 vD
-IB
+np
 IB
 bq
 bq
