@@ -1608,6 +1608,11 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
+"lE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/yagaslave,
+/turf/open/floor/stone,
+/area/city/fixers)
 "lF" = (
 /obj/structure/table/reinforced,
 /obj/item/food/soup/hotchili,
@@ -1665,9 +1670,9 @@
 /area/city)
 "lT" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/lovetown/slammer,
 /obj/structure/bed/maint,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/mob/living/simple_animal/hostile/netherworld/blankbody,
 /turf/open/floor/stone,
 /area/city/fixers)
 "lU" = (
@@ -3857,6 +3862,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/lootcrate/jcorp,
+/obj/structure/lootcrate/jcorp,
+/obj/structure/lootcrate/jcorp,
 /turf/open/floor/stone,
 /area/city/fixers)
 "AM" = (
@@ -4138,7 +4145,7 @@
 /area/city/shop)
 "Cn" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/steel_dawn,
+/mob/living/simple_animal/hostile/ordeal/sin_gluttony,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Co" = (
@@ -4163,8 +4170,8 @@
 /area/city/shop)
 "Cu" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/lovetown/slasher,
 /obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/netherworld/blankbody,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Cv" = (
@@ -4721,6 +4728,11 @@
 /obj/effect/turf_decal/box/red,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
+"GK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/worker_bee,
+/turf/open/floor/stone,
+/area/city/fixers)
 "GL" = (
 /obj/machinery/door/airlock/medical{
 	name = "Triage and Operating Room";
@@ -4823,6 +4835,11 @@
 /obj/effect/turf_decal/siding/blue,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
+"Hr" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/ordeal/sin_lust,
+/turf/open/floor/stone,
+/area/city/fixers)
 "Hs" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt,
@@ -4930,7 +4947,8 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/steel_dawn,
+/mob/living/simple_animal/hostile/ordeal/sin_lust,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "HX" = (
@@ -5402,7 +5420,7 @@
 /area/city/shop)
 "KN" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/sweeper,
+/mob/living/simple_animal/hostile/ordeal/sin_wrath,
 /turf/open/floor/stone,
 /area/city/fixers)
 "KO" = (
@@ -5510,6 +5528,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
 /mob/living/simple_animal/hostile/distortion/lantern,
+/obj/item/stack/spacecash/c200,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "LB" = (
@@ -6068,6 +6088,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Pa" = (
@@ -6146,6 +6167,12 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"PG" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/food/tomato_smudge,
+/obj/item/stack/spacecash/c200,
+/turf/open/floor/stone,
+/area/city/fixers)
 "PJ" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/titanium,
@@ -6584,6 +6611,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Ts" = (
@@ -6700,6 +6728,14 @@
 	pixel_x = 4
 	},
 /turf/open/floor/carpet/black,
+/area/city/fixers)
+"TO" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/spacecash/c200,
+/turf/open/floor/stone,
 /area/city/fixers)
 "TQ" = (
 /obj/machinery/vending/custom/unbreakable,
@@ -6849,6 +6885,11 @@
 /obj/item/krevive,
 /obj/item/krevive,
 /obj/effect/turf_decal/siding/blue,
+/obj/item/krevive,
+/obj/item/krevive,
+/obj/item/krevive,
+/obj/item/grenade/spawnergrenade/khealing,
+/obj/item/grenade/spawnergrenade/khealing,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
 "Vl" = (
@@ -7005,6 +7046,12 @@
 "WF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/food/tomato_smudge,
+/turf/open/floor/stone,
+/area/city/fixers)
+"WJ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/ordeal/sin_gluttony,
 /turf/open/floor/stone,
 /area/city/fixers)
 "WN" = (
@@ -10143,7 +10190,7 @@ LA
 Kc
 QD
 hV
-Av
+TO
 Uc
 QD
 YM
@@ -10236,15 +10283,15 @@ Wb
 Wb
 TF
 Vl
-Cn
-ov
+Wb
+WJ
 Cn
 Vl
 ov
 dm
 Wb
 QD
-KN
+lE
 Wb
 WF
 QD
@@ -11052,13 +11099,13 @@ Wb
 Wb
 TF
 QD
-KN
-WF
+GK
+PG
 KN
 QD
 Wb
 ov
-Cn
+Hr
 QD
 Wb
 ge

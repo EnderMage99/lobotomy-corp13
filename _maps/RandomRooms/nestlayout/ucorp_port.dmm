@@ -1586,6 +1586,14 @@
 /obj/machinery/light,
 /turf/open/floor/eighties,
 /area/city/shop)
+"hZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/cityspawner,
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
 "ia" = (
 /obj/docking_port/stationary{
 	dheight = 10;
@@ -1645,6 +1653,13 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
+"in" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/cityspawner,
 /turf/open/floor/facility{
 	color = "#b5b5b5"
 	},
@@ -3310,6 +3325,12 @@
 	},
 /turf/open/water/deep/saltwater,
 /area/city/backstreets_checkpoint)
+"rL" = (
+/obj/effect/landmark/cityspawner,
+/turf/open/floor/facility{
+	color = "#b5b5b5"
+	},
+/area/city)
 "rN" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -3489,6 +3510,12 @@
 /turf/open/floor/wood{
 	icon_state = "wood-broken"
 	},
+/area/city)
+"sM" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/facility/dark,
 /area/city)
 "sO" = (
 /obj/effect/turf_decal/siding/thinplating/dark/corner,
@@ -8751,10 +8778,17 @@
 /turf/open/floor/stone,
 /area/city/shop)
 "VF" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
+/obj/effect/light_emitter{
+	light_power = 4;
+	light_range = 25;
+	set_cap = 3;
+	set_luminosity = 24
 	},
-/turf/open/floor/facility/dark,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/cityspawner,
+/turf/open/floor/facility{
+	color = #c4c4c4
+	},
 /area/city)
 "VI" = (
 /obj/effect/turf_decal/siding/thinplating/dark/corner{
@@ -9916,7 +9950,7 @@ ro
 KE
 uP
 ro
-VF
+sM
 Rq
 Iz
 ro
@@ -16064,7 +16098,7 @@ SJ
 Yn
 Yn
 IB
-ak
+in
 Ym
 ak
 Kh
@@ -17441,7 +17475,7 @@ Kh
 gU
 gU
 gU
-PG
+VF
 xW
 Yn
 CZ
@@ -19981,7 +20015,7 @@ gU
 gU
 UO
 UO
-RM
+hZ
 gU
 UO
 gU
@@ -20055,7 +20089,7 @@ Mv
 rt
 Kh
 ak
-ak
+in
 bB
 ak
 Kh
@@ -23354,7 +23388,7 @@ DM
 VN
 UO
 gU
-gU
+rL
 KN
 st
 Tq

@@ -262,6 +262,12 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/stone,
 /area/city/fixers)
+"dq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/ordeal/sin_gluttony,
+/turf/open/floor/stone,
+/area/city/fixers)
 "ds" = (
 /obj/structure/table/wood,
 /obj/structure/railing,
@@ -718,14 +724,6 @@
 /obj/structure/flora/bush,
 /turf/open/floor/plating/asteroid/basalt,
 /area/city/backstreets_alley)
-"hs" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/barricade/wooden{
-	name = "unbreakable wooden barricade";
-	resistance_flags = 64
-	},
-/turf/open/floor/plating/airless,
-/area/city/fixers)
 "hu" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -942,6 +940,11 @@
 /obj/item/modular_computer/laptop/preset/fixer,
 /turf/open/floor/wood,
 /area/city/house)
+"jF" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/ladder,
+/turf/open/floor/stone,
+/area/city/shop)
 "jG" = (
 /obj/machinery/door/airlock/wood{
 	name = "Clinic Office"
@@ -985,6 +988,11 @@
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/stone,
 /area/city/shop)
+"ky" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/ordeal/sin_lust,
+/turf/open/floor/stone,
+/area/city/fixers)
 "kE" = (
 /obj/structure/table,
 /obj/item/folder,
@@ -1114,21 +1122,10 @@
 /area/city)
 "lT" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/lovetown/slammer,
 /obj/structure/bed/maint,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/mob/living/simple_animal/hostile/netherworld/blankbody,
 /turf/open/floor/stone,
-/area/city/fixers)
-"mj" = (
-/obj/machinery/door/airlock/grunge{
-	name = "association office";
-	req_access_txt = "67"
-	},
-/obj/structure/barricade/wooden{
-	name = "unbreakable wooden barricade";
-	resistance_flags = 64
-	},
-/turf/open/floor/wood,
 /area/city/fixers)
 "mn" = (
 /obj/structure/flora/stump,
@@ -1672,6 +1669,17 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
+"qF" = (
+/obj/machinery/door/airlock/grunge{
+	name = "association office";
+	req_access_txt = "67"
+	},
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
+/turf/open/floor/wood,
+/area/city/fixers)
 "qI" = (
 /obj/structure/chair/pew/left{
 	dir = 1
@@ -1758,6 +1766,13 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lone,
+/area/city/fixers)
+"rh" = (
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/fakeglass,
 /area/city/fixers)
 "rj" = (
 /obj/machinery/vending/fixer,
@@ -2797,6 +2812,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/lootcrate/jcorp,
+/obj/structure/lootcrate/jcorp,
+/obj/structure/lootcrate/jcorp,
 /turf/open/floor/stone,
 /area/city/fixers)
 "AM" = (
@@ -2863,6 +2880,11 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"Bf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/worker_bee,
+/turf/open/floor/stone,
+/area/city/fixers)
 "Bg" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/plating/grass,
@@ -2921,6 +2943,10 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
+"BN" = (
+/obj/effect/landmark/cityspawner,
+/turf/open/floor/plating/ashplanet/rocky,
+/area/city)
 "BR" = (
 /obj/machinery/door/airlock/grunge{
 	name = "association backstreets office";
@@ -2993,7 +3019,7 @@
 /area/city)
 "Cn" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/steel_dawn,
+/mob/living/simple_animal/hostile/ordeal/sin_gluttony,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Cp" = (
@@ -3010,8 +3036,8 @@
 /area/city/shop)
 "Cu" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/lovetown/slasher,
 /obj/effect/decal/cleanable/blood/old,
+/mob/living/simple_animal/hostile/netherworld/blankbody,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Cv" = (
@@ -3417,6 +3443,14 @@
 	},
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city)
+"GA" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/spacecash/c200,
+/turf/open/floor/stone,
+/area/city/fixers)
 "GB" = (
 /obj/machinery/telecomms/server/presets/command{
 	name = "Command Server"
@@ -3525,13 +3559,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"Hw" = (
-/obj/structure/barricade/wooden{
-	name = "unbreakable wooden barricade";
-	resistance_flags = 64
-	},
-/turf/closed/indestructible/fakeglass,
-/area/city/fixers)
 "Hz" = (
 /obj/structure/table/wood,
 /obj/item/storage/crayons,
@@ -3587,7 +3614,8 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/steel_dawn,
+/mob/living/simple_animal/hostile/ordeal/sin_lust,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Ia" = (
@@ -3800,6 +3828,11 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
+"JZ" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/ordeal/sin_wrath,
+/turf/open/floor/stone,
+/area/city/fixers)
 "Kc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed/maint,
@@ -3914,7 +3947,7 @@
 /area/city/shop)
 "KN" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/sweeper,
+/mob/living/simple_animal/hostile/yagaslave,
 /turf/open/floor/stone,
 /area/city/fixers)
 "KO" = (
@@ -3974,6 +4007,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
 /mob/living/simple_animal/hostile/distortion/lantern,
+/obj/item/stack/spacecash/c200,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "LB" = (
@@ -4396,6 +4431,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/remains/human,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Pd" = (
@@ -4671,6 +4707,14 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
+"RJ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
+/turf/open/floor/plating/airless,
+/area/city/fixers)
 "RM" = (
 /obj/structure/timelock,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -4722,6 +4766,12 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
+/area/city/fixers)
+"Ss" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/food/tomato_smudge,
+/obj/item/stack/spacecash/c200,
+/turf/open/floor/stone,
 /area/city/fixers)
 "Su" = (
 /obj/effect/light_emitter{
@@ -4819,6 +4869,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
+/obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
 "Tt" = (
@@ -5019,6 +5070,11 @@
 /obj/item/krevive,
 /obj/item/krevive,
 /obj/effect/turf_decal/siding/blue,
+/obj/item/krevive,
+/obj/item/krevive,
+/obj/item/krevive,
+/obj/item/grenade/spawnergrenade/khealing,
+/obj/item/grenade/spawnergrenade/khealing,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
 "Vl" = (
@@ -5344,11 +5400,6 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/floor/plating/grass,
 /area/city)
-"Yz" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/ladder,
-/turf/open/floor/stone,
-/area/city/shop)
 "YB" = (
 /obj/machinery/light,
 /turf/open/floor/wood{
@@ -8160,7 +8211,7 @@ LA
 Kc
 QD
 hV
-Av
+GA
 Uc
 QD
 YM
@@ -8253,8 +8304,8 @@ Wb
 Wb
 TF
 Vl
-Cn
-ov
+Wb
+dq
 Cn
 Vl
 ov
@@ -9069,13 +9120,13 @@ Wb
 Wb
 TF
 QD
-KN
-WF
-KN
+Bf
+Ss
+JZ
 QD
 Wb
 ov
-Cn
+ky
 QD
 Wb
 ge
@@ -10998,7 +11049,7 @@ Gi
 oc
 uN
 Jz
-Yz
+jF
 Jz
 Wc
 oc
@@ -11463,7 +11514,7 @@ IB
 IB
 IB
 IB
-IB
+BN
 IB
 IB
 oc
@@ -12014,7 +12065,7 @@ IJ
 Sz
 Vq
 IP
-Hw
+rh
 TA
 TA
 IB
@@ -12116,7 +12167,7 @@ Vq
 Vq
 Vq
 Dn
-Hw
+rh
 TA
 TA
 IB
@@ -12216,7 +12267,7 @@ fM
 fM
 fM
 fM
-mj
+qF
 fM
 fM
 TA
@@ -12886,7 +12937,7 @@ XA
 IB
 IB
 IB
-IB
+BN
 Gi
 oc
 oc
@@ -12932,7 +12983,7 @@ fM
 cL
 Vq
 Vq
-Hw
+rh
 TA
 TA
 uN
@@ -13034,7 +13085,7 @@ fM
 IJ
 Vq
 Vq
-Hw
+rh
 TA
 TA
 uN
@@ -13136,7 +13187,7 @@ Vq
 Vq
 Vq
 Vq
-Hw
+rh
 TA
 TA
 uN
@@ -13431,7 +13482,7 @@ RC
 tV
 fM
 fM
-hs
+RJ
 BR
 fM
 fM
@@ -14077,7 +14128,7 @@ IB
 IB
 IB
 IB
-IB
+BN
 IB
 IB
 IB
@@ -14087,7 +14138,7 @@ IB
 IB
 IB
 IB
-IB
+BN
 IB
 IB
 IB
@@ -16147,7 +16198,7 @@ dL
 xa
 oc
 IB
-IB
+BN
 IB
 oc
 xa
@@ -17761,7 +17812,7 @@ oc
 oc
 uN
 Jz
-Yz
+jF
 Jz
 Wc
 IB
