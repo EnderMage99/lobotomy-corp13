@@ -2,13 +2,15 @@
 "a" = (
 /turf/closed/indestructible/opshuttle{
 	color = "#6ced2f";
-	name = "shipping container"
+	name = "shipping container";
+	atom_colours = list("#6ced2f")
 	},
 /area/shuttle)
 "e" = (
 /turf/closed/indestructible/opshuttle{
 	color = "#ed2f5f";
-	name = "shipping container"
+	name = "shipping container";
+	atom_colours = list("#ed2f5f")
 	},
 /area/shuttle)
 "i" = (
@@ -17,7 +19,8 @@
 	},
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "j" = (
@@ -28,7 +31,8 @@
 	dir = 8
 	},
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "o" = (
@@ -49,7 +53,8 @@
 	dir = 4
 	},
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "v" = (
@@ -73,7 +78,8 @@
 /area/shuttle)
 "z" = (
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "A" = (
@@ -81,7 +87,8 @@
 	dir = 4
 	},
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "C" = (
@@ -109,7 +116,8 @@
 	},
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "K" = (
@@ -127,7 +135,8 @@
 	dir = 8
 	},
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "P" = (
@@ -146,7 +155,8 @@
 	dir = 4
 	},
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "T" = (
@@ -155,12 +165,21 @@
 	dir = 8
 	},
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "X" = (
+/obj/machinery/computer/shuttle/mining{
+	name = "ship console";
+	shuttleId = "boat2";
+	possible_destinations = "synd_island;side_port3;side_port2;side_port1;silk_island";
+	dir = 4;
+	resistance_flags = 64
+	},
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 

@@ -70,7 +70,7 @@
 "v" = (
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
-	shuttleId = "ucorp_boat";
+	shuttleId = "boat1";
 	possible_destinations = "main_port;backstreets_port";
 	dir = 1;
 	resistance_flags = 64

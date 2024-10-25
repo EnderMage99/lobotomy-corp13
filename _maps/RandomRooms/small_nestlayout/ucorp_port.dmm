@@ -120,8 +120,8 @@
 /obj/docking_port/stationary{
 	dwidth = 4;
 	height = 9;
-	id = "backstreets_port";
-	name = "backstreets port";
+	id = "backsteets_port";
+	name = "Backstreets Port";
 	width = 7;
 	dir = 2
 	},
@@ -1596,7 +1596,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat3";
-	possible_destinations = "side_port1;side_port2;side_port3;silk_island;synd_island";
+	possible_destinations = "silk_island";
 	resistance_flags = 64;
 	dir = 1
 	},
@@ -2155,7 +2155,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat2";
-	possible_destinations = "side_port1;side_port2;side_port3;silk_island;synd_island";
+	possible_destinations = "side_port2";
 	resistance_flags = 64;
 	dir = 1
 	},
@@ -2226,7 +2226,7 @@
 	dwidth = 4;
 	height = 7;
 	id = "silk_island";
-	name = "silk island";
+	name = "Pink Island";
 	width = 9;
 	dir = 2
 	},
@@ -2743,7 +2743,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat3";
-	possible_destinations = "side_port1;side_port2;side_port3;silk_island;synd_island";
+	possible_destinations = "side_port1";
 	resistance_flags = 64;
 	dir = 1
 	},
@@ -3068,7 +3068,8 @@
 	dwidth = 4;
 	height = 7;
 	id = "side_port3";
-	name = "sideport3";
+	name = "Side Port 3";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat3/elevator;
 	width = 9
 	},
 /turf/open/water/deep/saltwater{
@@ -3384,12 +3385,6 @@
 	},
 /turf/open/water/deep/saltwater,
 /area/city/backstreets_checkpoint)
-"rL" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 3
-	},
-/turf/open/floor/plasteel/dark,
-/area/city)
 "rN" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -4386,7 +4381,7 @@
 	dwidth = 4;
 	height = 7;
 	id = "side_port2";
-	name = "sideport2";
+	name = "Side Port 2";
 	width = 9;
 	dir = 2
 	},
@@ -4926,7 +4921,8 @@
 	dwidth = 4;
 	height = 9;
 	id = "main_port";
-	name = "main port";
+	name = "Main Port";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat/elevator;
 	width = 7
 	},
 /turf/open/water/deep/saltwater{
@@ -5551,7 +5547,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat2";
-	possible_destinations = "side_port1;side_port2;side_port3;silk_island;synd_island";
+	possible_destinations = "side_port3";
 	resistance_flags = 64
 	},
 /turf/open/floor/facility{
@@ -5797,7 +5793,8 @@
 	dwidth = 4;
 	height = 7;
 	id = "side_port1";
-	name = "sideport1";
+	name = "Side Port 1";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat2/elevator;
 	width = 9;
 	dir = 2
 	},
@@ -7776,7 +7773,7 @@
 	dwidth = 4;
 	height = 7;
 	id = "synd_island";
-	name = "synd island";
+	name = "Red Island";
 	width = 9;
 	dir = 2
 	},
@@ -9818,13 +9815,11 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat2";
-	possible_destinations = "side_port1;side_port2;side_port3;silk_island;synd_island";
+	possible_destinations = "synd_island";
 	resistance_flags = 64;
 	dir = 1
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 3
-	},
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel/dark,
 /area/city)
 "ZI" = (
@@ -10362,7 +10357,7 @@ KE
 ro
 ro
 ro
-rL
+yM
 Cn
 Cn
 Cn
@@ -10464,7 +10459,7 @@ ro
 ro
 ro
 ro
-rL
+yM
 Cn
 Cn
 Cn
@@ -10566,7 +10561,7 @@ ro
 ro
 ro
 KE
-rL
+yM
 Cn
 Cn
 Cn
@@ -10668,7 +10663,7 @@ ro
 ro
 ro
 ro
-rL
+yM
 Pd
 Cn
 Cn
@@ -10770,7 +10765,7 @@ VP
 KE
 VP
 KE
-rL
+yM
 Cn
 Cn
 Cn
@@ -10872,7 +10867,7 @@ VP
 VP
 KE
 KE
-rL
+yM
 Cn
 Cn
 Cn
@@ -10974,7 +10969,7 @@ al
 al
 al
 al
-rL
+yM
 Cn
 Cn
 Cn
@@ -24451,7 +24446,7 @@ Cn
 Cn
 Cn
 Cn
-Yn
+aa
 Yn
 Yn
 Yn
