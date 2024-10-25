@@ -1,11 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ac" = (
-/obj/machinery/door/airlock/wood{
-	name = "bistro alley entrance";
-	req_access_txt = "9"
-	},
-/turf/closed/indestructible/reinforced,
-/area/city)
 "ad" = (
 /obj/machinery/vending/cola,
 /obj/effect/turf_decal/siding/green{
@@ -31,21 +24,11 @@
 /obj/machinery/light,
 /turf/open/floor/wood,
 /area/city/fixers)
-"al" = (
-/obj/structure/bookcase/random/adult,
-/turf/open/floor/wood,
-/area/city)
 "am" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
 /turf/open/floor/plating/grass,
-/area/city)
-"an" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
 /area/city)
 "aq" = (
 /obj/effect/turf_decal/bot,
@@ -76,14 +59,6 @@
 	},
 /turf/open/floor/facility/dark,
 /area/city/backstreets_checkpoint)
-"aJ" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "aK" = (
 /obj/machinery/door/airlock/grunge{
 	name = "association director's overnight office";
@@ -103,12 +78,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating/grass,
-/area/city)
-"aR" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood{
-	icon_state = "wood-broken6"
-	},
 /area/city)
 "aS" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
@@ -140,34 +109,12 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"bh" = (
-/obj/machinery/light/small,
-/turf/open/floor/wood,
-/area/city/shop)
 "bi" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 4
 	},
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
-"bj" = (
-/obj/effect/mine/shrapnel,
-/obj/effect/landmark/cityloot,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
-"bn" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/carpet,
-/area/city)
-"bo" = (
-/obj/machinery/shower{
-	pixel_y = 16;
-	reagent_id = /datum/reagent/water/holywater
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/white,
-/area/city)
 "bq" = (
 /turf/closed/indestructible/reinforced,
 /area/city)
@@ -175,37 +122,11 @@
 /obj/machinery/telecomms/server/presets/security,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
-"bu" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "bv" = (
 /obj/structure/fence/cut/large{
 	resistance_flags = 64
 	},
 /turf/open/floor/plating/grass,
-/area/city)
-"bw" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood,
 /area/city)
 "bA" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -228,15 +149,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city)
-"bK" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 4
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
-"bM" = (
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
 "bO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb,
@@ -247,13 +159,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
-"bW" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "ca" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/telecomms/bus/preset_two,
@@ -266,41 +171,12 @@
 	},
 /turf/open/indestructible/hoteltile,
 /area/city/house)
-"cd" = (
-/obj/machinery/door/airlock/freezer{
-	name = "bathouse airlock"
-	},
-/turf/open/floor/mineral/titanium/white,
-/area/city)
 "cg" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"ch" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/bonfire/dense,
-/turf/open/floor/stone,
-/area/city)
-"ck" = (
-/obj/item/bodypart/chest/robot,
-/obj/item/bodypart/head/robot,
-/obj/item/bodypart/l_arm/robot,
-/obj/item/bodypart/l_leg/robot,
-/obj/item/bodypart/r_arm/robot,
-/obj/item/bodypart/r_leg/robot,
-/obj/structure/closet/crate,
-/obj/item/choice_beacon/augments,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
-"ct" = (
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "cx" = (
 /obj/structure/table/wood,
 /obj/structure/railing,
@@ -309,12 +185,6 @@
 "cy" = (
 /turf/open/floor/wood,
 /area/city)
-"cB" = (
-/obj/machinery/door/airlock/hatch{
-	req_access_txt = "31"
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "cC" = (
 /obj/machinery/griddle,
 /turf/open/floor/plasteel/checker,
@@ -325,23 +195,6 @@
 	},
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city/backstreets_checkpoint)
-"cG" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/white,
-/area/city)
-"cH" = (
-/obj/item/bodypart/chest/robot,
-/obj/item/bodypart/head/robot,
-/obj/item/bodypart/l_arm/robot,
-/obj/item/bodypart/l_leg/robot,
-/obj/item/bodypart/r_arm/robot,
-/obj/item/bodypart/r_leg/robot,
-/obj/structure/closet/crate,
-/obj/item/organ/cyberimp/arm/surgery/plus,
-/obj/item/organ/cyberimp/arm/toolset,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
 "cJ" = (
 /obj/machinery/light{
 	dir = 4
@@ -351,11 +204,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/city/fixers)
-"cK" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "cL" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -400,17 +248,6 @@
 	},
 /turf/open/floor/facility/dark,
 /area/city/backstreets_checkpoint)
-"cX" = (
-/obj/structure/kitchenspike,
-/obj/effect/mob_spawn/human/corpse,
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
-"cZ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/crate/trashcart/filled,
-/turf/open/floor/stone,
-/area/city)
 "de" = (
 /obj/structure/ladder,
 /obj/effect/portal/permanent{
@@ -420,60 +257,17 @@
 	},
 /turf/open/floor/carpet/lone,
 /area/city/fixers)
-"df" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/chair/stool/bar,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "dm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/stone,
 /area/city/fixers)
-"dn" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod,
-/obj/structure/closet/secure_closet/freezer/fridge/open,
-/obj/item/food/meat/slab/monkey,
-/obj/item/food/meat/slab/monkey,
-/obj/item/food/meat/slab/monkey,
-/obj/item/food/meat/slab/monkey,
-/obj/item/food/meat/slab/monkey,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "dq" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
+/obj/effect/decal/remains/human,
+/mob/living/simple_animal/hostile/ordeal/sin_gluttony,
+/turf/open/floor/stone,
+/area/city/fixers)
 "ds" = (
 /obj/structure/table/wood,
 /obj/structure/railing,
@@ -519,13 +313,6 @@
 /obj/structure/curtain,
 /turf/open/floor/noslip,
 /area/city/house)
-"dP" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "dS" = (
 /turf/open/floor/mineral/titanium,
 /area/city/house)
@@ -539,23 +326,6 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
-"eb" = (
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/turf/open/water/deep/polluted,
-/area/city)
-"ed" = (
-/obj/structure/sink{
-	pixel_y = 16
-	},
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
-"ee" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "eh" = (
 /obj/machinery/light{
 	dir = 1
@@ -580,14 +350,6 @@
 /obj/structure/flora/bush,
 /turf/open/floor/plating/dirt/jungle,
 /area/city/backstreets_alley)
-"en" = (
-/obj/structure/closet/crate,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 6
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "eq" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -719,11 +481,6 @@
 /obj/item/canvas/twentythree_twentythree,
 /turf/open/floor/wood,
 /area/city/shop)
-"eV" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "eX" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -757,13 +514,6 @@
 /obj/item/book_of_babel,
 /turf/open/floor/wood,
 /area/city/fixers)
-"fh" = (
-/obj/machinery/door/airlock/grunge{
-	name = "syndicate hideout";
-	req_access_txt = "150"
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "fk" = (
 /obj/structure/fence/door/opened{
 	dir = 4
@@ -783,15 +533,14 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"fu" = (
-/obj/item/reagent_containers/hypospray/medipen/mental,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/white,
-/area/city/shop)
 "fw" = (
 /obj/machinery/door/airlock/grunge{
 	name = "association backstreets office";
 	req_access_txt = "67"
+	},
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
 	},
 /turf/open/floor/wood,
 /area/city/backstreets_checkpoint)
@@ -802,19 +551,6 @@
 	},
 /obj/structure/railing/corner,
 /turf/open/floor/plating/grass,
-/area/city)
-"fy" = (
-/obj/structure/rack,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city)
-"fz" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityspawner,
-/turf/open/floor/stone,
 /area/city)
 "fA" = (
 /obj/structure/chair/pew/left{
@@ -830,26 +566,9 @@
 	color = "#ccc8c0"
 	},
 /area/city/fixers)
-"fB" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats,
-/turf/open/floor/wood,
-/area/city)
-"fC" = (
-/obj/machinery/door/airlock/wood{
-	name = "bistro kitchen entrance";
-	req_access_txt = "9"
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "fD" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/grass,
-/area/city)
-"fE" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/carpet,
 /area/city)
 "fH" = (
 /obj/machinery/vending/fixer,
@@ -858,24 +577,6 @@
 	color = "#006400"
 	},
 /turf/open/floor/carpet/green,
-/area/city/shop)
-"fK" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/turf/open/floor/mineral/silver,
 /area/city/shop)
 "fM" = (
 /turf/closed/indestructible/wood,
@@ -906,11 +607,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"fW" = (
-/obj/structure/rack,
-/obj/item/food/meat/slab/sweeper,
-/turf/open/floor/facility/dark,
-/area/city)
 "fY" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small,
@@ -924,20 +620,6 @@
 /mob/living/simple_animal/hostile/distortion/another_day_work,
 /turf/open/floor/stone,
 /area/city/fixers)
-"gh" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"gl" = (
-/obj/effect/decal/remains/human{
-	desc = "They look like human remains. They look smaller than you'd like."
-	},
-/turf/open/floor/facility/dark,
-/area/city)
 "go" = (
 /obj/machinery/door/airlock/wood{
 	name = "employee housing"
@@ -956,11 +638,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/shop)
-"gv" = (
-/obj/effect/mine/shrapnel,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "gy" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/emergency,
@@ -991,9 +668,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/shop)
-"gI" = (
-/turf/open/floor/facility/dark,
-/area/city)
 "gN" = (
 /obj/structure/table/reinforced,
 /turf/open/indestructible/hoteltile,
@@ -1013,6 +687,10 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/eastright,
 /obj/machinery/door/window/westleft,
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
 /turf/open/floor/facility,
 /area/city/backstreets_checkpoint)
 "gZ" = (
@@ -1035,21 +713,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"hh" = (
-/obj/structure/bed/pod,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood,
-/area/city)
-"hj" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/obj/item/wirecutters,
-/obj/item/wirecutters,
-/obj/item/wirecutters,
-/obj/item/wirecutters,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "hn" = (
 /obj/structure/forge,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -1061,10 +724,6 @@
 /obj/structure/flora/bush,
 /turf/open/floor/plating/asteroid/basalt,
 /area/city/backstreets_alley)
-"hs" = (
-/obj/structure/sign/poster/official/bless_this_spess,
-/turf/closed/indestructible/reinforced,
-/area/city/shop)
 "hu" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -1075,12 +734,6 @@
 /obj/machinery/vending/fixer,
 /turf/open/floor/wood,
 /area/city/fixers)
-"hy" = (
-/obj/structure/rack,
-/obj/item/reagent_containers/hypospray/medipen/mental,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/white,
-/area/city/shop)
 "hB" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/glass/bowl,
@@ -1095,11 +748,6 @@
 "hD" = (
 /turf/open/indestructible/hoteltile,
 /area/city/house)
-"hG" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "hH" = (
 /obj/structure/flora/grass/both,
 /turf/open/floor/plating/dirt/jungle,
@@ -1167,15 +815,6 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/stone,
 /area/city/fixers)
-"ia" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 9
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "ib" = (
 /obj/item/book/fish_catalog,
 /obj/structure/table,
@@ -1190,11 +829,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/cognac,
 /turf/open/floor/plasteel/checker,
 /area/city/house)
-"ii" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/garbage,
-/turf/open/floor/stone,
-/area/city)
 "il" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 5
@@ -1239,29 +873,6 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
-"iz" = (
-/obj/structure/closet/crate,
-/obj/item/storage/box/papersack{
-	pixel_x = -6
-	},
-/obj/item/storage/box/papersack{
-	pixel_x = -6
-	},
-/obj/item/storage/box/papersack{
-	pixel_x = -6
-	},
-/obj/item/storage/box/papersack{
-	pixel_x = -6
-	},
-/obj/item/storage/box/papersack{
-	pixel_x = -6
-	},
-/obj/item/storage/box/papersack{
-	pixel_x = -6
-	},
-/obj/effect/turf_decal/trimline/red/filled/line,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "iL" = (
 /obj/structure/table/reinforced,
 /obj/item/food/soup/meatball,
@@ -1272,12 +883,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone,
 /area/city/fixers)
-"iM" = (
-/obj/structure/musician/piano{
-	icon_state = "piano"
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "iN" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 1
@@ -1293,12 +898,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/city/shop)
-"iT" = (
-/obj/structure/rack,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city)
 "iV" = (
 /obj/structure/fence{
 	dir = 1;
@@ -1321,32 +920,10 @@
 /obj/item/storage/bag/trash/bluespace,
 /turf/open/floor/wood,
 /area/city/fixers)
-"jm" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "jp" = (
 /obj/structure/rack,
 /turf/open/floor/wood,
 /area/city/fixers)
-"jt" = (
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityspawner,
-/turf/open/floor/stone,
-/area/city)
-"jw" = (
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/wood,
-/area/city)
-"jx" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "jy" = (
 /obj/structure/flora/junglebush/large,
 /turf/open/floor/plating/grass,
@@ -1358,25 +935,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"jC" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/machinery/vending/cigarette,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "jD" = (
 /obj/structure/table/wood,
 /obj/item/modular_computer/laptop/preset/fixer,
@@ -1385,11 +943,6 @@
 "jF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/ladder,
-/obj/effect/portal/permanent{
-	id = "sewers2";
-	alpha = 0;
-	name = "ladder..."
-	},
 /turf/open/floor/stone,
 /area/city/shop)
 "jG" = (
@@ -1398,22 +951,9 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"jH" = (
-/obj/effect/landmark/cityloot,
-/turf/open/floor/plasteel/vaporwave,
-/area/city)
-"jL" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "jM" = (
 /turf/open/floor/plating/dirt/jungle,
 /area/city/backstreets_alley)
-"jO" = (
-/turf/open/floor/stone,
-/area/city)
 "jQ" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate/bin,
@@ -1423,17 +963,6 @@
 /obj/structure/flora/stump,
 /turf/open/floor/plating/dirt/jungle,
 /area/city/backstreets_alley)
-"jS" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 9
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"jT" = (
-/obj/effect/gibspawner/generic/silent,
-/turf/open/floor/facility/dark,
-/area/city)
 "jU" = (
 /obj/structure/statue/sandstone/venus,
 /turf/open/floor/plating/grass,
@@ -1448,47 +977,22 @@
 /obj/machinery/biogenerator,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city)
-"kf" = (
-/obj/machinery/door/airlock/wood{
-	name = "The Bistro"
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "kk" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"km" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/indestructible/rock,
-/area/city)
-"kn" = (
-/turf/closed/indestructible/reinforced,
-/area/city/shop)
 "ko" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/stone,
 /area/city/shop)
-"kq" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/plastic,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "ky" = (
-/obj/structure/table/reinforced,
-/obj/machinery/microwave,
-/turf/open/floor/wood,
-/area/city/shop)
-"kB" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/ordeal/sin_lust,
 /turf/open/floor/stone,
-/area/city)
+/area/city/fixers)
 "kE" = (
 /obj/structure/table,
 /obj/item/folder,
@@ -1521,20 +1025,11 @@
 "kI" = (
 /turf/open/floor/plating/asteroid/basalt,
 /area/city)
-"kK" = (
-/obj/structure/fireplace,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood,
-/area/city)
 "kN" = (
 /obj/effect/turf_decal/box/red,
 /turf/open/floor/stone{
 	color = #abf2ff
 	},
-/area/city/shop)
-"kP" = (
-/obj/structure/plasticflaps/opaque,
-/turf/open/floor/plasteel/dark,
 /area/city/shop)
 "kR" = (
 /obj/structure/statue/sandstone/venus{
@@ -1552,13 +1047,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"lb" = (
-/obj/machinery/door/airlock/wood{
-	name = "old warehouse"
-	},
-/obj/structure/barricade/wooden,
-/turf/open/floor/wood,
-/area/city)
 "lg" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd{
@@ -1582,16 +1070,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"lk" = (
-/obj/machinery/vending/dinnerware,
-/turf/open/floor/wood,
-/area/city/shop)
-"ll" = (
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "lp" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/item/clothing/under/pants/blackjeans,
@@ -1608,11 +1086,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"lE" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/yagaslave,
-/turf/open/floor/stone,
-/area/city/fixers)
 "lF" = (
 /obj/structure/table/reinforced,
 /obj/item/food/soup/hotchili,
@@ -1623,27 +1096,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone,
 /area/city/fixers)
-"lJ" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/obj/item/kitchen/knife/hunting,
-/obj/item/kitchen/rollingpin,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "lK" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/telecomms/processor/preset_four,
@@ -1675,14 +1127,6 @@
 /mob/living/simple_animal/hostile/netherworld/blankbody,
 /turf/open/floor/stone,
 /area/city/fixers)
-"lU" = (
-/obj/structure/curtain,
-/turf/open/floor/plasteel/white,
-/area/city)
-"mj" = (
-/obj/structure/lootcrate/s_corp,
-/turf/open/floor/plasteel/vaporwave,
-/area/city)
 "mn" = (
 /obj/structure/flora/stump,
 /turf/open/floor/plating/dirt/jungle,
@@ -1691,20 +1135,10 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet,
 /area/city/house)
-"mq" = (
-/obj/structure/table/wood,
-/turf/open/floor/wood,
-/area/city/shop)
 "mr" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/stone,
 /area/city/shop)
-"mv" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/stone,
-/area/city)
 "mC" = (
 /obj/structure/fluff/beach_umbrella/engine,
 /turf/open/floor/plating/grass,
@@ -1721,25 +1155,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"mL" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/window/reinforced/survival_pod,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "mM" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/stone{
@@ -1769,21 +1184,6 @@
 /obj/item/flashlight/flare,
 /turf/open/floor/wood,
 /area/city/fixers)
-"mT" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Staff Only";
-	req_access_txt = "31"
-	},
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
-"mU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/wood,
-/area/city)
 "mV" = (
 /obj/structure/flora/ash/fern,
 /turf/open/floor/plating/asteroid/basalt,
@@ -1810,21 +1210,6 @@
 "nd" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"nf" = (
-/obj/structure/table/wood/bar,
-/obj/item/reagent_containers/borghypo/borgshaker,
-/obj/item/storage/box/drinkingglasses,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/shop)
-"ng" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "ni" = (
 /obj/machinery/door/airlock/wood{
 	name = "general store"
@@ -1847,10 +1232,6 @@
 	color = #abf2ff
 	},
 /area/city/shop)
-"no" = (
-/obj/structure/chair/stool/bar,
-/turf/open/floor/wood,
-/area/city/shop)
 "np" = (
 /obj/structure/headpike{
 	name = "lamp post";
@@ -1865,14 +1246,6 @@
 /obj/machinery/smartfridge/organ,
 /turf/closed/indestructible/wood,
 /area/city/shop)
-"nu" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "nw" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 9
@@ -1897,10 +1270,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/shop)
-"nK" = (
-/obj/item/toy/plush/slimeplushie,
-/turf/open/floor/facility/dark,
-/area/city)
 "nM" = (
 /obj/structure/fluff/arc/angela,
 /turf/open/floor/plating/grass,
@@ -1933,17 +1302,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"nX" = (
-/obj/structure/table/wood,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/storage/box/bodybags,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
 "nY" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 2
@@ -2062,12 +1420,6 @@
 "oc" = (
 /turf/open/floor/plating/grass,
 /area/city)
-"od" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/fixergreatsword,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "oe" = (
 /obj/structure/potential,
 /turf/open/floor/wood,
@@ -2084,10 +1436,6 @@
 "om" = (
 /turf/open/floor/plating/grass,
 /area/city/backstreets_checkpoint)
-"on" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/white,
-/area/city/shop)
 "oq" = (
 /obj/structure/table/rolling,
 /obj/item/roller{
@@ -2110,11 +1458,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"ot" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mine/shrapnel/capspawn,
-/turf/open/floor/facility/dark,
-/area/city)
 "ou" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /turf/open/floor/carpet/black,
@@ -2142,11 +1485,6 @@
 "oC" = (
 /turf/open/floor/plating/dirt/jungle,
 /area/city)
-"oF" = (
-/obj/structure/mineral_door/wood,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/shop)
 "oG" = (
 /obj/structure/table/reinforced,
 /obj/item/kitchen/rollingpin,
@@ -2175,15 +1513,6 @@
 /obj/item/clothing/under/mercenary,
 /turf/open/floor/carpet/black,
 /area/city/house)
-"oX" = (
-/obj/machinery/door/airlock/hatch{
-	req_access_txt = "31"
-	},
-/obj/effect/turf_decal/trimline/red/filled/shrink_cw{
-	dir = 8
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "pc" = (
 /obj/machinery/cryopod,
 /turf/open/floor/stone,
@@ -2194,25 +1523,6 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/stone,
 /area/city/fixers)
-"pe" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "pj" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -2254,14 +1564,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/city)
-"pC" = (
-/obj/structure/sign/poster/contraband/red_rum,
-/turf/closed/indestructible/reinforced,
-/area/city/shop)
-"pF" = (
-/obj/structure/sign/poster/contraband/space_cube,
-/turf/closed/indestructible/reinforced,
-/area/city/shop)
 "pI" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/box/drinkingglasses{
@@ -2276,11 +1578,6 @@
 	dir = 8
 	},
 /turf/open/floor/stone,
-/area/city/shop)
-"pK" = (
-/obj/structure/window/reinforced/tinted/fulltile,
-/obj/structure/barricade/wooden,
-/turf/open/floor/wood,
 /area/city/shop)
 "pQ" = (
 /obj/structure/flora/tree/dead,
@@ -2339,10 +1636,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"ql" = (
-/obj/structure/table/optable,
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
 "qq" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -2369,25 +1662,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/house)
-"qy" = (
-/obj/structure/closet/crate,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/sugar,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/choice_beacon/ingredient,
-/obj/item/choice_beacon/ingredient,
-/obj/item/choice_beacon/ingredient,
-/obj/structure/sink{
-	pixel_y = 16
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "qA" = (
 /obj/structure/rack,
 /obj/machinery/light{
@@ -2395,25 +1669,17 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"qE" = (
-/obj/structure/chair/wood{
-	dir = 1
+"qF" = (
+/obj/machinery/door/airlock/grunge{
+	name = "association office";
+	req_access_txt = "67"
+	},
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
 	},
 /turf/open/floor/wood,
-/area/city/shop)
-"qF" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"qH" = (
-/obj/structure/rack,
-/obj/item/stack/spacecash/c100,
-/turf/open/floor/facility/dark,
-/area/city)
+/area/city/fixers)
 "qI" = (
 /obj/structure/chair/pew/left{
 	dir = 1
@@ -2502,24 +1768,16 @@
 /turf/open/floor/carpet/lone,
 /area/city/fixers)
 "rh" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/house)
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/fakeglass,
+/area/city/fixers)
 "rj" = (
 /obj/machinery/vending/fixer,
 /turf/closed/indestructible/wood,
 /area/city/fixers)
-"rr" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
-"rs" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/fixerhammer,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "rt" = (
 /obj/structure/chair/wood,
 /turf/open/floor/carpet/royalblue,
@@ -2528,16 +1786,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating/airless,
 /area/city/fixers)
-"rC" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/bed/maint,
-/turf/open/floor/wood,
-/area/city/house)
-"rD" = (
-/obj/structure/chair/stool/bar,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/shop)
 "rG" = (
 /obj/structure/rack,
 /obj/item/melee/baseball_bat,
@@ -2570,19 +1818,6 @@
 /obj/item/reagent_containers/glass/bottle/nutrient,
 /turf/open/floor/wood,
 /area/city/house)
-"rQ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood{
-	icon_state = "wood-broken7"
-	},
-/area/city)
-"rT" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/shop)
-"rV" = (
-/turf/closed/indestructible/rock,
-/area/city)
 "rW" = (
 /obj/item/folder,
 /obj/item/folder,
@@ -2631,13 +1866,6 @@
 /obj/structure/bed,
 /turf/open/floor/carpet/green,
 /area/city/house)
-"sd" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "sf" = (
 /obj/structure/bodycontainer/morgue,
 /obj/effect/turf_decal/siding/brown/end{
@@ -2723,12 +1951,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"tp" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats/brick,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "tq" = (
 /obj/structure/curtain/cloth,
 /turf/closed/indestructible/fakeglass,
@@ -2741,9 +1963,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"ts" = (
-/turf/open/water/deep/polluted,
-/area/city)
 "tt" = (
 /obj/machinery/door/airlock/wood{
 	name = "general store"
@@ -2752,12 +1971,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"tv" = (
-/obj/effect/decal/cleanable/ash/large,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "tx" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/glass/bowl,
@@ -2776,15 +1989,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"tD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken{
-	dir = 1
-	},
-/obj/structure/rack,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city/house)
 "tI" = (
 /obj/structure/potential,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -2819,10 +2023,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/city/shop)
-"tU" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "tV" = (
 /turf/open/floor/plating/asteroid/basalt,
 /area/city/backstreets_alley)
@@ -2835,21 +2035,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city)
-"tZ" = (
-/obj/machinery/computer/slot_machine,
-/obj/machinery/light/small,
-/turf/open/floor/wood,
-/area/city/shop)
-"ud" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
-"uf" = (
-/obj/effect/decal/cleanable/ash/large,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/stone,
-/area/city)
 "ui" = (
 /obj/structure/table/wood,
 /obj/item/modular_computer/laptop/preset/civilian,
@@ -2858,25 +2043,6 @@
 "uk" = (
 /obj/effect/turf_decal/siding/blue,
 /turf/open/floor/plasteel/showroomfloor,
-/area/city/shop)
-"ul" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/closet/crate/bin,
-/turf/open/floor/mineral/silver,
 /area/city/shop)
 "um" = (
 /obj/structure/closet/crate/bin,
@@ -2890,13 +2056,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/maltliquor,
 /turf/open/floor/wood,
 /area/city/house)
-"us" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats/pipe,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city)
 "uv" = (
 /obj/effect/landmark/cityloot,
 /turf/open/floor/plating/grass,
@@ -2914,29 +2073,6 @@
 "uC" = (
 /turf/closed/indestructible/reinforced,
 /area/facility_hallway/north)
-"uK" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/microwave,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "uL" = (
 /obj/machinery/vending/forge,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2947,9 +2083,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"uM" = (
-/turf/closed/mineral/ash_rock,
-/area/city)
 "uN" = (
 /turf/closed/indestructible/wood,
 /area/city/shop)
@@ -2977,12 +2110,6 @@
 /obj/machinery/light,
 /turf/open/floor/facility/dark,
 /area/city/backstreets_checkpoint)
-"uU" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/stairs/medium{
-	dir = 8
-	},
-/area/city)
 "uV" = (
 /obj/structure/flora/ausbushes/genericbush,
 /obj/structure/flora/ausbushes/genericbush,
@@ -2990,25 +2117,12 @@
 /obj/structure/flora/ausbushes/genericbush,
 /turf/open/floor/plating/grass,
 /area/city)
-"uW" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "uZ" = (
 /obj/structure/fence{
 	dir = 1;
 	resistance_flags = 64
 	},
 /turf/open/water/deep/freshwater,
-/area/city)
-"va" = (
-/obj/structure/lootcrate/tres,
-/obj/structure/rack,
-/turf/open/floor/facility/dark,
 /area/city)
 "vb" = (
 /obj/structure/statue/sandstone/venus{
@@ -3040,30 +2154,6 @@
 	pixel_y = -10
 	},
 /turf/open/floor/plating/ashplanet/rocky,
-/area/city)
-"vi" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats/knife,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
-"vl" = (
-/obj/item/bodypart/chest/robot,
-/obj/item/bodypart/head/robot,
-/obj/item/bodypart/l_arm/robot,
-/obj/item/bodypart/l_leg/robot,
-/obj/item/bodypart/r_arm/robot,
-/obj/item/bodypart/r_leg/robot,
-/obj/structure/closet/crate,
-/obj/item/organ/eyes/robotic/glow,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
-"vm" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/mariachi,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
 /area/city)
 "vr" = (
 /obj/structure/filingcabinet/medical,
@@ -3110,13 +2200,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"vG" = (
-/obj/machinery/gibber,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
 "vI" = (
 /obj/machinery/vending/hana,
 /obj/machinery/light{
@@ -3134,25 +2217,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"vO" = (
-/turf/open/floor/plasteel/white,
-/area/city)
-"vP" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/portal/permanent{
-	id = "sewers2";
-	alpha = 0;
-	name = "ladder..."
-	},
-/obj/structure/ladder,
-/turf/open/floor/stone,
-/area/city)
-"vT" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/stone,
-/area/city)
 "vU" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/telecomms/hub/preset,
@@ -3163,13 +2227,6 @@
 	name = "Clinic Office"
 	},
 /turf/open/floor/carpet/royalblue,
-/area/city/shop)
-"vY" = (
-/obj/structure/table/wood,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/wood,
 /area/city/shop)
 "we" = (
 /turf/open/floor/carpet/black,
@@ -3205,16 +2262,6 @@
 /obj/machinery/hydroponics,
 /turf/open/floor/wood,
 /area/city/house)
-"wr" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/portal/permanent{
-	id = "sewers1";
-	alpha = 0;
-	name = "ladder..."
-	},
-/obj/structure/ladder,
-/turf/open/floor/stone,
-/area/city)
 "ws" = (
 /obj/structure/rack,
 /obj/item/workshop_mod/regular/red,
@@ -3260,12 +2307,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"wB" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "wC" = (
 /obj/structure/table,
 /obj/item/seeds/onion,
@@ -3352,14 +2393,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"wT" = (
-/obj/structure/spacevine,
-/turf/closed/indestructible/reinforced,
-/area/city)
-"wV" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "wY" = (
 /obj/structure/rack,
 /obj/item/clothing/under/suit/charcoal,
@@ -3382,12 +2415,6 @@
 "xa" = (
 /turf/closed/indestructible/wood,
 /area/city/house)
-"xe" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats/pipe,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city)
 "xf" = (
 /obj/machinery/vending/city_clothing,
 /obj/machinery/light,
@@ -3397,28 +2424,15 @@
 	},
 /turf/open/floor/carpet/green,
 /area/city/shop)
-"xg" = (
-/obj/effect/mine/shrapnel,
-/turf/open/floor/facility/dark,
-/area/city)
 "xi" = (
 /obj/structure/flora/rock/jungle,
 /obj/structure/railing/corner,
 /turf/open/floor/plating/grass,
 /area/city)
-"xj" = (
-/obj/item/toy/plush/rabbit,
-/turf/open/floor/facility/dark,
-/area/city)
 "xk" = (
 /obj/effect/landmark/distortion,
 /turf/open/floor/carpet/red,
 /area/city/fixers)
-"xl" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/stone,
-/area/city)
 "xn" = (
 /obj/structure/flora/tree/dead,
 /turf/open/floor/plating/asteroid/basalt,
@@ -3467,24 +2481,6 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/filled/cola,
 /turf/open/floor/wood,
 /area/city/fixers)
-"xC" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "xE" = (
 /turf/open/floor/plating,
 /area/city)
@@ -3518,14 +2514,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/city/fixers)
-"xQ" = (
-/obj/structure/closet/crate/trashcart/filled,
-/turf/open/floor/plating/ashplanet/rocky,
-/area/city)
-"xS" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "xU" = (
 /obj/structure/fence/corner{
 	dir = 4
@@ -3642,23 +2630,10 @@
 	},
 /turf/open/floor/plating,
 /area/city)
-"za" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "zc" = (
 /obj/machinery/photocopier,
 /turf/open/floor/carpet/black,
 /area/city/fixers)
-"ze" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood,
-/area/city)
 "zg" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 4
@@ -3734,11 +2709,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"zD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city/house)
 "zE" = (
 /obj/item/reagent_containers/food/condiment/flour,
 /obj/item/reagent_containers/food/condiment/flour,
@@ -3764,18 +2734,18 @@
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
 "zH" = (
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/rock,
+/area/space)
 "zJ" = (
 /obj/effect/turf_decal/siding/thinplating/light{
 	dir = 1
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"zL" = (
-/obj/item/toy/plush/beeplushie,
-/turf/open/floor/facility/dark,
-/area/city)
 "zP" = (
 /turf/closed/indestructible/wood,
 /area/city)
@@ -3785,22 +2755,6 @@
 /obj/machinery/telecomms/processor/preset_three,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
-"zV" = (
-/obj/effect/decal/cleanable/ash/large,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"Ab" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 5
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"Ak" = (
-/obj/effect/turf_decal/trimline/red/filled/line,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "Al" = (
 /obj/machinery/light{
 	dir = 1
@@ -3817,10 +2771,6 @@
 	color = "#006400"
 	},
 /turf/open/floor/carpet/green,
-/area/city/shop)
-"Ap" = (
-/obj/structure/sign/poster/contraband/smoke,
-/turf/closed/indestructible/reinforced,
 /area/city/shop)
 "Aq" = (
 /obj/structure/chair/sofa/corp/right{
@@ -3912,15 +2862,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone,
 /area/city/fixers)
-"AW" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/turf/open/floor/stone,
-/area/city)
 "Ba" = (
 /obj/structure/closet/crate,
 /obj/item/choice_beacon/ingredient,
@@ -3939,23 +2880,11 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"Bb" = (
-/obj/effect/decal/cleanable/garbage,
-/turf/open/floor/wood,
-/area/city)
 "Bf" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/saltshaker{
-	pixel_x = -4
-	},
-/obj/item/reagent_containers/food/condiment/peppermill{
-	pixel_x = 5
-	},
-/turf/open/floor/wood,
-/area/city/shop)
+/obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/worker_bee,
+/turf/open/floor/stone,
+/area/city/fixers)
 "Bg" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/plating/grass,
@@ -4003,17 +2932,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/indestructible/fakeglass,
 /area/city/fixers)
-"BF" = (
-/obj/structure/table/greyscale,
-/obj/item/stack/medical/aloe{
-	desc = "A healing paste you can apply on wounds. It smells amazing."
-	},
-/obj/item/clothing/shoes/sneakers/white{
-	name = "white slippers"
-	},
-/obj/item/clothing/under/misc/pj/blue,
-/turf/open/floor/plasteel/white,
-/area/city)
 "BK" = (
 /obj/machinery/door/airlock/medical{
 	hackProof = 1;
@@ -4026,14 +2944,17 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
 "BN" = (
-/obj/structure/rack,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
+/obj/effect/landmark/cityspawner,
+/turf/open/floor/plating/ashplanet/rocky,
 /area/city)
 "BR" = (
 /obj/machinery/door/airlock/grunge{
 	name = "association backstreets office";
 	req_access_txt = "67"
+	},
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
@@ -4047,10 +2968,6 @@
 	color = #abf2ff
 	},
 /area/city/shop)
-"BW" = (
-/obj/effect/turf_decal/box/red/corners,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "BZ" = (
 /obj/machinery/light{
 	dir = 4
@@ -4063,14 +2980,6 @@
 	color = #abf2ff
 	},
 /area/city/shop)
-"Ca" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Cc" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -4081,36 +2990,6 @@
 /obj/structure/spacevine,
 /turf/closed/indestructible/wood,
 /area/city/fixers)
-"Ce" = (
-/obj/structure/table/reinforced,
-/obj/item/food/bread/plain,
-/obj/item/food/bread/plain,
-/obj/item/kitchen/knife,
-/obj/item/kitchen/knife,
-/obj/item/food/cheesewheel,
-/obj/item/kitchen/rollingpin,
-/obj/machinery/light/small,
-/turf/open/floor/wood,
-/area/city/shop)
-"Ch" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/machinery/griddle,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "Ci" = (
 /obj/structure/rack{
 	pixel_x = -1
@@ -4138,32 +3017,19 @@
 /obj/item/clothing/suit/apron,
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city)
-"Ck" = (
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/condiment/enzyme,
-/turf/open/floor/wood,
-/area/city/shop)
 "Cn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/ordeal/sin_gluttony,
 /turf/open/floor/stone,
 /area/city/fixers)
-"Co" = (
-/obj/effect/landmark/cityloot,
-/turf/open/floor/facility/dark,
-/area/city)
 "Cp" = (
 /turf/open/floor/facility/dark,
 /area/city/backstreets_checkpoint)
-"Cq" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/garbage,
-/turf/open/floor/stone,
-/area/city)
 "Cr" = (
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
 /turf/open/floor/plasteel/stairs/medium{
 	dir = 8
 	},
@@ -4244,13 +3110,6 @@
 /obj/structure/mineral_door/wood,
 /turf/open/floor/carpet/donk,
 /area/city/house)
-"CZ" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "Dc" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -4259,12 +3118,6 @@
 	dir = 6
 	},
 /turf/open/floor/plating/grass,
-/area/city)
-"Dd" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
 /area/city)
 "De" = (
 /obj/structure/flora/junglebush/c,
@@ -4319,19 +3172,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/shop)
-"DB" = (
-/obj/structure/curtain,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/white,
-/area/city)
-"DD" = (
-/obj/structure/chair/office{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/cockroach/glockroach,
-/turf/open/floor/wood,
-/area/city)
 "DE" = (
 /obj/structure/headpike{
 	name = "lamp post";
@@ -4342,30 +3182,16 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city/backstreets_checkpoint)
-"DJ" = (
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city)
-"DR" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/stairs/medium{
-	dir = 8
-	},
-/area/city/backstreets_alley)
 "DS" = (
 /obj/machinery/door/airlock/grunge{
 	name = "association office"
 	},
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"DV" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "DW" = (
 /obj/structure/toilet,
 /obj/machinery/light{
@@ -4411,13 +3237,6 @@
 	color = #abf2ff
 	},
 /area/city/shop)
-"Ep" = (
-/obj/machinery/door/airlock/wood{
-	name = "bistro chef entrance";
-	req_access_txt = "9"
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "Es" = (
 /turf/open/floor/carpet/red,
 /area/city/shop)
@@ -4428,9 +3247,6 @@
 	},
 /turf/open/floor/mineral/titanium,
 /area/city/house)
-"EC" = (
-/turf/open/floor/plasteel/vaporwave,
-/area/city)
 "ED" = (
 /obj/machinery/paystand{
 	pixel_y = 3
@@ -4446,13 +3262,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"EF" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/white,
-/area/city)
 "EJ" = (
 /obj/structure/chair/wood,
 /obj/effect/turf_decal/siding/wood{
@@ -4460,10 +3269,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"EN" = (
-/obj/structure/sign/poster/lobotomycorp/suckmyenegy,
-/turf/closed/indestructible/reinforced,
-/area/city/shop)
 "EP" = (
 /obj/effect/landmark/cityspawner,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -4482,22 +3287,6 @@
 "ES" = (
 /turf/open/floor/carpet/black,
 /area/city/fixers)
-"ET" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/white,
-/area/city)
-"EW" = (
-/obj/machinery/door/airlock/wood{
-	name = "old warehouse"
-	},
-/obj/structure/barricade/wooden,
-/obj/effect/mine/shrapnel,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
 "EY" = (
 /obj/structure/table/reinforced,
 /obj/machinery/chem_dispenser/drinks{
@@ -4518,25 +3307,6 @@
 /obj/structure/railing/corner,
 /turf/open/floor/plating/grass,
 /area/city)
-"Fe" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/machinery/door/window,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "Fi" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -4552,6 +3322,10 @@
 /area/city/house)
 "Fm" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
 /turf/open/floor/plating/airless,
 /area/city/backstreets_checkpoint)
 "Fn" = (
@@ -4603,28 +3377,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"FN" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/structure/sink/kitchen{
-	dir = 8;
-	pixel_x = 10
-	},
-/turf/open/floor/mineral/silver,
-/area/city/shop)
 "FO" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/railing{
@@ -4646,11 +3398,6 @@
 	color = #abf2ff
 	},
 /area/city/shop)
-"FV" = (
-/obj/effect/landmark/cityloot,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "Ga" = (
 /obj/structure/fluff/beach_umbrella/engine,
 /obj/structure/railing,
@@ -4670,27 +3417,11 @@
 /obj/structure/flora/tree/dead,
 /turf/open/floor/plating/dirt/jungle,
 /area/city)
-"Gl" = (
-/turf/closed/wall/bathhouse,
-/area/city)
-"Gm" = (
-/turf/open/water/deep/saltwater/safe{
-	color = "GREEN"
-	},
-/area/city)
 "Go" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 10
 	},
 /turf/open/floor/stone,
-/area/city/shop)
-"Gq" = (
-/obj/structure/table/wood/bar,
-/obj/machinery/chem_dispenser/drinks/fullupgrade{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
 /area/city/shop)
 "Gs" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -4713,10 +3444,13 @@
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city)
 "GA" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mine/explosive,
-/turf/open/floor/facility/dark,
-/area/city)
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/stack/spacecash/c200,
+/turf/open/floor/stone,
+/area/city/fixers)
 "GB" = (
 /obj/machinery/telecomms/server/presets/command{
 	name = "Command Server"
@@ -4728,11 +3462,6 @@
 /obj/effect/turf_decal/box/red,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"GK" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/worker_bee,
-/turf/open/floor/stone,
-/area/city/fixers)
 "GL" = (
 /obj/machinery/door/airlock/medical{
 	name = "Triage and Operating Room";
@@ -4748,12 +3477,6 @@
 /obj/item/storage/bag/trash/bluespace,
 /turf/open/floor/wood,
 /area/city/shop)
-"GQ" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "GS" = (
 /obj/machinery/vending/medical,
 /obj/machinery/light{
@@ -4764,22 +3487,10 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"GT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/hypospray/medipen/salacid,
-/turf/open/floor/facility/white,
-/area/city/shop)
 "GY" = (
 /obj/structure/flora/grass/both,
 /turf/open/floor/plating/dirt/jungle,
 /area/city/backstreets_alley)
-"GZ" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "He" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/glass/beaker/large{
@@ -4801,13 +3512,9 @@
 	color = "#7D6521";
 	dir = 4
 	},
+/obj/item/price_tagger,
 /turf/open/floor/stone,
 /area/city/shop)
-"Hf" = (
-/obj/structure/table/greyscale,
-/obj/item/soap,
-/turf/open/floor/plasteel/white,
-/area/city)
 "Hl" = (
 /obj/effect/turf_decal/siding/green{
 	color = "#006400";
@@ -4835,17 +3542,6 @@
 /obj/effect/turf_decal/siding/blue,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"Hr" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/sin_lust,
-/turf/open/floor/stone,
-/area/city/fixers)
-"Hs" = (
-/obj/structure/rack,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/storage/firstaid/regular,
-/turf/open/floor/facility/white,
-/area/city/shop)
 "Hu" = (
 /obj/machinery/door/airlock/wood{
 	name = "HHPP";
@@ -4862,28 +3558,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating/grass,
-/area/city)
-"Hw" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
-"Hx" = (
-/obj/effect/mapping_helpers/airlock/abandoned,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/door/airlock/grunge{
-	name = "Vacant Office A"
-	},
-/obj/structure/cable,
-/turf/open/floor/wood,
 /area/city)
 "Hz" = (
 /obj/structure/table/wood,
@@ -4927,13 +3601,6 @@
 /obj/machinery/vending/coffee,
 /turf/open/floor/wood,
 /area/city/fixers)
-"HK" = (
-/obj/machinery/light,
-/obj/effect/turf_decal/box/red/corners{
-	dir = 8
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "HL" = (
 /obj/machinery/griddle,
 /turf/open/floor/mineral/titanium,
@@ -4951,10 +3618,6 @@
 /obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
-"HX" = (
-/obj/structure/sign/poster/lobotomycorp/bearbeer,
-/turf/closed/indestructible/reinforced,
-/area/city/shop)
 "Ia" = (
 /obj/structure/fence,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -5008,12 +3671,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"It" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/yun,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "Iu" = (
 /obj/structure/dresser,
 /obj/machinery/light{
@@ -5021,10 +3678,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/city/house)
-"Iw" = (
-/obj/machinery/vending/weaving,
-/turf/closed/indestructible/reinforced,
-/area/city/backstreets_room)
 "Ix" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin,
@@ -5059,13 +3712,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"IM" = (
-/obj/machinery/griddle,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "IO" = (
 /obj/structure/flora/grass/both,
 /turf/open/floor/plating/asteroid/basalt,
@@ -5075,23 +3721,6 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/city/fixers)
-"IQ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"IS" = (
-/obj/effect/decal/cleanable/blood/drip{
-	pixel_x = 12;
-	pixel_y = 12
-	},
-/obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
-"IT" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/bathhouse,
-/area/city)
 "IU" = (
 /obj/effect/turf_decal/siding/brown{
 	dir = 8
@@ -5138,38 +3767,6 @@
 "Ja" = (
 /turf/open/floor/wood,
 /area/city/house)
-"Jd" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats/knife,
-/turf/open/floor/wood,
-/area/city)
-"Je" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plating/ashplanet/rocky,
-/area/city)
-"Jf" = (
-/obj/structure/table/wood,
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/firstaid/regular,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/city/shop)
-"Jh" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/white,
-/area/city)
-"Jl" = (
-/obj/structure/closet/secure_closet/freezer/kitchen{
-	req_access = list(9)
-	},
-/obj/machinery/light/small,
-/turf/open/floor/wood,
-/area/city/shop)
 "Jm" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
@@ -5192,11 +3789,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/lone,
 /area/city/fixers)
-"Jv" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "Jx" = (
 /obj/machinery/door/airlock/grunge{
 	name = "association director's office";
@@ -5215,34 +3807,9 @@
 /obj/item/flashlight/seclite,
 /turf/open/floor/wood,
 /area/city/fixers)
-"JE" = (
-/obj/machinery/light,
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"JI" = (
-/mob/living/simple_animal/hostile/shrimp,
-/turf/open/floor/plasteel/vaporwave,
-/area/city)
-"JM" = (
-/turf/open/floor/plasteel/stairs/medium,
-/area/city)
-"JP" = (
-/obj/structure/table/wood,
-/obj/item/flashlight/lamp,
-/turf/open/floor/wood,
-/area/city)
 "JT" = (
 /obj/structure/fence/door/opened,
 /turf/open/floor/plating/grass,
-/area/city)
-"JU" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/chair/plastic{
-	dir = 8
-	},
-/turf/open/floor/plating/ashplanet/wateryrock,
 /area/city)
 "JV" = (
 /obj/structure/table/reinforced,
@@ -5262,10 +3829,10 @@
 	},
 /area/city/shop)
 "JZ" = (
-/obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood,
-/area/city)
+/mob/living/simple_animal/hostile/ordeal/sin_wrath,
+/turf/open/floor/stone,
+/area/city/fixers)
 "Kc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/bed/maint,
@@ -5295,18 +3862,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
-"Kk" = (
-/obj/structure/table/wood,
-/obj/item/food/breadslice/moldy,
-/turf/open/floor/wood,
-/area/city/shop)
-"Km" = (
-/obj/machinery/door/airlock/wood{
-	name = "old warehouse"
-	},
-/obj/structure/barricade/wooden,
-/turf/open/floor/facility/dark,
-/area/city/shop)
 "Kn" = (
 /obj/structure/fluff/hedge{
 	resistance_flags = 64
@@ -5316,31 +3871,11 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"Kp" = (
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
-"Kq" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Ks" = (
 /turf/open/floor/wood{
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"Ku" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 6
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Kv" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/siding/wood{
@@ -5355,14 +3890,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"Kw" = (
-/obj/machinery/door/airlock/wood{
-	name = "old warehouse"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/wooden,
-/turf/open/floor/facility/dark,
-/area/city)
 "Kx" = (
 /obj/structure/sign/painting/library{
 	pixel_x = -32
@@ -5420,7 +3947,7 @@
 /area/city/shop)
 "KN" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/sin_wrath,
+/mob/living/simple_animal/hostile/yagaslave,
 /turf/open/floor/stone,
 /area/city/fixers)
 "KO" = (
@@ -5441,39 +3968,6 @@
 /obj/item/clothing/under/mercenary/rus_army,
 /turf/open/floor/plasteel/grimy,
 /area/city/house)
-"KS" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#3234B9";
-	dir = 8
-	},
-/obj/item/modular_computer/laptop/preset/fixer,
-/turf/open/floor/mineral/silver,
-/area/city/shop)
-"KT" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 9
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityspawner,
-/turf/open/floor/stone,
-/area/city)
-"KX" = (
-/obj/structure/spacevine,
-/obj/structure/spacevine,
-/obj/structure/spacevine,
-/turf/closed/indestructible/reinforced,
-/area/city)
 "KY" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/food/drinks/beer,
@@ -5482,15 +3976,6 @@
 /obj/item/reagent_containers/food/drinks/bottle/cognac,
 /turf/open/floor/wood,
 /area/city/house)
-"KZ" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/turf/open/floor/stone,
-/area/city)
 "Lg" = (
 /obj/structure/chair/wood/wings{
 	dir = 4;
@@ -5515,12 +4000,6 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/plating/grass,
 /area/city/backstreets_checkpoint)
-"Lz" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood,
-/area/city)
 "LA" = (
 /obj/machinery/light{
 	dir = 8
@@ -5655,26 +4134,9 @@
 /obj/effect/turf_decal/siding/blue,
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"Mf" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/table/reinforced,
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/obj/item/ego_weapon/city/carnival_spear,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "Ml" = (
 /turf/open/water/deep/freshwater,
 /area/city/backstreets_alley)
-"Mo" = (
-/obj/effect/mine/shrapnel,
-/obj/structure/barricade/wooden,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
 "Mp" = (
 /obj/structure/table/reinforced,
 /obj/structure/railing,
@@ -5701,13 +4163,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"My" = (
-/obj/structure/closet/crate/trashcart,
-/obj/item/bodypart/l_arm,
-/obj/item/bodypart/r_arm,
-/obj/machinery/light/small,
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
 "MB" = (
 /obj/machinery/computer/med_data,
 /obj/effect/turf_decal/siding/blue{
@@ -5715,13 +4170,6 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/city/shop)
-"MC" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "MD" = (
 /obj/machinery/door/airlock/wood{
 	name = "chapel"
@@ -5730,11 +4178,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/fixers)
-"MG" = (
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "MH" = (
 /obj/structure/table/wood,
 /obj/item/binoculars,
@@ -5786,38 +4229,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/stone,
 /area/city/fixers)
-"MX" = (
-/obj/structure/table/reinforced,
-/obj/structure/railing{
-	dir = 5
-	},
-/obj/effect/decal/cleanable/cobweb/cobweb2,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
-"Nf" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/crate/trashcart/filled,
-/turf/open/floor/stone,
-/area/city)
-"Nh" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/table/reinforced,
-/obj/item/storage/box/bodybags{
-	pixel_x = -5;
-	pixel_y = -4
-	},
-/obj/item/storage/firstaid{
-	pixel_x = 9;
-	pixel_y = -7
-	},
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 8
-	},
-/obj/item/ego_weapon/city/carnival_spear{
-	pixel_y = 17
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "Nj" = (
 /obj/machinery/vending/city,
 /obj/effect/turf_decal/siding/green{
@@ -5832,13 +4243,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/city/fixers)
-"Nw" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/stone,
-/area/city)
 "Ny" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -5869,33 +4273,9 @@
 	},
 /turf/open/floor/carpet/red,
 /area/city/fixers)
-"NF" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "NJ" = (
 /turf/open/floor/carpet/green,
 /area/city/shop)
-"NL" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 5
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"NM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/broken{
-	dir = 1
-	},
-/obj/structure/rack,
-/obj/item/ego_weapon/city/axegang/leader,
-/turf/open/floor/wood,
-/area/city/house)
 "NO" = (
 /obj/machinery/telecomms/server/presets/common,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -5925,13 +4305,6 @@
 /obj/structure/flora/tree/dead,
 /turf/open/floor/plating/dirt/jungle,
 /area/city/backstreets_alley)
-"Od" = (
-/obj/machinery/door/airlock/wood{
-	name = "bistro chef entrance";
-	req_access_txt = "9"
-	},
-/turf/open/floor/plasteel/dark,
-/area/city/shop)
 "Of" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5948,19 +4321,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/fixers)
-"Oo" = (
-/obj/item/wirecutters,
-/obj/item/wirecutters,
-/obj/item/wirecutters,
-/obj/item/wirecutters,
-/turf/open/floor/stone,
-/area/city)
-"Op" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Or" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/railing/corner{
@@ -6029,11 +4389,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"OK" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/flora/rock/pile,
-/turf/open/floor/stone,
-/area/city)
 "ON" = (
 /obj/structure/table/reinforced,
 /obj/item/taperecorder/empty,
@@ -6048,22 +4403,10 @@
 "OO" = (
 /turf/closed/indestructible/wood,
 /area/city/backstreets_alley)
-"OP" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityspawner,
-/turf/open/floor/stone,
-/area/city)
 "OS" = (
 /obj/effect/decal/cleanable/garbage,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/ashplanet/rocky,
-/area/city)
-"OV" = (
-/obj/machinery/door/airlock/grunge{
-	name = "NO ENTRY";
-	req_access_txt = "150"
-	},
-/turf/open/floor/stone,
 /area/city)
 "OX" = (
 /obj/structure/table/reinforced,
@@ -6091,11 +4434,6 @@
 /obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
-"Pa" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/axegang,
-/turf/open/floor/wood,
-/area/city/house)
 "Pd" = (
 /obj/structure/flora/ash/fern,
 /turf/open/floor/plating/dirt/jungle,
@@ -6103,14 +4441,6 @@
 "Ph" = (
 /obj/machinery/hydroponics,
 /turf/open/floor/plating/grass,
-/area/city)
-"Pj" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/garbage,
-/turf/open/floor/stone,
 /area/city)
 "Pk" = (
 /obj/machinery/door/airlock/grunge{
@@ -6136,17 +4466,6 @@
 	},
 /turf/open/floor/carpet/donk,
 /area/city/house)
-"Pw" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 10
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
-"Px" = (
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/turf/open/floor/wood,
-/area/city)
 "PA" = (
 /obj/machinery/door/airlock/wood{
 	name = "employee housing"
@@ -6167,12 +4486,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"PG" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/food/tomato_smudge,
-/obj/item/stack/spacecash/c200,
-/turf/open/floor/stone,
-/area/city/fixers)
 "PJ" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/titanium,
@@ -6236,20 +4549,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"Qu" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
-"Qv" = (
-/obj/item/storage/toolbox/mechanical,
-/obj/structure/closet,
-/obj/item/ego_weapon/city/district23,
-/obj/machinery/light/small,
-/turf/open/floor/wood,
-/area/city/shop)
 "Qw" = (
 /obj/structure/chair/wood/wings{
 	dir = 1
@@ -6341,6 +4640,10 @@
 /turf/open/floor/carpet/green,
 /area/city/house)
 "QZ" = (
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
 /turf/open/floor/plasteel/stairs/medium{
 	dir = 4
 	},
@@ -6383,11 +4686,6 @@
 /obj/structure/flora/ausbushes,
 /turf/open/floor/plating/grass,
 /area/city)
-"Ro" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/wood,
-/area/city/house)
 "Ry" = (
 /obj/effect/turf_decal/siding/brown{
 	dir = 8
@@ -6409,22 +4707,14 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"RI" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/spawner/lootdrop/garbage_spawner,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "RJ" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 6
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
 	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
+/turf/open/floor/plating/airless,
+/area/city/fixers)
 "RM" = (
 /obj/structure/timelock,
 /turf/open/floor/plating/ashplanet/rocky,
@@ -6469,27 +4759,6 @@
 	},
 /turf/open/floor/plating/grass,
 /area/city)
-"RS" = (
-/obj/structure/table/wood,
-/obj/item/poster/random_contraband,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood,
-/area/city)
-"RX" = (
-/obj/structure/lattice/lava{
-	name = "sewer catwalk"
-	},
-/turf/open/water/deep/saltwater/safe{
-	color = "GREEN"
-	},
-/area/city)
-"RZ" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Sd" = (
 /obj/structure/bed/pod,
 /obj/item/bedsheet/random,
@@ -6498,14 +4767,12 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"Si" = (
-/obj/structure/table/wood/bar,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/shop)
 "Ss" = (
-/turf/closed/indestructible/reinforced,
-/area/city/backstreets_room)
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/food/tomato_smudge,
+/obj/item/stack/spacecash/c200,
+/turf/open/floor/stone,
+/area/city/fixers)
 "Su" = (
 /obj/effect/light_emitter{
 	light_power = 4;
@@ -6538,21 +4805,12 @@
 /obj/item/clothing/gloves/color/black,
 /turf/open/floor/wood,
 /area/city/fixers)
-"SC" = (
-/obj/effect/turf_decal/box/red,
-/obj/effect/landmark/syndicatebase,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "SG" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/telecomms/bus/preset_four,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/facility_hallway/north)
-"SI" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city/backstreets_alley)
 "SK" = (
 /obj/structure/rack,
 /obj/structure/lootcrate/tres,
@@ -6614,10 +4872,6 @@
 /obj/item/stack/spacecash/c200,
 /turf/open/floor/stone,
 /area/city/fixers)
-"Ts" = (
-/obj/structure/spacevine,
-/turf/closed/indestructible/reinforced,
-/area/city/house)
 "Tt" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
@@ -6660,36 +4914,6 @@
 "TA" = (
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city/backstreets_checkpoint)
-"TB" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/wine/unlabeled{
-	name = "Saito-brand wine";
-	pixel_x = 4;
-	pixel_y = 14
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = -6;
-	pixel_y = 12
-	},
-/obj/item/food/spaghetti/beefnoodle,
-/turf/open/floor/wood,
-/area/city)
-"TC" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/closet/crate,
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 4
-	},
-/obj/item/clothing/suit/armor/ego_gear/city/carnival_robes,
-/obj/item/clothing/suit/armor/ego_gear/city/carnival_robes,
-/obj/item/clothing/suit/armor/ego_gear/city/carnival_robes,
-/obj/item/clothing/mask/carnival_mask,
-/obj/item/clothing/mask/carnival_mask,
-/obj/item/clothing/mask/carnival_mask,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "TF" = (
 /obj/structure/table/reinforced,
 /obj/item/camera,
@@ -6729,14 +4953,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/city/fixers)
-"TO" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/stack/spacecash/c200,
-/turf/open/floor/stone,
-/area/city/fixers)
 "TQ" = (
 /obj/machinery/vending/custom/unbreakable,
 /obj/effect/turf_decal/siding{
@@ -6747,11 +4963,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"TU" = (
-/obj/structure/spacevine,
-/obj/structure/spacevine,
-/turf/closed/indestructible/reinforced,
-/area/city)
 "TX" = (
 /obj/structure/curtain/cloth,
 /turf/closed/indestructible/fakeglass,
@@ -6786,6 +4997,10 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/eastleft,
 /obj/machinery/door/window/westright,
+/obj/structure/barricade/wooden{
+	name = "unbreakable wooden barricade";
+	resistance_flags = 64
+	},
 /turf/open/floor/facility,
 /area/city/backstreets_checkpoint)
 "Up" = (
@@ -6800,12 +5015,6 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/carpet/black,
 /area/city/house)
-"Uu" = (
-/obj/effect/landmark/cityloot,
-/obj/structure/rack,
-/obj/item/stack/spacecash/c100,
-/turf/open/floor/facility/dark,
-/area/city)
 "Uv" = (
 /obj/structure/table/wood/fancy,
 /obj/item/food/soup/stew,
@@ -6816,12 +5025,6 @@
 /obj/item/food/soup/stew,
 /turf/open/floor/wood,
 /area/city/fixers)
-"Uz" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/garbage,
-/turf/open/floor/stone,
-/area/city)
 "UB" = (
 /obj/structure/table/wood,
 /obj/item/potential_tester,
@@ -6837,12 +5040,6 @@
 "UH" = (
 /turf/open/space/basic,
 /area/space)
-"UN" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/floor/plating/ashplanet/rocky,
-/area/city)
 "UO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/clothing/suit/hooded/chaplain_hoodie/leader,
@@ -6860,11 +5057,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/fixers)
-"Va" = (
-/obj/effect/mine/shrapnel,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
 "Vd" = (
 /obj/structure/fence{
 	dir = 1;
@@ -6872,13 +5064,6 @@
 	},
 /turf/open/floor/plating/ashplanet/rocky,
 /area/city/backstreets_alley)
-"Vf" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Vh" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /obj/item/krevive,
@@ -6903,12 +5088,6 @@
 /obj/item/bedsheet/random,
 /turf/open/floor/wood,
 /area/city/fixers)
-"VF" = (
-/obj/machinery/door/airlock/wood{
-	name = "employee housing"
-	},
-/turf/open/floor/facility/dark,
-/area/city)
 "VG" = (
 /obj/structure/chair/sofa/corner{
 	dir = 8
@@ -6924,11 +5103,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/city/shop)
-"VO" = (
-/obj/effect/decal/cleanable/garbage,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city)
 "VQ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -6951,13 +5125,6 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/city/shop)
-"VY" = (
-/obj/machinery/vending/boozeomat/all_access,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/city/shop)
 "Wa" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/plating/grass,
@@ -6970,12 +5137,6 @@
 /obj/structure/spacevine,
 /turf/closed/indestructible/wood,
 /area/city/shop)
-"Wd" = (
-/obj/structure/barricade/wooden,
-/obj/effect/mine/shrapnel,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/facility/dark,
-/area/city)
 "Wg" = (
 /obj/structure/table/wood,
 /obj/item/choice_beacon/association,
@@ -7019,13 +5180,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"Wy" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
-/area/city)
 "Wz" = (
 /turf/closed/indestructible/fakeglass,
 /area/city/shop)
@@ -7048,26 +5202,11 @@
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /turf/open/floor/stone,
 /area/city/fixers)
-"WJ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/remains/human,
-/mob/living/simple_animal/hostile/ordeal/sin_gluttony,
-/turf/open/floor/stone,
-/area/city/fixers)
 "WN" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 4
 	},
 /turf/open/floor/stone,
-/area/city/shop)
-"WQ" = (
-/obj/machinery/vending/cigarette{
-	dir = 1
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/wood,
 /area/city/shop)
 "WV" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
@@ -7079,14 +5218,6 @@
 /obj/structure/chair/office,
 /turf/open/floor/wood,
 /area/city/fixers)
-"WY" = (
-/obj/structure/table/wood/bar,
-/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
-/area/city/shop)
 "WZ" = (
 /obj/machinery/griddle{
 	dir = 6
@@ -7113,13 +5244,6 @@
 	dir = 9
 	},
 /turf/open/floor/carpet/green,
-/area/city/shop)
-"Xf" = (
-/obj/machinery/door/window{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/wood,
 /area/city/shop)
 "Xg" = (
 /obj/machinery/light{
@@ -7163,15 +5287,6 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/carpet/black,
 /area/city/house)
-"Xs" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Carnival"
-	},
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 5
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "Xu" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -7198,14 +5313,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"XB" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/yun/fist,
-/turf/open/floor/wood,
-/area/city)
-"XL" = (
-/turf/open/floor/carpet,
-/area/city)
 "XM" = (
 /obj/machinery/light{
 	dir = 1
@@ -7215,11 +5322,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"XQ" = (
-/obj/machinery/light,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "Ya" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -7277,14 +5379,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"Yp" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/garbage,
-/turf/open/floor/stone,
-/area/city)
 "Yq" = (
 /obj/machinery/door/airlock/grunge{
 	name = "bathroom";
@@ -7292,22 +5386,6 @@
 	},
 /turf/open/floor/wood,
 /area/city/fixers)
-"Ys" = (
-/obj/structure/table/reinforced,
-/obj/structure/railing{
-	dir = 5
-	},
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
-"Yt" = (
-/obj/effect/turf_decal/loading_area/red{
-	dir = 1
-	},
-/obj/structure/chair,
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
 "Yw" = (
 /obj/structure/table/wood/fancy,
 /obj/item/bouquet/sunflower,
@@ -7322,48 +5400,18 @@
 /obj/structure/flora/rock/jungle,
 /turf/open/floor/plating/grass,
 /area/city)
-"Yz" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/ladder,
-/obj/effect/portal/permanent{
-	id = "sewers1";
-	alpha = 0;
-	name = "ladder..."
-	},
-/turf/open/floor/stone,
-/area/city/shop)
 "YB" = (
 /obj/machinery/light,
 /turf/open/floor/wood{
 	color = "#ccc8c0"
 	},
 /area/city/shop)
-"YC" = (
-/obj/effect/turf_decal/trimline/red/filled/line{
-	dir = 1
-	},
-/turf/open/floor/facility/dark,
-/area/city/backstreets_room)
-"YG" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/landmark/cityloot,
-/turf/open/floor/wood{
-	icon_state = "wood-broken"
-	},
-/area/city)
 "YH" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/railing{
 	dir = 5
 	},
 /turf/open/floor/plating/grass,
-/area/city)
-"YK" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/wateryrock,
 /area/city)
 "YM" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7394,12 +5442,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/city/fixers)
-"YS" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/stone,
-/area/city)
 "YT" = (
 /obj/structure/chair/wood,
 /turf/open/floor/wood,
@@ -7424,15 +5466,6 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/stellar,
-/area/city/shop)
-"YX" = (
-/obj/structure/table/wood,
-/obj/item/ego_weapon/city/district23,
-/obj/item/ego_weapon/city/district23{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/turf/open/floor/wood,
 /area/city/shop)
 "Zc" = (
 /obj/structure/rack,
@@ -7486,11 +5519,6 @@
 	},
 /turf/open/floor/stone,
 /area/city/shop)
-"Zf" = (
-/obj/structure/rack,
-/obj/item/ego_weapon/city/rats/brick,
-/turf/open/floor/wood,
-/area/city)
 "Zg" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/open/floor/plating/grass,
@@ -7534,10 +5562,6 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/showroomfloor,
-/area/city/shop)
-"Zx" = (
-/obj/machinery/processor,
-/turf/open/floor/wood,
 /area/city/shop)
 "ZA" = (
 /obj/machinery/light{
@@ -7588,9 +5612,6 @@
 /obj/structure/noticeboard,
 /turf/closed/indestructible/wood,
 /area/city/shop)
-"ZT" = (
-/turf/closed/indestructible/reinforced,
-/area/city/house)
 "ZV" = (
 /obj/structure/curtain/cloth/fancy,
 /turf/closed/indestructible/fakeglass,
@@ -7629,13 +5650,6 @@ RC
 RC
 RC
 RC
-kn
-kn
-kn
-kn
-kn
-kn
-kn
 RC
 RC
 RC
@@ -7662,11 +5676,6 @@ RC
 RC
 RC
 RC
-bq
-bq
-bq
-bq
-bq
 RC
 RC
 RC
@@ -7679,17 +5688,29 @@ RC
 RC
 RC
 RC
-uM
-uM
-uM
-uM
-uM
-uM
-uM
-uM
-uM
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -7731,13 +5752,6 @@ RC
 RC
 RC
 RC
-kn
-Hs
-on
-on
-on
-hy
-kn
 RC
 RC
 RC
@@ -7764,11 +5778,6 @@ RC
 RC
 RC
 RC
-bq
-cH
-ck
-vl
-bq
 RC
 RC
 RC
@@ -7779,20 +5788,32 @@ RC
 RC
 RC
 RC
-uM
-uM
-uM
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -7833,13 +5854,6 @@ RC
 RC
 RC
 RC
-kn
-hy
-fu
-on
-GT
-Hs
-kn
 RC
 RC
 RC
@@ -7852,25 +5866,6 @@ RC
 RC
 RC
 RC
-kn
-kn
-kn
-kn
-kn
-kn
-kn
-RC
-RC
-RC
-RC
-RC
-RC
-RC
-bq
-Mo
-Va
-Wd
-bq
 RC
 RC
 RC
@@ -7879,23 +5874,49 @@ RC
 RC
 RC
 RC
-uM
-uM
-uM
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -7915,12 +5936,6 @@ RC
 RC
 RC
 RC
-bq
-bq
-bq
-bq
-bq
-bq
 RC
 RC
 RC
@@ -7935,13 +5950,6 @@ RC
 RC
 RC
 RC
-kn
-Hs
-on
-GT
-on
-hy
-kn
 RC
 RC
 RC
@@ -7950,17 +5958,6 @@ RC
 RC
 RC
 RC
-kn
-kn
-kn
-kn
-kn
-jC
-xC
-KS
-GQ
-bh
-kn
 RC
 RC
 RC
@@ -7968,36 +5965,60 @@ RC
 RC
 RC
 RC
-bq
-ud
-Mo
-Va
-bq
-bq
-bq
-bq
 RC
 RC
 RC
-uM
-uM
-uM
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8017,52 +6038,6 @@ RC
 RC
 RC
 RC
-bq
-tp
-Px
-Px
-Jd
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-kn
-kn
-kn
-Km
-kn
-kn
-kn
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-kn
-Ch
-xC
-Fe
-xC
-xC
-xC
-fK
-GQ
-iM
-kn
 RC
 RC
 RC
@@ -8070,37 +6045,83 @@ RC
 RC
 RC
 RC
-bq
-Mo
-bj
-Wd
-bq
-jm
-jm
-bq
 RC
 RC
 RC
-uM
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-eb
-ts
-ts
-ts
-eb
-ts
-ts
-ts
-ts
-ts
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8119,52 +6140,6 @@ RC
 RC
 RC
 RC
-bq
-BN
-VO
-DJ
-tp
-bq
-Nf
-jm
-wV
-jm
-jm
-jm
-jm
-jm
-GZ
-jm
-jm
-jm
-jm
-MG
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-GZ
-wV
-jm
-jm
-jm
-jm
-jm
-MG
-kn
-lJ
-xC
-mL
-df
-df
-xC
-fK
-GQ
-no
-kn
 RC
 RC
 RC
@@ -8172,37 +6147,83 @@ RC
 RC
 RC
 RC
-bq
-Va
-Mo
-Wd
-bq
-jm
-jm
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-wT
-wT
-wT
-bq
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8221,52 +6242,6 @@ RC
 RC
 RC
 RC
-bq
-vi
-Kp
-Px
-Dd
-bq
-jm
-cK
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-Cq
-ee
-Wy
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-bW
-jm
-kn
-uK
-FN
-dn
-bu
-pe
-ul
-fK
-GQ
-bh
-kn
 RC
 RC
 RC
@@ -8274,37 +6249,83 @@ RC
 RC
 RC
 RC
-bq
-Va
-Mo
-ud
-EW
-jm
-jm
-jm
-IQ
-IQ
-bq
-bn
-DD
-RS
-wT
-OK
-ll
-kq
-ts
-ts
-wV
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8323,90 +6344,90 @@ RC
 RC
 RC
 RC
-bq
-fB
-xS
-xS
-us
-bq
-Vf
-eV
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-NF
-hG
-kn
-kn
-kn
-kn
-kn
-kn
-kn
-oF
-kn
-kn
-kn
-bq
-bq
-wT
-wT
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-tv
-an
-ee
-nu
-ll
-bq
-fE
-JZ
-JP
-wT
-jm
-jm
-ch
-wV
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8425,90 +6446,90 @@ RC
 RC
 RC
 RC
-bq
-xe
-Kp
-VO
-BN
-bq
-MG
-eV
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-za
-za
-kB
-kB
-kB
-kB
-kB
-kB
-Pw
-Gm
-NF
-jm
-bq
-Nf
-jm
-jm
-zV
-jm
-jm
-jm
-GZ
-jm
-jm
-jm
-ii
-jm
-jm
-jm
-jm
-IQ
-mv
-bq
 RC
 RC
-bq
-jm
-eV
-Gm
-NF
-jm
-bq
-bn
-bw
-aR
-wT
-ll
-ii
-jm
-JU
-ts
-ts
-rr
-eb
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8527,90 +6548,90 @@ RC
 RC
 RC
 RC
-bq
-Px
-Px
-xS
-Kp
-lb
-jm
-Jv
-Gm
-jS
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-Hw
-Gm
-Gm
-wV
-wV
-xl
-jm
-jm
-jm
-jm
-jm
-jt
-eV
-Gm
-NF
-jm
-bq
-jx
-an
-ee
-uW
-ee
-ee
-ee
-ee
-uW
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-nu
-Op
-bq
 RC
 RC
-bq
-jm
-eV
-Gm
-RI
-jm
-bq
-bn
-DD
-RS
-bq
-jm
-jm
-wT
-wT
-bq
-bq
-bq
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8629,90 +6650,90 @@ RC
 RC
 RC
 RC
-bq
-Px
-Px
-xS
-cy
-bq
-jm
-eV
-Gm
-NF
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-wV
-Gm
-bq
-bq
-bq
-bq
-bq
-wT
-wT
-wT
-wT
-jm
-eV
-RX
-NF
-jm
-bq
-vP
-eV
-Gm
-Gm
-Gm
-Gm
-Gm
-RX
-RX
-RX
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-YK
-zV
-bq
 RC
 RC
-bq
-Vf
-eV
-Gm
-NF
-XQ
-bq
-XL
-JZ
-ze
-bq
-ii
-jm
-wT
-va
-va
-va
-bq
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-ts
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8731,90 +6752,90 @@ RC
 RC
 RC
 RC
-bq
-bq
-Zf
-Bb
-jw
-bq
-jm
-eV
-Gm
-NF
-jm
-wT
-wT
-wT
-wT
-lb
-bq
-bq
-bq
-wV
-wV
-bq
-bo
-DB
-ET
-BF
-bq
-al
-hh
-wT
-jm
-eV
-RX
-NF
-jm
-wT
-Vf
-ng
-kB
-kB
-kB
-kB
-fz
-kB
-kB
-kB
-za
-kB
-kB
-AW
-KZ
-Gm
-NF
-jm
-bq
 RC
 RC
-wT
-ii
-Jv
-Gm
-NF
-jm
-bq
-bn
-YG
-cy
-bq
-jm
-jm
-wT
-ot
-xg
-va
-bq
-bq
-bq
-bq
-ts
-ts
-ts
-ts
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8832,90 +6853,90 @@ RC
 RC
 RC
 RC
-ZT
-ZT
-ZT
-ZT
-ZT
-ZT
-ZT
-jm
-eV
-RX
-NF
-zV
-wT
-vm
-cy
-gv
-gv
-gv
-BN
-bq
-FV
-wV
-bq
-IT
-Gl
-cG
-Hf
-bq
-kK
-Lz
-wT
-Vf
-eV
-RX
-NF
-jm
-wT
-jm
-ll
-RZ
-jm
-jm
-jm
-jm
-zV
-jm
-jm
-RZ
-jm
-jm
-IQ
-YS
-Gm
-NF
-jm
-bq
 RC
 RC
-wT
-jm
-eV
-Gm
-NF
-zV
-bq
-bn
-DD
-RS
-bq
-jm
-jm
-wT
-ud
-Va
-GA
-xg
-va
-va
-bq
-ts
-ts
-ts
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -8934,89 +6955,89 @@ RC
 RC
 RC
 RC
-ZT
-NM
-zD
-Ja
-Ro
-rh
-PA
-ii
-eV
-RX
-NF
-vT
-wT
-iT
-xS
-xS
-gv
-xS
-od
-bq
-wV
-wV
-bq
-bo
-lU
-Jh
-cG
-cd
-bw
-TB
-wT
-xl
-eV
-Gm
-NF
-jm
-wT
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-VF
-bq
-bq
-bq
-jm
-eV
-Gm
-NF
-jm
-bq
 RC
 RC
-wT
-jm
-eV
-Gm
-NF
-jm
-bq
-bn
-JZ
-ze
-bq
-jm
-ii
-wT
-ot
-ud
-Va
-GA
-ud
-va
-bq
-uM
-uM
-uM
-uM
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9036,85 +7057,85 @@ RC
 RC
 RC
 RC
-ZT
-Pa
-rh
-Ro
-zD
-Ro
-Ts
-Vf
-eV
-RX
-NF
-jm
-bq
-It
-mU
-xS
-xS
-xS
-fy
-bq
-wV
-wV
-bq
-Gl
-Gl
-cG
-vO
-bq
-bq
-bq
-wT
-jm
-eV
-Gm
-NF
-jm
-wT
 RC
 RC
 RC
 RC
 RC
 RC
-bq
-mj
-EC
-EC
-EC
-mj
-bq
-Vf
-eV
-Gm
-NF
-jm
-bq
 RC
 RC
-wT
-jm
-Uz
-Gm
-YK
-jm
-bq
-bn
-bw
-rQ
-bq
-jm
-ll
-wT
-Va
-xg
-Va
-Va
-Co
-va
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9138,85 +7159,85 @@ RC
 RC
 RC
 RC
-ZT
-tD
-rh
-rC
-rC
-rC
-Ts
-jm
-eV
-Gm
-NF
-jm
-bq
-fy
-cy
-BN
-rs
-xS
-XB
-wT
-FV
-wV
-bq
-bo
-lU
-EF
-cG
-cG
-cG
-cG
-cd
-jm
-eV
-Gm
-NF
-jm
-wT
 RC
 RC
 RC
 RC
 RC
 RC
-bq
-EC
-jH
-JI
-EC
-mj
-bq
-Vf
-eV
-Gm
-NF
-XQ
-bq
 RC
 RC
-bq
-Vf
-Uz
-Gm
-NF
-XQ
-bq
-bn
-bn
-bn
-Hx
-jm
-jm
-wT
-va
-Va
-va
-va
-va
-va
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9240,89 +7261,89 @@ RC
 RC
 RC
 RC
-ZT
-Ts
-Ts
-Ts
-Ts
-Ts
-Ts
-jm
-eV
-Gm
-NF
-OP
-bq
-bq
-bq
-wT
-wT
-wT
-wT
-wT
-wV
-Gm
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-jm
-eV
-Gm
-NF
-XQ
-wT
-wT
-wT
-wT
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-jm
-eV
-Gm
-NF
-jm
-bq
-bq
-bq
-bq
-jm
-eV
-Gm
-NF
-jm
-bq
-bq
-wT
-wT
-bq
-jm
-jm
-bq
-bq
-Kw
-bq
-bq
-bq
-bq
-bq
-bq
-KX
-TU
-KX
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9342,89 +7363,89 @@ RC
 RC
 RC
 RC
-bq
-jm
-zV
-jm
-MG
-jm
-jm
-jm
-eV
-Gm
-NF
-jm
-jm
-ii
-jm
-xl
-jm
-jm
-Qu
-wV
-dq
-Gm
-Gm
-wV
-Qu
-MG
-jm
-jm
-jm
-jm
-zV
-jm
-eV
-Gm
-gh
-IQ
-jm
-jm
-jm
-jm
-jm
-ii
-MG
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-IQ
-Uz
-Gm
-gh
-IQ
-jm
-jm
-Ca
-jm
-IQ
-YS
-Gm
-gh
-IQ
-jm
-jm
-jm
-jm
-GZ
-jm
-jm
-jm
-jm
-ii
-jm
-GZ
-jm
-jm
-jm
-jm
-IQ
-cZ
-KX
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9444,89 +7465,89 @@ RC
 RC
 RC
 RC
-bq
-jm
-cK
-ee
-ee
-Wy
-ee
-ee
-Ku
-Gm
-Ab
-ee
-ee
-ee
-ee
-ee
-ee
-Wy
-Wy
-Wy
-Gm
-Gm
-Wy
-Wy
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-Ku
-Gm
-Ab
-ee
-ee
-Wy
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-qF
-Ku
-Gm
-Ab
-ee
-ee
-ee
-ee
-ee
-qF
-RJ
-Gm
-NL
-DV
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-Cq
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-nu
-tv
-TU
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9543,92 +7564,92 @@ RC
 "}
 (20,1,1) = {"
 RC
-LG
-LG
-LG
-rV
-Vf
-Uz
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-RX
-RX
-RX
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-RX
-RX
-RX
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-RX
-RX
-RX
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-NF
-JE
-KX
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9645,98 +7666,98 @@ RC
 "}
 (21,1,1) = {"
 RC
-LG
-SI
-Bx
-JM
-MG
-dP
-kB
-kB
-kB
-kB
-kB
-kB
-Pj
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-za
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-Pj
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-za
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-Pw
-Gm
-KT
-kB
-kB
-kB
-kB
-kB
-kB
-za
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-Pw
-Gm
-NF
-jm
-kn
-kn
-kn
-EN
-pC
-kn
-kn
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9747,98 +7768,98 @@ RC
 "}
 (22,1,1) = {"
 RC
-LG
-Bx
-Bx
-JM
-jm
-jm
-RZ
-jm
-jm
-wV
-jm
-jm
-jm
-jm
-jm
-RZ
-jm
-jm
-jm
-MG
-jm
-RZ
-jm
-jm
-jm
-jm
-jm
-zV
-Yp
-jm
-wV
-jm
-jm
-RZ
-jm
-jm
-MG
-jm
-jm
-jm
-RZ
-jm
-jm
-jm
-jm
-jm
-Nw
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-RZ
-jm
-zV
-MG
-MG
-jm
-jm
-jm
-IQ
-YS
-Gm
-YK
-jm
-MG
-jm
-xl
-jm
-RZ
-zV
-jm
-jm
-jm
-Yp
-jm
-uf
-jm
-jm
-Jv
-Gm
-NF
-jm
-pK
-VY
-nf
-WY
-Gq
-Qv
-kn
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9849,98 +7870,98 @@ RC
 "}
 (23,1,1) = {"
 RC
-LG
-Bx
-Bx
-rV
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-OV
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-VF
-bq
-bq
-bq
-kn
-kn
-kn
-kn
-kn
-kn
-kn
-kn
-kn
-jm
-eV
-Gm
-NF
-jm
-bq
-bq
-bq
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-jm
-eV
-Gm
-NF
-jm
-hs
-rT
-rT
-rT
-rT
-rT
-Ap
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -9951,21 +7972,6 @@ RC
 "}
 (24,1,1) = {"
 RC
-LG
-DR
-DR
-LG
-RC
-RC
-RC
-RC
-RC
-bq
-bq
-bq
-bq
-jO
-bq
 RC
 RC
 RC
@@ -9998,51 +8004,66 @@ RC
 RC
 RC
 RC
-bq
-fW
-gI
-gl
-bq
 RC
-kn
-IM
-NW
-Ce
-kn
-nH
-mq
-qE
-Wz
-jm
-eV
-Gm
-NF
-XQ
-bq
-rV
-rV
-Ss
-ia
-sd
-mT
-MC
-jL
-hj
-Mf
-Nh
-Ss
-Vf
-eV
-Gm
-NF
-ii
-HX
-rT
-rT
-rT
-rT
-rT
-pF
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10053,21 +8074,21 @@ RC
 "}
 (25,1,1) = {"
 RC
-LG
-DR
-DR
-LG
 RC
 RC
 RC
 RC
 RC
-bq
-Oo
-jO
-jO
-jO
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10100,51 +8121,51 @@ RC
 RC
 RC
 RC
-bq
-qH
-jT
-nK
-bq
 RC
-kn
-ky
-NW
-NW
-kP
-NW
-Kk
-NW
-Wz
-zV
-eV
-RX
-NF
-jm
-bq
-rV
-rV
-Ss
-YC
-zH
-Ss
-cB
-Iw
-zH
-IS
-Ak
-Ss
-jm
-eV
-RX
-NF
-jm
-pK
-Xf
-Si
-Si
-Si
-Si
-kn
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10155,23 +8176,23 @@ RC
 "}
 (26,1,1) = {"
 RC
-LG
-Bx
-SI
-LG
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-fh
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10190,7 +8211,7 @@ LA
 Kc
 QD
 hV
-TO
+GA
 Uc
 QD
 YM
@@ -10199,54 +8220,54 @@ Wm
 Vl
 RC
 RC
-bq
-bq
-bq
-bq
-fW
-gl
-gI
-bq
 RC
-kn
-Zx
-NW
-Ck
-kn
-nH
-mq
-NW
-kf
-Vf
-eV
-RX
-NF
-jm
-bq
-rV
-rV
-Ss
-YC
-Yt
-Ys
-HK
-Ss
-tU
-zH
-iz
-Ss
-jm
-eV
-RX
-NF
-jm
-oF
-NW
-rD
-rD
-rT
-rD
-kn
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10257,23 +8278,23 @@ RC
 "}
 (27,1,1) = {"
 RC
-LG
-Bx
-SI
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10284,14 +8305,14 @@ Wb
 TF
 Vl
 Wb
-WJ
+dq
 Cn
 Vl
 ov
 dm
 Wb
 QD
-lE
+KN
 Wb
 WF
 QD
@@ -10301,54 +8322,54 @@ Wb
 Vl
 RC
 RC
-bq
-gI
-gI
-zL
-Co
-xj
-gI
-bq
 RC
-kn
-qy
-NW
-Jl
-kn
-NW
-mq
-qE
-kn
-jm
-eV
-RX
-NF
-jm
-bq
-rV
-rV
-Ss
-CZ
-Yt
-MX
-BW
-oX
-bK
-TC
-en
-Ss
-jm
-eV
-RX
-NF
-XQ
-pK
-WQ
-NW
-rT
-rT
-tZ
-kn
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10359,23 +8380,23 @@ RC
 "}
 (28,1,1) = {"
 RC
-LG
-Bx
-Bx
-LG
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10403,56 +8424,56 @@ BC
 Vl
 RC
 RC
-bq
-Uu
-jT
-gl
-gI
-gI
-jT
-bq
-kn
-kn
-kn
-fC
-kn
-kn
-NW
-mq
-qE
-Wz
-jm
-eV
-Gm
-YK
-jm
-bq
-bq
-bq
-Ss
-Xs
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-jm
-eV
-Gm
-NF
-jm
-kn
-kn
-kn
-kn
-kn
-kn
-kn
-bq
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10461,23 +8482,23 @@ RC
 "}
 (29,1,1) = {"
 RC
-LG
-DR
-DR
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10505,56 +8526,56 @@ pz
 Vl
 RC
 RC
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-kn
-Bf
-mq
-NW
-NW
-Ep
-NW
-mq
-NW
-Wz
-jm
-eV
-Gm
-NF
-jm
-jm
-jm
-Nf
-GZ
-jm
-jm
-uf
-xl
-jm
-jm
-GZ
-jm
-jm
-jm
-wB
-Gm
-gh
-IQ
-jm
-jm
-jm
-zV
-jm
-jm
-IQ
-jm
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10563,23 +8584,23 @@ RC
 "}
 (30,1,1) = {"
 RC
-LG
-DR
-DR
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10615,48 +8636,48 @@ RC
 RC
 RC
 RC
-kn
-lk
-NW
-NW
-mq
-kn
-vY
-mq
-NW
-Wz
-jm
-Uz
-Gm
-Ab
-Cq
-ee
-ee
-ee
-Wy
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-ee
-Ku
-Gm
-NL
-qF
-ee
-ee
-ee
-ee
-Wy
-ee
-nu
-JE
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10665,23 +8686,23 @@ RC
 "}
 (31,1,1) = {"
 RC
-LG
-SI
-Bx
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10717,48 +8738,48 @@ RC
 RC
 RC
 RC
-kn
-Jf
-NW
-NW
-YX
-kn
-ct
-ct
-NW
-kn
-jm
-eV
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-RX
-RX
-RX
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-Gm
-NF
-wr
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10767,23 +8788,23 @@ RC
 "}
 (32,1,1) = {"
 RC
-LG
-Bx
-Bx
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-SC
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10819,48 +8840,48 @@ RC
 RC
 RC
 RC
-kn
-kn
-kn
-Od
-kn
-kn
-kn
-kn
-kn
-kn
-jx
-ng
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-kB
-Pj
-kB
-kB
-kB
-kB
-Kq
-kB
-kB
-kB
-kB
-za
-kB
-kB
-Pj
-kB
-fz
-kB
-kB
-kB
-aJ
-Op
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10869,23 +8890,23 @@ RC
 "}
 (33,1,1) = {"
 RC
-LG
-Bx
-SI
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10921,48 +8942,48 @@ RC
 RC
 RC
 RC
-kn
-vG
-bM
-bM
-My
-kn
-Je
-xQ
-xQ
-bq
-IQ
-IQ
-MG
-jm
-jm
-RZ
-jm
-jm
-jm
-zV
-jm
-jm
-RZ
-jm
-jm
-jm
-jm
-jm
-jm
-jm
-RZ
-zV
-jm
-wV
-jm
-RZ
-jm
-jm
-jm
-jm
-MG
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -10971,23 +8992,23 @@ RC
 "}
 (34,1,1) = {"
 RC
-LG
-DR
-DR
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11023,48 +9044,48 @@ RC
 RC
 RC
 RC
-kn
-cX
-bM
-bM
-cX
-kn
-IB
-IB
-xQ
-bq
-bq
-ac
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-KX
-TU
-TU
-TU
-KX
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-bq
-km
-uU
-uU
-rV
-bq
-bq
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11072,24 +9093,24 @@ RC
 RC
 "}
 (35,1,1) = {"
-LG
-LG
-DR
-DR
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11099,13 +9120,13 @@ Wb
 Wb
 TF
 QD
-GK
-PG
-KN
+Bf
+Ss
+JZ
 QD
 Wb
 ov
-Hr
+ky
 QD
 Wb
 ge
@@ -11125,20 +9146,6 @@ RC
 RC
 RC
 RC
-kn
-cX
-bM
-bM
-cX
-kn
-IB
-IB
-IB
-IB
-IB
-IB
-IB
-bq
 RC
 RC
 RC
@@ -11160,11 +9167,25 @@ RC
 RC
 RC
 RC
-LG
-uP
-DR
-DR
-LG
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11174,24 +9195,24 @@ RC
 RC
 "}
 (36,1,1) = {"
-LG
-SI
-Bx
-SI
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11227,20 +9248,6 @@ RC
 RC
 RC
 RC
-kn
-ed
-bM
-bM
-bM
-Od
-IB
-IB
-UN
-IB
-IB
-IB
-bq
-bq
 RC
 RC
 RC
@@ -11262,11 +9269,25 @@ RC
 RC
 RC
 RC
-LG
-SI
-Bx
-Bx
-LG
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11276,24 +9297,24 @@ RC
 RC
 "}
 (37,1,1) = {"
-LG
-Bx
-Bx
-SI
-LG
-Ss
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-zH
-Ss
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11329,19 +9350,6 @@ RC
 RC
 RC
 RC
-kn
-kn
-ql
-nX
-kn
-kn
-bq
-bq
-bq
-bq
-bq
-bq
-bq
 RC
 RC
 RC
@@ -11364,11 +9372,24 @@ RC
 RC
 RC
 RC
-LG
-Bx
-SI
-SI
-LG
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11378,24 +9399,6 @@ RC
 RC
 "}
 (38,1,1) = {"
-LG
-DR
-DR
-DR
-LG
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
-Ss
 RC
 RC
 RC
@@ -11432,10 +9435,6 @@ RC
 RC
 RC
 RC
-kn
-kn
-kn
-kn
 RC
 RC
 RC
@@ -11466,11 +9465,33 @@ RC
 RC
 RC
 RC
-LG
-DR
-DR
-uP
-LG
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
+RC
 RC
 RC
 RC
@@ -11481,9 +9502,9 @@ RC
 "}
 (39,1,1) = {"
 LG
-SI
 Bx
 Bx
+Bx
 LG
 LG
 LG
@@ -11568,9 +9589,9 @@ LG
 LG
 LG
 LG
-LG
-DR
-DR
+Bx
+Bx
+Bx
 uP
 LG
 RC
@@ -11671,7 +9692,7 @@ jM
 jM
 jM
 LG
-SI
+Bx
 Bx
 uP
 LG
@@ -13493,7 +11514,7 @@ IB
 IB
 IB
 IB
-IB
+BN
 IB
 IB
 oc
@@ -14044,7 +12065,7 @@ IJ
 Sz
 Vq
 IP
-UG
+rh
 TA
 TA
 IB
@@ -14146,7 +12167,7 @@ Vq
 Vq
 Vq
 Dn
-UG
+rh
 TA
 TA
 IB
@@ -14246,7 +12267,7 @@ fM
 fM
 fM
 fM
-jA
+qF
 fM
 fM
 TA
@@ -14916,7 +12937,7 @@ XA
 IB
 IB
 IB
-IB
+BN
 Gi
 oc
 oc
@@ -14962,7 +12983,7 @@ fM
 cL
 Vq
 Vq
-UG
+rh
 TA
 TA
 uN
@@ -15064,7 +13085,7 @@ fM
 IJ
 Vq
 Vq
-UG
+rh
 TA
 TA
 uN
@@ -15166,7 +13187,7 @@ Vq
 Vq
 Vq
 Vq
-UG
+rh
 TA
 TA
 uN
@@ -15461,7 +13482,7 @@ RC
 tV
 fM
 fM
-rB
+RJ
 BR
 fM
 fM
@@ -16107,7 +14128,7 @@ IB
 IB
 IB
 IB
-IB
+BN
 IB
 IB
 IB
@@ -16117,7 +14138,7 @@ IB
 IB
 IB
 IB
-IB
+BN
 IB
 IB
 IB
@@ -18177,7 +16198,7 @@ dL
 xa
 oc
 IB
-IB
+BN
 IB
 oc
 xa
@@ -19791,7 +17812,7 @@ oc
 oc
 uN
 Jz
-Yz
+jF
 Jz
 Wc
 IB

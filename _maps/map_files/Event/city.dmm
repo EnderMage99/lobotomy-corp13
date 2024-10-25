@@ -4,7 +4,7 @@
 /turf/closed/indestructible/rock,
 /area/space)
 "Hm" = (
-/obj/effect/landmark/latejoin,
+/obj/effect/landmark/observer_start,
 /turf/closed/indestructible/rock,
 /area/space)
 "Oq" = (
@@ -26146,7 +26146,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+Hm
 Oq
 Oq
 Oq
@@ -27942,7 +27942,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -28199,7 +28199,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -28456,7 +28456,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -28713,7 +28713,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -28970,7 +28970,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -29227,7 +29227,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -29484,7 +29484,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
@@ -29741,7 +29741,7 @@ Oq
 Oq
 Oq
 Oq
-Hm
+Oq
 Oq
 Oq
 Oq
