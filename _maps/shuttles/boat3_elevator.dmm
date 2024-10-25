@@ -8,7 +8,8 @@
 	dir = 4
 	},
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "e" = (
@@ -24,17 +25,12 @@
 	},
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
-/area/shuttle)
-"h" = (
-/turf/closed/indestructible/fakeglass,
 /area/shuttle)
 "i" = (
-/turf/closed/indestructible/opshuttle{
-	color = "#6ced2f";
-	name = "shipping container"
-	},
+/turf/closed/wall/mineral/plastitanium,
 /area/shuttle)
 "l" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -63,7 +59,8 @@
 	dir = 4
 	},
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "q" = (
@@ -71,7 +68,8 @@
 	dir = 8
 	},
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "s" = (
@@ -79,15 +77,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/facility,
-/area/shuttle)
-"w" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/effect/spawner/lootdrop/grille_or_trash,
-/turf/open/floor/facility{
-	color = "#8f8f8f"
-	},
 /area/shuttle)
 "y" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -99,12 +88,14 @@
 	dir = 8
 	},
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "A" = (
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "G" = (
@@ -112,27 +103,14 @@
 	dir = 8
 	},
 /turf/open/floor/facility{
-	color = "#8f8f8f"
+	color = "#8f8f8f";
+	atom_colours = list("#8f8f8f")
 	},
 /area/shuttle)
 "I" = (
 /turf/open/floor/carpet/green,
 /area/shuttle)
-"J" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/turf/open/floor/facility{
-	color = "#8f8f8f"
-	},
-/area/shuttle)
 "O" = (
-/turf/open/floor/carpet/red,
-/area/shuttle)
-"Q" = (
-/obj/machinery/door/airlock/grunge{
-	name = "ucorp boat"
-	},
 /turf/open/floor/carpet/red,
 /area/shuttle)
 "S" = (
@@ -142,15 +120,10 @@
 /obj/effect/spawner/lootdrop/grille_or_trash,
 /turf/open/floor/facility,
 /area/shuttle)
-"T" = (
-/turf/closed/indestructible/opshuttle{
-	color = "#ed2f5f";
-	name = "shipping container"
-	},
-/area/shuttle)
 "U" = (
 /turf/open/floor/facility{
-	color = "#b5b5b5"
+	color = "#b5b5b5";
+	atom_colours = list("#b5b5b5")
 	},
 /area/shuttle)
 "X" = (
@@ -168,14 +141,14 @@
 m
 i
 i
-h
+i
 i
 i
 m
 "}
 (2,1,1) = {"
-T
-T
+i
+i
 p
 y
 p
@@ -183,13 +156,13 @@ i
 i
 "}
 (3,1,1) = {"
-h
-J
-w
+i
+p
+p
 O
 p
 d
-h
+i
 "}
 (4,1,1) = {"
 e
@@ -201,7 +174,7 @@ U
 Z
 "}
 (5,1,1) = {"
-Q
+i
 O
 O
 A
@@ -219,17 +192,17 @@ a
 Z
 "}
 (7,1,1) = {"
-h
+i
 g
 q
 l
 z
 q
-h
+i
 "}
 (8,1,1) = {"
-T
-T
+i
+i
 G
 l
 S
@@ -238,10 +211,10 @@ i
 "}
 (9,1,1) = {"
 m
-T
-T
-h
-T
-T
+i
+i
+i
+i
+i
 m
 "}

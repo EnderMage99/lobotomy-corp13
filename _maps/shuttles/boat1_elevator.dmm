@@ -71,7 +71,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat";
-	possible_destinations = "main_port_1;main_port_2;main_port_3";
+	possible_destinations = "main_port;backstreets_port";
 	dir = 1;
 	resistance_flags = 64
 	},

@@ -120,7 +120,7 @@
 /obj/docking_port/stationary{
 	dwidth = 4;
 	height = 9;
-	id = "backsteets_port";
+	id = "backstreets_port";
 	name = "backstreets port";
 	width = 7;
 	dir = 2
@@ -1563,7 +1563,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat";
-	possible_destinations = "main_port;backstreets_port";
+	possible_destinations = "backstreets_port";
 	dir = 1;
 	resistance_flags = 64
 	},
@@ -3069,7 +3069,6 @@
 	height = 7;
 	id = "side_port3";
 	name = "sideport3";
-	roundstart_template = /datum/map_template/shuttle/boat3_elevator;
 	width = 9
 	},
 /turf/open/water/deep/saltwater{
@@ -4928,7 +4927,6 @@
 	height = 9;
 	id = "main_port";
 	name = "main port";
-	roundstart_template = /datum/map_template/shuttle/boat1_elevator;
 	width = 7
 	},
 /turf/open/water/deep/saltwater{
@@ -5800,7 +5798,6 @@
 	height = 7;
 	id = "side_port1";
 	name = "sideport1";
-	roundstart_template = /datum/map_template/shuttle/boat2_elevator;
 	width = 9;
 	dir = 2
 	},
@@ -9557,7 +9554,7 @@
 /obj/machinery/computer/shuttle/mining{
 	name = "ship console";
 	shuttleId = "ucorp_boat";
-	possible_destinations = "main_port;backstreets_port";
+	possible_destinations = "main_port";
 	resistance_flags = 64
 	},
 /turf/open/floor/facility{

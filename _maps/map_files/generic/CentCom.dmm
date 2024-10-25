@@ -3231,6 +3231,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"uA" = (
+/obj/docking_port/stationary{
+	dwidth = 3;
+	height = 9;
+	id = "main_port_1";
+	name = "main port 1";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat/elevator;
+	width = 7
+	},
+/turf/open/space/basic,
+/area/space)
 "uD" = (
 /obj/structure/table/wood/fancy,
 /obj/item/radio/headset,
@@ -4902,6 +4913,18 @@
 /obj/item/inducer,
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
+"CM" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "???";
+	name = "sideport1";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat2/elevator;
+	width = 9;
+	dir = 2
+	},
+/turf/open/space/basic,
+/area/space)
 "CT" = (
 /turf/open/floor/wood,
 /area/centcom/holding)
@@ -5329,6 +5352,17 @@
 "FX" = (
 /turf/open/floor/plasteel/stairs,
 /area/centcom/holding)
+"FZ" = (
+/obj/docking_port/stationary{
+	dwidth = 4;
+	height = 7;
+	id = "?";
+	name = "sideport3";
+	roundstart_template = /datum/map_template/shuttle/ucorp_boat3/elevator;
+	width = 9
+	},
+/turf/open/space/basic,
+/area/space)
 "Gm" = (
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
@@ -57469,7 +57503,7 @@ aa
 aa
 aa
 aa
-aa
+FZ
 aa
 aa
 aa
@@ -65161,6 +65195,7 @@ aa
 aa
 aa
 aa
+CM
 aa
 aa
 aa
@@ -65178,8 +65213,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+uA
 aa
 aa
 aa

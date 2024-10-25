@@ -627,18 +627,6 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/facility/dark,
 /area/facility_hallway/manager)
-"jT" = (
-/obj/docking_port/stationary{
-	dwidth = 4;
-	height = 7;
-	id = "???";
-	name = "sideport1";
-	roundstart_template = /datum/map_template/shuttle/ucorp_boat2/elevator;
-	width = 9;
-	dir = 2
-	},
-/turf/open/space/basic,
-/area/space)
 "jZ" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -849,16 +837,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
-"mz" = (
-/obj/docking_port/stationary{
-	dwidth = 3;
-	height = 9;
-	id = "??";
-	name = "main port 5";
-	width = 7
-	},
-/turf/open/space/basic,
-/area/space)
 "mF" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "managerlockdown";
@@ -1827,17 +1805,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/facility_hallway/manager)
-"An" = (
-/obj/docking_port/stationary{
-	dwidth = 4;
-	height = 7;
-	id = "?";
-	name = "sideport3";
-	roundstart_template = /datum/map_template/shuttle/ucorp_boat3/elevator;
-	width = 9
-	},
-/turf/open/space/basic,
-/area/space)
 "Ao" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 6
@@ -2083,29 +2050,9 @@
 /obj/effect/turf_decal/siding/wood/end,
 /turf/open/floor/wood,
 /area/facility_hallway/manager)
-"EM" = (
-/obj/docking_port/stationary{
-	dwidth = 3;
-	height = 9;
-	id = "main_port_3";
-	name = "main port 3";
-	width = 7
-	},
-/turf/open/space/basic,
-/area/space)
 "EQ" = (
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
-"ER" = (
-/obj/docking_port/stationary{
-	dwidth = 3;
-	height = 9;
-	id = "??";
-	name = "main port 4";
-	width = 7
-	},
-/turf/open/space/basic,
-/area/space)
 "Fb" = (
 /obj/machinery/facility_holomap{
 	dir = 1;
@@ -2855,17 +2802,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/facility_hallway/manager)
-"Su" = (
-/obj/docking_port/stationary{
-	dwidth = 3;
-	height = 9;
-	id = "main_port_1";
-	name = "main port 1";
-	roundstart_template = /datum/map_template/shuttle/ucorp_boat/elevator;
-	width = 7
-	},
-/turf/open/space/basic,
-/area/space)
 "Sx" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -3073,16 +3009,6 @@
 	},
 /turf/open/floor/carpet/cyan,
 /area/department_main/manager)
-"Xi" = (
-/obj/docking_port/stationary{
-	dwidth = 3;
-	height = 9;
-	id = "main_port_2";
-	name = "main port 2";
-	width = 7
-	},
-/turf/open/space/basic,
-/area/space)
 "Xl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 7
@@ -6215,7 +6141,7 @@ XL
 XL
 XL
 XL
-EM
+XL
 XL
 XL
 XL
@@ -7959,7 +7885,7 @@ XL
 XL
 XL
 XL
-Xi
+XL
 XL
 XL
 XL
@@ -9067,7 +8993,7 @@ XL
 XL
 XL
 XL
-ER
+XL
 XL
 XL
 XL
@@ -9897,7 +9823,7 @@ XL
 XL
 XL
 XL
-An
+XL
 XL
 XL
 XL
@@ -10385,7 +10311,7 @@ XL
 XL
 XL
 XL
-mz
+XL
 XL
 XL
 XL
@@ -11919,7 +11845,6 @@ XL
 XL
 XL
 XL
-jT
 XL
 XL
 XL
@@ -11937,7 +11862,8 @@ XL
 XL
 XL
 XL
-Su
+XL
+XL
 XL
 XL
 XL
