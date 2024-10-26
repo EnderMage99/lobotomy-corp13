@@ -4738,6 +4738,9 @@
 	name = "Triage and Operating Room";
 	req_access_txt = "5"
 	},
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 8
+	},
 /turf/open/floor/carpet/royalblue,
 /area/city/shop)
 "GO" = (

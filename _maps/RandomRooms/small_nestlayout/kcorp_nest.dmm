@@ -2913,10 +2913,6 @@
 	color = "#ccc8c0"
 	},
 /area/city/fixers)
-"Bx" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/ashplanet/rocky,
-/area/city/backstreets_alley)
 "By" = (
 /obj/structure/sink/kitchen{
 	dir = 1;
@@ -3466,6 +3462,9 @@
 /obj/machinery/door/airlock/medical{
 	name = "Triage and Operating Room";
 	req_access_txt = "5"
+	},
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 8
 	},
 /turf/open/floor/carpet/royalblue,
 /area/city/shop)
@@ -9502,9 +9501,9 @@ RC
 "}
 (39,1,1) = {"
 LG
-Bx
-Bx
-Bx
+uP
+uP
+uP
 LG
 LG
 LG
@@ -9589,9 +9588,9 @@ LG
 LG
 LG
 LG
-Bx
-Bx
-Bx
+uP
+uP
+uP
 uP
 LG
 RC
@@ -9692,8 +9691,8 @@ jM
 jM
 jM
 LG
-Bx
-Bx
+uP
+uP
 uP
 LG
 LG
