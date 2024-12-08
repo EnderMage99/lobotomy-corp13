@@ -2598,7 +2598,10 @@
 "qt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/bot_red,
-/mob/living/simple_animal/hostile/abnormality/bottle,
+/mob/living/simple_animal/hostile/abnormality/bottle{
+	maxHealth = 400;
+	health = 400
+	},
 /turf/open/floor/facility/dark,
 /area/city/backstreets_room)
 "qu" = (
@@ -2809,7 +2812,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion,
+/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion{
+	health = 110;
+	maxHealth = 110
+	},
 /turf/open/floor/facility/halls,
 /area/city/backstreets_room)
 "rv" = (
@@ -2822,6 +2828,7 @@
 /area/city/backstreets_room)
 "rx" = (
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/coin/gold,
 /obj/item/reagent_containers/hypospray/medipen/mental,
 /turf/open/floor/plating/dirt,
 /area/city/backstreets_alley)
@@ -3594,9 +3601,6 @@
 "ww" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/hypospray/medipen/mental,
-/obj/item/reagent_containers/hypospray/medipen/mental,
-/obj/item/reagent_containers/hypospray/medipen/mental,
-/obj/item/reagent_containers/hypospray/medipen/mental,
 /turf/open/floor/plating/dirt,
 /area/city/backstreets_alley)
 "wy" = (
@@ -3928,8 +3932,10 @@
 /area/city/backstreets_room)
 "zh" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/coin/gold,
-/obj/item/reagent_containers/hypospray/medipen/salacid,
+/obj/item/reagent_containers/hypospray/medipen/mental,
+/obj/item/reagent_containers/hypospray/medipen/mental,
+/obj/item/reagent_containers/hypospray/medipen/mental,
+/obj/item/reagent_containers/hypospray/medipen/mental,
 /turf/open/floor/plating/dirt,
 /area/city/backstreets_alley)
 "zk" = (
@@ -4117,8 +4123,9 @@
 "AD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/ordeal/white_lake_corrosion{
-	sweep_damage = 30;
-	health = 1500
+	sweep_damage = 15;
+	health = 1000;
+	maxHealth = 1000
 	},
 /turf/open/floor/carpet/green,
 /area/city/backstreets_room)
@@ -4395,7 +4402,10 @@
 "Cy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/insectguts,
-/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion,
+/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion{
+	health = 110;
+	maxHealth = 110
+	},
 /turf/open/floor/plating,
 /area/city/backstreets_room)
 "CC" = (
@@ -4523,7 +4533,10 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion,
+/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion{
+	health = 110;
+	maxHealth = 110
+	},
 /turf/open/floor/facility/halls,
 /area/city/backstreets_room)
 "DA" = (
@@ -5279,7 +5292,7 @@
 "If" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/coin/gold,
-/obj/item/reagent_containers/hypospray/medipen/mental,
+/obj/item/reagent_containers/hypospray/medipen/salacid,
 /turf/open/floor/plating/dirt,
 /area/city/backstreets_alley)
 "Ii" = (
@@ -6848,6 +6861,10 @@
 "SR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/glass,
+/obj/item/reagent_containers/hypospray/medipen/mental,
+/obj/item/reagent_containers/hypospray/medipen/mental,
+/obj/item/reagent_containers/hypospray/medipen/salacid,
+/obj/item/reagent_containers/hypospray/medipen/salacid,
 /turf/open/floor/plasteel/white,
 /area/city/backstreets_room)
 "ST" = (
@@ -6896,7 +6913,10 @@
 "Ti" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt/dust,
-/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion,
+/mob/living/simple_animal/hostile/ordeal/beanstalk_corrosion{
+	health = 110;
+	maxHealth = 110
+	},
 /turf/open/floor/plating,
 /area/city/backstreets_room)
 "Tj" = (
@@ -7773,6 +7793,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
+/obj/item/ego_weapon/ranged/pistol/nightshade,
+/obj/item/ego_weapon/ranged/pistol/nightshade,
 /turf/open/floor/facility/halls,
 /area/city/backstreets_room)
 "YG" = (
@@ -8238,7 +8260,7 @@ Ox
 Ox
 Ox
 Ox
-ww
+zh
 pB
 OP
 kI
@@ -8460,7 +8482,7 @@ OP
 OP
 OP
 Ox
-rx
+ww
 Ox
 YR
 YR
@@ -8683,7 +8705,7 @@ OP
 OP
 YR
 Ox
-rx
+ww
 Ox
 YR
 OP
@@ -12341,7 +12363,7 @@ JE
 YR
 YR
 Se
-zh
+If
 Rm
 OP
 kI
@@ -12450,7 +12472,7 @@ fB
 kq
 BP
 Ox
-If
+rx
 dq
 sZ
 Yc
@@ -12561,7 +12583,7 @@ GR
 Vh
 BP
 QQ
-If
+rx
 sm
 Yc
 YR
