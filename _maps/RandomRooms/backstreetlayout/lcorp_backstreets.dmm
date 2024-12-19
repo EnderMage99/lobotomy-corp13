@@ -2600,7 +2600,8 @@
 /obj/effect/turf_decal/bot_red,
 /mob/living/simple_animal/hostile/abnormality/bottle{
 	maxHealth = 400;
-	health = 400
+	health = 400;
+	speak_damage = 4
 	},
 /turf/open/floor/facility/dark,
 /area/city/backstreets_room)
