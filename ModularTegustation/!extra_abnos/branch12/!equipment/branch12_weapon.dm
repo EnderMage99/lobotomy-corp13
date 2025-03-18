@@ -523,6 +523,33 @@
 		var/mob/living/L = attacked_target
 		L.apply_lc_mental_decay(inflicted_decay)
 
+/obj/item/ego_weapon/lance/helios
+	name = "helios"
+	desc = "Burn it, burn right through them!"
+	icon_state = "sangre"
+	inhand_x_dimension = 96
+	inhand_y_dimension = 96
+	force = 30
+	reach = 2
+	attack_speed = 3
+	damtype = RED_DAMAGE
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 40
+							)
+	var/burn_inflict = 0
+	var/burn_inflict_per_tile = 1
+
+/obj/item/ego_weapon/lance/helios/UserMoved(mob/user)
+	. = ..()
+	burn_inflict += burn_inflict_per_tile
+
+/obj/item/ego_weapon/lance/helios/attack(mob/living/M, mob/living/carbon/human/user)
+	if(!CanUseEgo(user))
+		return
+	if(!charge_speed || burn_inflict < initial(burn_inflict))
+		burn_inflict = initial(burn_inflict)
+	..()
+
 // --------WAW---------
 //Plagiarism
 /obj/item/ego_weapon/branch12/plagiarism
