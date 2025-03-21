@@ -49,6 +49,9 @@
 /obj/effect/temp_visual/damage_effect/tox
 	icon_state = "dam_tox"
 
+/obj/effect/temp_visual/damage_effect/mental_decay
+	icon_state = "stat_md"
+
 //Stuntime visual for when you're stunned by your weapon, so you know what happened.
 /obj/effect/temp_visual/weapon_stun
 	icon = 'ModularTegustation/Teguicons/lc13_coloreffect.dmi'
