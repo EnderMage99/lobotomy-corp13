@@ -141,8 +141,9 @@
 		return
 	var/mob/living/T = hit_target
 	var/datum/status_effect/stacking/lc_mental_decay/D = T.has_status_effect(/datum/status_effect/stacking/lc_mental_decay)
-	if(D.stacks >= detonation_breakpoint)
-		T.apply_status_effect(/datum/status_effect/mental_detonate)
+	if(D)
+		if(D.stacks >= detonation_breakpoint)
+			T.apply_status_effect(/datum/status_effect/mental_detonate)
 	T.apply_lc_mental_decay(mental_decay_inflict)
 
 //White Lotus
