@@ -1148,6 +1148,25 @@ GLOBAL_REAL_VAR(list/stack_trace_storage)
 	C.color = flash_color
 	animate(C, color = animate_color, time = flash_time)
 
+/proc/quick_flash_color(mob_or_client, flash_color="#960000", flash_time=20)
+	var/client/C
+	if(ismob(mob_or_client))
+		var/mob/M = mob_or_client
+		if(M.client)
+			C = M.client
+		else
+			return
+	else if(istype(mob_or_client, /client))
+		C = mob_or_client
+
+	if(!istype(C))
+		return
+
+	var/animate_color = C.color
+	C.color = flash_color
+	sleep(flash_time)
+	C.color = animate_color
+
 /proc/extended_flash_color(mob_or_client, flash_color="#960000", flash_time=20, maintain_time=0)//this calls sleep()
 	var/client/C
 	if(ismob(mob_or_client))
@@ -1525,6 +1544,31 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 /proc/show_global_blurb(duration, blurb_text, fade_time = 5, text_color = "white", outline_color = "black", text_align = "left", screen_location = "LEFT+1,BOTTOM+2")
 	for(var/client/C in GLOB.clients)
 		show_blurb(C, duration, blurb_text, fade_time, text_color, outline_color, text_align, screen_location)
+
+/proc/show_blurb_quick(client/C, duration, blurb_text, text_color = "white", outline_color = "black", text_align = "left", screen_location = "LEFT+1,BOTTOM+2")
+	if(!C)
+		return
+
+	var/style = "font-family: 'Fixedsys'; text-align: [text_align]; color: [text_color]; -dm-text-outline: 1 [outline_color]; font-size: 11px;"
+	var/text = blurb_text
+	text = uppertext(text)
+
+	var/obj/effect/overlay/T = new()
+	T.maptext_height = 64
+	T.maptext_width = 424
+	T.layer = FLOAT_LAYER
+	T.plane = HUD_PLANE
+	T.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
+	T.screen_loc = screen_location
+
+	C.screen += T
+	T.maptext = "<span style=\"[style]\">[text]</span>"
+
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(fade_blurb_quick), C, T), duration)
+
+/proc/fade_blurb_quick(client/C, obj/T)
+	C.screen -= T
+	qdel(T)
 
 // Animates atom's color over time
 /proc/SetColorOverTime(atom/A, new_color = "#FFFFFF", new_time = 2)

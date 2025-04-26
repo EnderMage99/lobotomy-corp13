@@ -95,3 +95,19 @@
 		to_chat(user, "<span class='nicegreen'>You gain 1 potential!</span>")
 
 	qdel(src)
+
+/obj/item/flasher_test
+	name = "DEBUG Flasing Test"
+	desc = "Debug item."
+	icon = 'ModularTegustation/Teguicons/teguitems.dmi'
+	icon_state = "potential_scanner"
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_POCKETS
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/flasher_test/afterattack(atom/target, mob/user, proximity_flag)
+	. = ..()
+	// quick_flash_color(target, flash_color = COLOR_ALMOST_BLACK, flash_time = 40)
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(quick_flash_color), target, COLOR_ALMOST_BLACK, 40), 40)
+
+	// show_blurb_quick(target, 4 SECONDS, "Painful lie...", "white", "white", "left", "CENTER-6,BOTTOM+2")
+	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(show_blurb_quick), target, 40, "Painful lie...", "white", "white"), 40)
