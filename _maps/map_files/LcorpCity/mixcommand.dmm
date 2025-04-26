@@ -1409,7 +1409,7 @@
 	name = "Command unlock button";
 	pixel_x = -31;
 	pixel_y = -1;
-	req_access_txt = "19"
+	req_access_txt = "19;29"
 	},
 /turf/open/floor/facility/dark,
 /area/department_main/command)
@@ -2368,6 +2368,9 @@
 "rZ" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
+	},
+/obj/machinery/computer/camera_advanced/manager/representative{
+	dir = 1
 	},
 /turf/open/floor/wood,
 /area/city/shop)

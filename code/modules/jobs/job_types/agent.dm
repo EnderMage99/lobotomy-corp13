@@ -14,8 +14,8 @@
 	outfit = /datum/outfit/job/agent
 	display_order = JOB_DISPLAY_ORDER_AGENT
 
-	access = list() // LC13:To-Do
-	minimal_access = list()
+	access = list(ACCESS_ROBOTICS) // LC13:To-Do
+	minimal_access = list(ACCESS_ROBOTICS)
 
 	allow_bureaucratic_error = FALSE
 	departments = DEPARTMENT_SECURITY

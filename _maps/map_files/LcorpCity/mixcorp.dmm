@@ -170,19 +170,33 @@
 /obj/machinery/cell_charger,
 /turf/open/floor/carpet/red,
 /area/department_main/control)
-"cm" = (
+"ch" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 8
+	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/brown{
-	dir = 1
+/obj/structure/table/reinforced,
+/obj/item/toy/plush/pierre,
+/obj/structure/sign/ordealmonitor{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
+"cm" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/item/food/meat/slab,
-/obj/item/food/meat/slab,
+/obj/item/storage/box/drinkingglasses,
+/obj/item/storage/box/cups,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "cq" = (
@@ -261,18 +275,16 @@
 /turf/open/floor/carpet/orange,
 /area/department_main/training)
 "dU" = (
-/obj/effect/turf_decal/tile/brown{
+/obj/effect/turf_decal/siding/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/structure/sink/kitchen{
-	pixel_y = 14
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
 	},
-/obj/effect/turf_decal/siding/brown{
-	dir = 9
-	},
+/obj/machinery/deepfryer,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "ea" = (
@@ -285,6 +297,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
+/obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "eI" = (
@@ -328,10 +341,23 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/obj/effect/turf_decal/siding/brown{
+	dir = 10
+	},
+/obj/item/reagent_containers/food/condiment/soysauce{
+	pixel_x = 15;
+	pixel_y = 7
+	},
 /obj/machinery/door/poddoor/shutters/window/preopen{
 	id = "training"
 	},
-/obj/effect/turf_decal/siding/brown,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "gx" = (
@@ -410,11 +436,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/brown{
-	dir = 5
-	},
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/condiment/flour,
+/obj/machinery/icecream_vat,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "lD" = (
@@ -453,6 +475,32 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
+/obj/machinery/chem_master/condimaster,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
+"ne" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
+"nA" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/machinery/gibber,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "nZ" = (
@@ -512,9 +560,6 @@
 	desc = "Used to grind things up into raw materials and liquids.";
 	pixel_y = 10
 	},
-/obj/effect/turf_decal/siding/brown{
-	dir = 1
-	},
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "pk" = (
@@ -547,9 +592,6 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/brown{
-	dir = 1
-	},
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "qM" = (
@@ -558,6 +600,42 @@
 	},
 /turf/open/floor/plasteel,
 /area/facility_hallway/north)
+"qP" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet/freezer/fridge/open{
+	anchored = 1
+	},
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/food/condiment/rice,
+/obj/item/reagent_containers/food/condiment/rice,
+/obj/item/reagent_containers/food/condiment/rice,
+/obj/item/storage/fancy/egg_box,
+/obj/effect/turf_decal/siding/brown{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "rj" = (
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plasteel,
@@ -587,6 +665,20 @@
 /obj/effect/spawner/abnormality_room,
 /turf/closed/indestructible/reinforced,
 /area/department_main/information)
+"se" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/brown{
+	dir = 9
+	},
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "sk" = (
 /obj/machinery/regenerator/safety,
 /turf/open/floor/facility/white,
@@ -607,6 +699,19 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/department_main/information)
+"sC" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/brown{
+	dir = 5
+	},
+/obj/machinery/griddle,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "sQ" = (
 /obj/structure/closet,
 /obj/item/assembly/prox_sensor,
@@ -718,10 +823,49 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
+"xb" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/brown,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "xu" = (
 /obj/machinery/computer/operating,
 /turf/open/floor/facility/white,
 /area/department_main/safety)
+"xB" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/status_display{
+	pixel_x = -32
+	},
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/obj/item/storage/box/papersack,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "xC" = (
 /obj/structure/table/wood,
 /obj/item/candle,
@@ -901,6 +1045,37 @@
 	},
 /turf/open/floor/carpet/red,
 /area/department_main/control)
+"Ew" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/freezer/meat/open{
+	anchored = 1
+	},
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/obj/item/food/meat/slab,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "EZ" = (
 /obj/machinery/light/cold,
 /turf/open/floor/plasteel,
@@ -935,6 +1110,21 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/department_main/information)
+"Ha" = (
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/structure/sink/kitchen{
+	pixel_y = 14
+	},
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "He" = (
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plasteel,
@@ -988,6 +1178,10 @@
 	},
 /turf/open/floor/facility/white,
 /area/department_main/safety)
+"Ix" = (
+/obj/structure/sign/poster/lobotomycorp/hhpp,
+/turf/closed/indestructible/reinforced,
+/area/department_main/training)
 "IK" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /turf/open/floor/facility/white,
@@ -1017,6 +1211,27 @@
 /obj/effect/turf_decal/siding/brown/corner,
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
+"JM" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/brown{
+	dir = 1
+	},
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/drinks/shaker{
+	pixel_x = 10
+	},
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "Ka" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -1025,12 +1240,6 @@
 	dir = 4
 	},
 /obj/machinery/processor,
-/obj/effect/turf_decal/siding/brown{
-	dir = 1
-	},
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
 "Kg" = (
@@ -1075,6 +1284,13 @@
 /obj/machinery/regenerator,
 /turf/open/floor/carpet/purple,
 /area/department_main/information)
+"OU" = (
+/obj/machinery/button/door/indestructible{
+	id = "training";
+	name = "Kitchen Access Shutters"
+	},
+/turf/closed/indestructible/reinforced,
+/area/department_main/training)
 "Pl" = (
 /obj/effect/spawner/abnormality_room,
 /turf/closed/indestructible/reinforced,
@@ -1083,6 +1299,21 @@
 /obj/machinery/light/cold,
 /turf/open/floor/plasteel,
 /area/facility_hallway/central)
+"PB" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/kitchen/rollingpin,
+/obj/item/kitchen/knife,
+/obj/item/clothing/suit/apron/chef,
+/obj/item/clothing/head/chefhat,
+/turf/open/floor/plasteel/white,
+/area/department_main/training)
 "Qf" = (
 /turf/open/floor/carpet/purple,
 /area/department_main/information)
@@ -1122,15 +1353,6 @@
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/kitchen/rollingpin,
-/obj/item/kitchen/knife,
-/obj/item/clothing/suit/apron/chef,
-/obj/item/clothing/head/chefhat,
-/obj/effect/turf_decal/siding/brown{
-	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
@@ -1278,18 +1500,20 @@
 /turf/open/floor/carpet/red,
 /area/department_main/control)
 "XL" = (
-/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/brown{
+	dir = 4
+	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/brown{
-	dir = 10
+/obj/machinery/camera/autoname{
+	dir = 9
 	},
-/obj/machinery/door/poddoor/shutters/window/preopen{
-	id = "training"
+/obj/structure/sign/poster/lobotomycorp/suckmyenegy{
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/white,
 /area/department_main/training)
@@ -30470,9 +30694,9 @@ if
 if
 if
 if
-if
-if
-if
+tv
+tv
+tv
 tv
 tv
 tv
@@ -30727,13 +30951,13 @@ if
 if
 if
 if
-if
-if
-if
 tv
+se
+ch
+xB
 dU
 nd
-Vh
+tv
 QC
 QC
 pk
@@ -30984,13 +31208,13 @@ if
 if
 if
 if
-if
-if
-if
 tv
+ne
 Ry
-gx
-XL
+Ry
+Ry
+xb
+Vh
 oJ
 QC
 pk
@@ -31241,12 +31465,12 @@ if
 if
 if
 if
-if
-if
-if
-tv
+Ix
+JM
+Ry
+nA
 Ka
-cM
+gx
 go
 oJ
 QC
@@ -31498,10 +31722,10 @@ if
 if
 if
 if
-if
-if
-if
 tv
+Ha
+Ry
+PB
 pf
 QO
 BV
@@ -31755,13 +31979,13 @@ if
 if
 if
 if
-if
-if
-if
 tv
+Ew
+Ry
+cm
 qt
 wK
-tv
+OU
 FH
 QC
 pk
@@ -32012,11 +32236,11 @@ if
 if
 if
 if
-if
-if
-if
 tv
-cm
+sC
+Ry
+Ry
+cM
 Jv
 Eo
 QC
@@ -32269,10 +32493,10 @@ if
 if
 if
 if
-if
-if
-if
 tv
+sC
+XL
+qP
 lx
 ea
 tv
@@ -32526,9 +32750,9 @@ if
 if
 if
 if
-if
-if
-if
+tv
+tv
+tv
 tv
 tv
 tv
