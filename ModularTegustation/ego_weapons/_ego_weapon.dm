@@ -26,6 +26,12 @@
 	crit_multiplier = 1
 	var/crit_info
 
+	//Durability for the weapon
+	var/max_durability = null
+	var/durability = null
+	var/broken = FALSE
+	var/durability_on = FALSE
+
 /obj/item/ego_weapon/Initialize()
 	. = ..()
 	if(swingstyle == WEAPONSWING_SMALLSWEEP && reach > 1)
@@ -33,7 +39,12 @@
 	RegisterSignal(src, COMSIG_OBJ_PAINTED, PROC_REF(GetSwingColor))
 	if(SSmaptype.chosen_trait == FACILITY_TRAIT_CALLBACK)
 		w_class = WEIGHT_CLASS_NORMAL			//Callback to when we had stupid 10 Egos in bag
-
+	if(!max_durability)
+		max_durability = 200 * attack_speed
+	if(!durability)
+		durability = max_durability
+	if(SSmaptype.maptype in SSmaptype.citymaps)
+		durability_on = TRUE
 
 /obj/item/ego_weapon/attack(mob/living/target, mob/living/user)
 	if(!CanUseEgo(user))
@@ -119,6 +130,9 @@
 	var/list/typecache_small = typecacheof(GLOB.small_ego)
 	if(is_type_in_typecache(src, typecache_small))
 		. += span_nicegreen("This weapon fits in an EGO belt.")
+
+	if(durability_on)
+
 
 	//Melee stuff is NOT shown on ranged lol
 	if(is_ranged)
