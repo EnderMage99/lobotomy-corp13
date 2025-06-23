@@ -14,9 +14,9 @@
 							TEMPERANCE_ATTRIBUTE = 40,
 							JUSTICE_ATTRIBUTE = 40
 							)
-	var/durability = 25
-	var/max_durability = 25
-	var/broken = FALSE
+	durability = 25
+	max_durability = 25
+	broken = FALSE
 
 /obj/item/ego_weapon/city/leaflet/examine(mob/user)
 	. = ..()

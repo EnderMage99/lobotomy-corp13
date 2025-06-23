@@ -40,7 +40,7 @@
 	if(SSmaptype.chosen_trait == FACILITY_TRAIT_CALLBACK)
 		w_class = WEIGHT_CLASS_NORMAL			//Callback to when we had stupid 10 Egos in bag
 	if(!max_durability)
-		max_durability = 200 * attack_speed
+		max_durability = 200 / max(attack_speed, 0.1) // Prevent division by zero or negative values
 	if(!durability)
 		durability = max_durability
 	if(SSmaptype.maptype in SSmaptype.citymaps)
@@ -53,6 +53,14 @@
 
 	if(charge && attack_charge_gain)
 		HandleCharge(1, target)
+
+	// Durability system
+	if(durability_on && !broken && .)
+		durability--
+		if(durability <= 0)
+			broken = TRUE
+			to_chat(user, span_danger("[src] breaks from overuse!"))
+			playsound(src, 'sound/effects/glassbr3.ogg', 50, TRUE)
 
 	if(target.anchored || !knockback || QDELETED(target)) // lets not throw machines around
 		return TRUE
@@ -132,6 +140,21 @@
 		. += span_nicegreen("This weapon fits in an EGO belt.")
 
 	if(durability_on)
+		if(broken)
+			. += span_danger("This weapon is broken and unusable!")
+		else
+			var/durability_percent = (durability / max_durability) * 100
+			switch(durability_percent)
+				if(75 to INFINITY)
+					. += span_nicegreen("It is in excellent condition. ([durability]/[max_durability])")
+				if(50 to 74)
+					. += span_notice("It shows some signs of wear. ([durability]/[max_durability])")
+				if(25 to 49)
+					. += span_warning("It is heavily worn. ([durability]/[max_durability])")
+				if(1 to 24)
+					. += span_danger("It is about to break! ([durability]/[max_durability])")
+				else
+					. += span_danger("It is completely broken!")
 
 
 	//Melee stuff is NOT shown on ranged lol
@@ -213,6 +236,9 @@
 		to_chat(usr, display_text)
 
 /obj/item/ego_weapon/proc/CanUseEgo(mob/living/user)
+	if(durability_on && broken)
+		to_chat(user, span_danger("[src] is broken and cannot be used!"))
+		return FALSE
 	if(istype(user, /mob/living/simple_animal/bot/cleanbot))
 		for(var/atr in attribute_requirements)
 			if(attribute_requirements[atr] > 40)

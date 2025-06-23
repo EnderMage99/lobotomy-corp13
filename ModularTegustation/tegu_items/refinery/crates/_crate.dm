@@ -80,6 +80,14 @@
 	if(SSmaptype.maptype in SSmaptype.citymaps)
 		SEND_GLOBAL_SIGNAL(COMSIG_CRATE_LOOTING_ENDED, user, src)
 
-	new loot(get_turf(src))
+	var/obj/spawned_loot = new loot(get_turf(src))
+	
+	// Make EGO weapons spawn broken in city maps
+	if((SSmaptype.maptype in SSmaptype.citymaps) && istype(spawned_loot, /obj/item/ego_weapon))
+		var/obj/item/ego_weapon/weapon = spawned_loot
+		weapon.durability = 0
+		weapon.broken = TRUE
+		to_chat(user, span_warning("The weapon appears to be damaged and unusable..."))
+	
 	qdel(src)
 

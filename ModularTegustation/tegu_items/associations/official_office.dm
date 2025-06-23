@@ -127,8 +127,6 @@
 #define OFFICE_MESSAGE_COOLDOWN 50
 /obj/machinery/scanner_gate/officescanner/CanAllowThrough(atom/movable/mover, turf/target)
 	. = ..()
-	if(isobj(mover))
-		return FALSE
 	if(ishuman(mover))
 		var/mob/living/carbon/human/H = mover
 		set_scanline("scanning", 5)

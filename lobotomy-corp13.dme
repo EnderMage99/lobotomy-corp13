@@ -3995,6 +3995,7 @@
 #include "ModularTegustation\anomaly_items\anomaly_tools.dm"
 #include "ModularTegustation\anomaly_items\anomaly_weapons.dm"
 #include "ModularTegustation\ego_weapons\_ego_weapon.dm"
+#include "ModularTegustation\ego_weapons\ego_disassembler.dm"
 #include "ModularTegustation\ego_weapons\melee\_lists.dm"
 #include "ModularTegustation\ego_weapons\melee\aleph.dm"
 #include "ModularTegustation\ego_weapons\melee\he.dm"

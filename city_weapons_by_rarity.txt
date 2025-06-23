@@ -1,0 +1,188 @@
+CITY WEAPONS SORTED BY RARITY
+==============================
+
+Format: Path | Name | Average Requirement | Damage Type | Attack Speed
+
+
+=== RARITY 0 - CRUDE (No/Low Requirements) ===
+
+/obj/item/ego_weapon/city/axegang | "axe gang axe" | Avg Req: 0 | RED | Speed: 1.4
+/obj/item/ego_weapon/city/cane/briefcase | "cane office - briefcase" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/cane/cane | "cane office - cane" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/cane/claw | "cane office - claw" | Avg Req: 0 | RED | Speed: 0.3
+/obj/item/ego_weapon/city/cane/fist | "cane office - gauntlet" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/carnival_spear/weak | "Worn-down Carnival Spear" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/dawn/cello | "dawn office cello case" | Avg Req: 0 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/dawn/sword | "dawn office sword" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/dawn/zwei | "dawn office zweihander" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/district23 | "district 23 butcher knife" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/fakeindex/proxy/knife | "index dagger" | Avg Req: 0 | RED | Speed: 0.5
+/obj/item/ego_weapon/city/fakeindex/proxy/spear | "index spear" | Avg Req: 0 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/fixerblade | "fixer blade" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/fixergreatsword | "fixer greatsword" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/fixerhammer | "fixer hammer" | Avg Req: 0 | RED | Speed: 1.4
+/obj/item/ego_weapon/city/handchainsword | "chainsword" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/index/proxy/spear | "index spear" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/kcorp | "K corp baton" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/kcorp/axe | "K corp axe" | Avg Req: 0 | RED | Speed: 1.7
+/obj/item/ego_weapon/city/lccb_bat | "LCCB bat" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/lcorp/baton | "l-corp combat baton" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/lcorp/club | "l-corp club" | Avg Req: 0 | RED | Speed: 1.6
+/obj/item/ego_weapon/city/lcorp/machete | "l-corp machete" | Avg Req: 0 | RED | Speed: 0.5
+/obj/item/ego_weapon/city/leaflet/round | "leaflet round hammer" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/leaflet/wide | "leaflet wide hammer" | Avg Req: 0 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/liu | "Liu template" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/mantis | "mantis blade" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/mantis/black | "mantis blade (B)" | Avg Req: 0 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/mariachi | "maraca" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/mariachi_blades | "dual machetes" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/mirae/page | "mirae life insurance package" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/ncorp_brassnail | "MessingNagel" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_hammer | "KleinHammer" | Avg Req: 0 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/ncorp_mark | "n-corp red seal" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_mark/black | "n-corp black seal" | Avg Req: 0 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/ncorp_mark/pale | "n-corp pale seal" | Avg Req: 0 | PALE | Speed: 1
+/obj/item/ego_weapon/city/ncorp_mark/white | "n-corp white seal" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/ncorp_nail | "KleinNagel" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/rats | "rat hammer" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/rats/brick | "brick" | Avg Req: 0 | RED | Speed: 0.8
+/obj/item/ego_weapon/city/rats/knife | "rat combat knife" | Avg Req: 0 | RED | Speed: 0.5
+/obj/item/ego_weapon/city/rats/pipe | "pipe" | Avg Req: 0 | RED | Speed: 3
+/obj/item/ego_weapon/city/rats/scalpel | "rat scalpel" | Avg Req: 0 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/rats/truepipe | "REAL pipe" | Avg Req: 0 | WHITE | Speed: 2
+/obj/item/ego_weapon/city/rosespanner | "rosespanner template" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/shi_assassin/sakura | "shi association sakura blade" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/shi_assassin/serpent | "shi association seperant blade" | Avg Req: 0 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/shi_assassin/yokai | "shi association yokai blade" | Avg Req: 0 | PALE | Speed: 1
+/obj/item/ego_weapon/city/streetlight_bat | "streetlight office bat" | Avg Req: 0 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/streetlight_greatsword | "streetlight greatsword" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/thumbmelee | "thumb brass knuckles" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/ting_tang | "ting tang shank" | Avg Req: 0 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/ting_tang/cleaver | "ting tang cleaver" | Avg Req: 0 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/ting_tang/pipe | "ting tang pipe" | Avg Req: 0 | RED | Speed: 2
+/obj/item/ego_weapon/city/wcorp | "W corp baton" | Avg Req: 0 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/wcorp/shield/axe | "w-corp type-C shieldaxe" | Avg Req: 0 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/wcorp/shield/club | "w-corp type-C shieldclub" | Avg Req: 0 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/wcorp/shield/spear | "w-corp type-C shieldglaive" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/yun | "yun office baton" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/yun/chainsaw | "yun office chainsword" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/yun/shortsword | "yun office shortsword" | Avg Req: 0 | RED | Speed: 0.7
+/obj/item/ego_weapon/city/zweibaton/protection | "city protection baton" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/zweihander/knife | "einhander" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/zweihander/knife/lcdr | "lieutenant commander's sword" | Avg Req: 0 | RED | Speed: 1
+
+=== RARITY 1 - COMMON (Average ~30) ===
+
+
+/obj/item/ego_weapon/city/axegang/leader | "axe gang heavy axe" | Avg Req: 45 | RED | Speed: 1
+/obj/item/ego_weapon/city/devyat_trunk | "devyat courier trunk" | Avg Req: 45 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/district23/pierre | "district 23 carving knife" | Avg Req: 45 | RED | Speed: 1
+/obj/item/ego_weapon/city/leaflet | "leaflet base" | Avg Req: 45 | RED | Speed: 1
+/obj/item/ego_weapon/city/liu/fire | "liu blade" | Avg Req: 45 | RED | Speed: 1
+/obj/item/ego_weapon/city/liu/fire/section5 | "liu combat gloves" | Avg Req: 45 | RED | Speed: 0.7
+/obj/item/ego_weapon/city/liu/fist | "liu combat gloves" | Avg Req: 45 | RED | Speed: 0.7
+/obj/item/ego_weapon/city/mariachi/dual | "maracas" | Avg Req: 45 | RED | Speed: 0.5
+/obj/item/ego_weapon/city/rabbit_blade | "high-frequency combat blade" | Avg Req: 55 | RED | Speed: 1
+/obj/item/ego_weapon/city/rabbit_blade/raven | "R-corp raven dagger" | Avg Req: 40 | RED | Speed: 1
+/obj/item/ego_weapon/city/rabbit_rush | "rush dagger" | Avg Req: 55 | PALE | Speed: 1
+/obj/item/ego_weapon/city/sweeper | "sweeper hook" | Avg Req: 45 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/ting_tang/knife //Leader, Grade 6 | "ting tang knife" | Avg Req: 45 | RED | Speed: 1
+/obj/item/ego_weapon/city/yun/fist | "yun office gloves" | Avg Req: 45 | RED | Speed: 1
+/obj/item/ego_weapon/city/zweibaton | "zwei association baton" | Avg Req: 45 | RED | Speed: 2
+/obj/item/ego_weapon/city/zweihander | "zweihander" | Avg Req: 45 | RED | Speed: 2
+/obj/item/ego_weapon/city/zweihander/streetlight_baton | "streetlight office baton" | Avg Req: 45 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/zweiwest | "zwei knight greatsword" | Avg Req: 45 | RED | Speed: 2
+
+=== RARITY 2 - REFINED (Average ~60) ===
+
+
+/obj/item/ego_weapon/city/awl | "night awl stilleto" | Avg Req: 80 | BLACK | Speed: 1.2
+/obj/item/ego_weapon/city/bladelineage | "blade lineage katana" | Avg Req: 80 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/cane | "cane office template" | Avg Req: 80 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/cane/briefcase/weak | "(unnamed)" | Avg Req: 60 | RED | Speed: 1
+/obj/item/ego_weapon/city/cane/cane/weak | "(unnamed)" | Avg Req: 60 | RED | Speed: 1
+/obj/item/ego_weapon/city/cane/claw/weak | "(unnamed)" | Avg Req: 60 | RED | Speed: 1
+/obj/item/ego_weapon/city/cane/fist/weak | "(unnamed)" | Avg Req: 60 | RED | Speed: 1
+/obj/item/ego_weapon/city/carnival_spear | "Carnival Spear" | Avg Req: 65 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/cinq | "cinq association rapier" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/dawn | "dawn office template" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/dawn/cello/white | "(unnamed)" | Avg Req: 60 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/dawn/sword/white | "(unnamed)" | Avg Req: 60 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/dawn/zwei/white | "(unnamed)" | Avg Req: 60 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/devyat_trunk/demo | "heavy devyat courier trunk" | Avg Req: 65 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/echo/iria | "iria" | Avg Req: 65 | BLACK | Speed: 1.5
+/obj/item/ego_weapon/city/echo/sunstrike | "sunstrike" | Avg Req: 65 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/echo/twins/gomorrah | "gomorrah" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/echo/twins/sodom | "sodom" | Avg Req: 0 | RED | Speed: 1
+/obj/item/ego_weapon/city/hana | "hana weapon system" | Avg Req: 85 | PALE | Speed: 1
+/obj/item/ego_weapon/city/index | "index recruit sword" | Avg Req: 65 | PALE | Speed: 1
+/obj/item/ego_weapon/city/jeong | "jeong's office wakizashi" | Avg Req: 65 | BLACK | Speed: 0.7
+/obj/item/ego_weapon/city/jeong/large | "jeong's office katana" | Avg Req: 80 | RED | Speed: 1.5
+/obj/item/ego_weapon/city/kcorp/dspear | "K corp blast spear" | Avg Req: 65 | RED | Speed: 0.6
+/obj/item/ego_weapon/city/kcorp/spear | "K corp spear" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/kurokumo | "kurokumo blade" | Avg Req: 80 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/leaflet/square | "leaflet square hammer" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/liu/fire/fist | "liu flaming glove" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/liu/fire/section5/vet | "liu veteran combat gloves" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/liu/fire/spear | "liu spear" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/liu/fist/vet | "liu veteran combat gloves" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/mariachi/dual/boss | "glowing maracas" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/molar | "molar chainsword" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/molar/olga | "molar chainknife" | Avg Req: 80 | RED | Speed: 0.7
+/obj/item/ego_weapon/city/ncorp_brassnail/big | "Elektrumnagel" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_brassnail/huge | "GoldNagel" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_brassnail/rose | "RoseNagel" | Avg Req: 80 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/ncorp_hammer/big | "MittelHammer" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_hammer/grippy | "Hand der Gerechten" | Avg Req: 80 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/ncorp_hammer/hand | "GrossHand" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_nail/big | "MittleNagel" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/ncorp_nail/grip | "Nagel der Gerechten" | Avg Req: 80 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/ncorp_nail/huge | "GrossNagel" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/reindeer | "R-corp reindeer staff" | Avg Req: 60 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/reindeer/captain | "R-corp reindeer captain staff" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/rosespanner/hammer | "rosespanner hammer" | Avg Req: 65 | RED | Speed: 2
+/obj/item/ego_weapon/city/rosespanner/minihammer | "rosespanner mini hammer" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/rosespanner/spear | "rosespanner spear" | Avg Req: 65 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/seven | "Seven Association blade" | Avg Req: 65 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/seven/vet | "Seven Association veteran blade" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/seven_fencing | "seven association fencing foil" | Avg Req: 65 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/seven_fencing/vet | "seven association veteran fencing foil" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/shi_assassin | "shi association sheathed blade" | Avg Req: 65 | RED | Speed: 1.2
+/obj/item/ego_weapon/city/shi_assassin/vet | "shi association veteran sheathed blade" | Avg Req: 80 | RED | Speed: 1
+/obj/item/ego_weapon/city/shi_knife | "shi association knife" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/sweeper/claw | "sweeper claw" | Avg Req: 65 | RED | Speed: 0.6
+/obj/item/ego_weapon/city/sweeper/hooksword | "sweeper hooksword" | Avg Req: 65 | RED | Speed: 1.6
+/obj/item/ego_weapon/city/sweeper/sickle | "sweeper_sickle" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/wcorp/axe | "w-corp axe" | Avg Req: 65 | RED | Speed: 2
+/obj/item/ego_weapon/city/wcorp/dagger | "w-corp dagger" | Avg Req: 65 | RED | Speed: 0.5
+/obj/item/ego_weapon/city/wcorp/fist | "w-corp gauntlet" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/wcorp/hammer | "w-corp warhammer" | Avg Req: 65 | RED | Speed: 2
+/obj/item/ego_weapon/city/wcorp/hatchet | "w-corp hatchet" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/wcorp/shield | "w-corp type-C shieldblade" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/wcorp/spear | "w-corp spear" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/wedge | "wedge office spear" | Avg Req: 80 | BLACK | Speed: 1
+/obj/item/ego_weapon/city/zweihander/vet | "veteran zweihander" | Avg Req: 65 | RED | Speed: 1
+/obj/item/ego_weapon/city/zweiwest/vet | "veteran zwei knight greatsword" | Avg Req: 65 | RED | Speed: 1
+
+=== RARITY 3 - EXCEPTIONAL (Average ~90) ===
+
+
+/obj/item/ego_weapon/city/donghwan | "Carver of Scars" | Avg Req: 105 | RED | Speed: 0.8
+/obj/item/ego_weapon/city/fakeindex/yan | "index greatsword" | Avg Req: 100 | RED | Speed: 2
+/obj/item/ego_weapon/city/index/proxy | "index longsword" | Avg Req: 90 | RED | Speed: 1
+/obj/item/ego_weapon/city/index/yan | "index greatsword" | Avg Req: 105 | RED | Speed: 2
+/obj/item/ego_weapon/city/liu/fire/sword | "liu director sword" | Avg Req: 105 | RED | Speed: 1
+/obj/item/ego_weapon/city/mirae | "mirae cane" | Avg Req: 90 | WHITE | Speed: 1
+/obj/item/ego_weapon/city/rabbit_blade/command | "R-corp command sabre" | Avg Req: 100 | RED | Speed: 1
+/obj/item/ego_weapon/city/seven/cane | "Seven Association director's cane" | Avg Req: 105 | RED | Speed: 1
+/obj/item/ego_weapon/city/seven/director | "Seven Association director's blade" | Avg Req: 105 | RED | Speed: 1
+/obj/item/ego_weapon/city/seven_fencing/dagger | "seven association fencing dagger" | Avg Req: 105 | RED | Speed: 0.5
+/obj/item/ego_weapon/city/shi_assassin/director | "shi association director sheathed blade" | Avg Req: 90 | RED | Speed: 1
+/obj/item/ego_weapon/city/thumbcane | "thumb sottocapo cane" | Avg Req: 90 | RED | Speed: 1
+
+=== RARITY 4 - LEGENDARY (Average ~120) ===
+
+
+/obj/item/ego_weapon/city/pt "A Purple Tear" | Avg Req: 120 | RED | Speed: 1
+/obj/item/ego_weapon/city/reverberation | "Elogio Bianco" | Avg Req: 120 | WHITE | Speed: 0.7
+/obj/item/ego_weapon/city/vermillion | "Vermillion Cross" | Avg Req: 120 | RED | Speed: 1
