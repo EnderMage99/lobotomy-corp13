@@ -1,8 +1,8 @@
-# EGO Material Grid Crafting System
+# Weaponry Material Grid Crafting System
 
 ## System Overview
 
-The EGO Grid Crafting System is a unique crafting mechanic where players navigate a "focus point" through a coordinate grid using EGO materials to reach weapon coordinates and craft city weapons. The system creates a strategic resource management challenge where material properties determine movement patterns.
+The Weaponry Grid Crafting System is a unique crafting mechanic where players navigate a "focus point" through a coordinate grid using weaponry materials to reach weapon coordinates and craft city weapons. The system creates a strategic resource management challenge where material properties determine movement patterns.
 
 ## Core Mechanics
 
@@ -27,26 +27,29 @@ Materials move the focus point based on their properties:
 - **Damage Type**: Determines movement direction/pattern
   - RED: Cardinal directions (N/S/E/W)
   - WHITE: Diagonal directions (NE/NW/SE/SW)
-  - BLACK: Teleport to random location within range
-  - PALE: Any direction (player choice)
+  - BLACK: Diagonal/Cardinal movement (N/S/E/W/NE/NW/SE/SW)
+  - PALE: Teleport to location within range (player choice)
 
 - **Density**: Modifies movement behavior
-  - Lightweight: +50% distance
+  - Lightweight: +25% distance
   - Normal: Standard distance
-  - Heavy: -30% distance, but can "push through" other weapons' zones
+  - Heavy: -50% distance, When landing in multiple weapon radius, gain the ability to pick a specific weapon.
 
 ### 3. Weapon Placement Algorithm
 
 ```
-Base Distance = Weapon Rarity * 15 + random(0, 10)
-Base Radius = 20 - (Weapon Rarity * 4)
+Algorithm adjusted based on weapon density per rarity:
+- More weapons in a rarity = smaller radius to prevent overlap
+- Distance ranges expanded for crowded rarities to ensure 2+ unit spacing
 
-Examples:
-- Rarity 0: Distance 0-10, Radius 20
-- Rarity 1: Distance 15-25, Radius 16
-- Rarity 2: Distance 30-40, Radius 12
-- Rarity 3: Distance 45-55, Radius 8
-- Rarity 4: Distance 60-70, Radius 4
+Rarity 0 (46 weapons): Distance 5-25, Radius 10
+Rarity 1 (19 weapons): Distance 20-40, Radius 12  
+Rarity 2 (65 weapons): Distance 35-65, Radius 8
+Rarity 3 (12 weapons): Distance 55-85, Radius 8
+Rarity 4 (3 weapons):  Distance 75-105, Radius 6
+
+Note: The high weapon count in Rarity 2 requires the largest distance 
+range to prevent coordinate clustering.
 ```
 
 ### 4. Crafting Process
@@ -82,12 +85,60 @@ F = Focus Point
 [Rn:r] = Rarity n weapon with radius r
 ```
 
+## Weaponry Disassembler
+
+The weaponry disassembler converts existing weapons into weapon shards used for grid navigation.
+
+### Operation
+1. **Load Weapons**: Insert weaponry into the disassembler (accepts `/obj/item/ego_weapon`)
+2. **Activate**: Use harm intent on the machine to begin processing
+3. **Processing**: Machine takes 5 seconds to disassemble all loaded weapons
+4. **Output**: Each weapon produces 4-7 weapon shards
+
+### Shard Property Generation
+
+Each weapon shard inherits properties from the disassembled weapon:
+
+#### Rarity Calculation
+```
+Average Requirement = Sum of all attribute requirements / Number of requirements
+Shard Rarity = Average Requirement / 30
+```
+- Weapons with no requirements → Rarity 0 (Crude)
+- Average 30 requirements → Rarity 1 (Common)
+- Average 60 requirements → Rarity 2 (Refined)
+- Average 90 requirements → Rarity 3 (Exceptional)
+- Average 120+ requirements → Rarity 4+ (Legendary)
+
+#### Density Mapping
+Based on weapon attack speed:
+- Attack Speed < 0.7 → "lightweight" shard
+- Attack Speed 0.7-1.3 → "normal" shard
+- Attack Speed > 1.3 → "heavy" shard
+
+#### Damage Type
+Directly inherited from weapon's `damtype`:
+- RED_DAMAGE → Red shards (Cardinal movement)
+- WHITE_DAMAGE → White shards (Diagonal movement)
+- BLACK_DAMAGE → Black shards (8-directional movement)
+- PALE_DAMAGE → Pale shards (Teleport movement)
+
+### Usage Example
+1. Load a "kurokumo blade" (Avg Req: 80, RED damage, Speed: 1.2)
+2. Activate disassembler
+3. Receive 4-7 shards with:
+   - Rarity 2 (80/30 = 2.67 → 2)
+   - Normal density (speed 1.2)
+   - Red damage type
+
+These shards can then be used to move 6-10 units in cardinal directions on the crafting grid.
+
 ## Implementation Suggestions
 
 ### Data Structures
 
 ```dm
-/datum/ego_grid_system
+/datum/weaponry_grid_system
     var/list/weapon_coordinates = list() // list of /datum/weapon_coordinate
     var/focus_x = 0
     var/focus_y = 0
@@ -105,26 +156,27 @@ F = Focus Point
 ### Movement Calculation
 
 ```dm
-/datum/ego_grid_system/proc/ApplyMaterial(obj/item/ego_material/M)
+/datum/weaponry_grid_system/proc/ApplyMaterial(obj/item/weapon_shard/M)
     var/base_distance = GetBaseDistance(M.rarity)
     
     // Apply density modifier
     switch(M.material_density)
         if("lightweight")
-            base_distance *= 1.5
+            base_distance *= 1.25  // +25% distance
         if("heavy")
-            base_distance *= 0.7
+            base_distance *= 0.5   // -50% distance
+            // Heavy materials also allow weapon selection when landing in multiple radii
     
     // Apply movement based on damage type
     switch(M.damage_type)
         if(RED_DAMAGE)
-            // Cardinal movement
+            // Cardinal movement (N/S/E/W)
         if(WHITE_DAMAGE)
-            // Diagonal movement
+            // Diagonal movement (NE/NW/SE/SW)
         if(BLACK_DAMAGE)
-            // Player picks between Diagonal or Cardinal movement
+            // Diagonal/Cardinal movement (N/S/E/W/NE/NW/SE/SW)
         if(PALE_DAMAGE)
-            // Random teleport
+            // Teleport to location within range (player choice)
 ```
 
 ## Expansion Ideas

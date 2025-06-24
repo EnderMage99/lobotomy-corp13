@@ -1,0 +1,92 @@
+DURABILITY SYSTEM CHANGES DOCUMENTATION
+======================================
+
+This document outlines all changes made to implement the weapon durability system in this branch.
+
+AFFECTED FILES
+--------------
+1. ModularTegustation\ego_weapons\_ego_weapon.dm
+2. ModularTegustation\tegu_items\refinery\crates\_crate.dm
+
+OVERVIEW
+--------
+A durability system has been added to EGO weapons that tracks weapon usage and causes weapons to break when overused. The system is only active in city maps.
+
+CORE CHANGES
+------------
+
+### _ego_weapon.dm Changes:
+
+1. **New Variables Added** (Lines 30-33):
+   - max_durability: Maximum durability value for the weapon
+   - durability: Current durability value  
+   - broken: Boolean indicating if weapon is broken
+   - durability_on: Boolean controlling if durability system is active
+
+2. **Initialize() Modifications** (Lines 42-47):
+   - max_durability formula changed from `200 * attack_speed` to `200 / max(attack_speed, 0.1)`
+   - This reverses the scaling: faster weapons now have MORE durability
+   - durability_on is set to TRUE for city maps
+
+3. **Attack() Modifications** (Lines 57-64):
+   - Durability decreases by 1 each successful attack
+   - When durability reaches 0:
+     - Weapon becomes broken
+     - Player receives warning message
+     - Breaking sound effect plays
+
+4. **CanUseEgo() Modifications** (Lines 240-242):
+   - Broken weapons cannot be used
+   - Player receives message: "This weapon is broken and cannot be used!"
+
+5. **Examine() Modifications** (Lines 143-158):
+   - Shows durability status with color coding:
+     - Green (75%+): "It is in excellent condition"
+     - White (50-74%): "It shows some signs of wear"
+     - Orange (25-49%): "It is heavily worn"
+     - Red (1-24%): "It is about to break!"
+   - Shows current/max durability values
+   - Broken weapons show: "This weapon is broken and unusable!"
+
+### _crate.dm Changes:
+
+1. **Lootcrate Opening Modifications** (Lines 83-91):
+   - When opening crates in city maps
+   - If loot is an EGO weapon:
+     - durability set to 0
+     - broken set to TRUE
+     - Player sees: "The weapon appears to be damaged and unusable..."
+
+DURABILITY FORMULA
+-----------------
+Max Durability = 200 / max(attack_speed, 0.1)
+
+Examples:
+- Very Fast weapon (0.3 speed): ~667 durability
+- Fast weapon (0.5 speed): 400 durability  
+- Normal weapon (1.0 speed): 200 durability
+- Slow weapon (1.5 speed): ~133 durability
+- Very slow weapon (2.0 speed): 100 durability
+
+This means faster weapons can be used more times before breaking, compensating for their lower damage per hit.
+
+GAMEPLAY IMPACT
+--------------
+1. **City Maps Only**: Durability system only activates in city environments
+2. **Resource Management**: Players must manage weapon usage carefully
+3. **Loot Consideration**: Weapons from crates start broken, requiring repair
+4. **Strategic Choices**: Fast weapons last longer but deal less damage per hit
+
+PLAYER EXPERIENCE
+----------------
+- Players can check weapon condition via examine
+- Clear visual feedback when weapons are degrading
+- Audio/visual notification when weapon breaks
+- Broken weapons become completely unusable (not just reduced damage)
+- City map weapons from crates always start broken
+
+FUTURE CONSIDERATIONS
+--------------------
+- No repair system currently implemented
+- Broken weapons remain in inventory but unusable
+- Could be expanded with repair mechanics or durability restoration items

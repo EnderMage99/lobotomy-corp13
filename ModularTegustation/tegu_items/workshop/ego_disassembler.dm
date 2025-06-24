@@ -1,18 +1,18 @@
-/obj/item/ego_material
-	name = "ego material"
-	desc = "A strange material extracted from an EGO weapon."
-	icon = 'icons/obj/stack_objects.dmi'
-	icon_state = "sheet-plasteel"
+/obj/item/weapon_shard
+	name = "weapon shard"
+	desc = "A strange shard extracted from weaponry."
+	icon = 'icons/obj/shards.dmi'
+	icon_state = "small"
 	w_class = WEIGHT_CLASS_SMALL
 	var/damage_type = RED_DAMAGE
 	var/material_density = "normal"
 	var/rarity = 0
 
-/obj/item/ego_material/Initialize()
+/obj/item/weapon_shard/Initialize()
 	. = ..()
 	UpdateAppearance()
 
-/obj/item/ego_material/proc/UpdateAppearance()
+/obj/item/weapon_shard/proc/UpdateAppearance()
 	var/type_name = "unknown"
 	var/type_color = "#808080"
 
@@ -43,8 +43,8 @@
 		if(4 to INFINITY)
 			rarity_name = "legendary"
 
-	name = "[rarity_name] [material_density] [type_name] ego material"
-	desc = "A [material_density] material extracted from an EGO weapon. It radiates [type_name] energy."
+	name = "[rarity_name] [material_density] [type_name] weapon shard"
+	desc = "A [material_density] shard extracted from weaponry. It radiates [type_name] energy."
 	color = type_color
 
 	// Adjust size based on density
@@ -54,15 +54,15 @@
 		if("heavy")
 			transform = matrix(1.2, 0, 0, 0, 1.2, 0)
 
-/obj/item/ego_material/examine(mob/user)
+/obj/item/weapon_shard/examine(mob/user)
 	. = ..()
 	. += span_notice("Damage Type: [damage_type]")
 	. += span_notice("Density: [material_density]")
 	. += span_notice("Rarity: [rarity]")
 
-/obj/structure/ego_disassembler
-	name = "ego weapon disassembler"
-	desc = "A specialized machine that breaks down EGO weapons into their base materials. Use harm intent to activate."
+/obj/structure/weaponry_disassembler
+	name = "weaponry disassembler"
+	desc = "A specialized machine that breaks down weaponry into their base materials. Use harm intent to activate."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "smoke0"
 	anchored = TRUE
@@ -72,21 +72,21 @@
 	var/processing = FALSE
 	var/processing_time = 5 SECONDS
 
-/obj/structure/ego_disassembler/examine(mob/user)
+/obj/structure/weaponry_disassembler/examine(mob/user)
 	. = ..()
 	if(loaded_weapons.len)
 		. += span_notice("Contains [loaded_weapons.len] weapon\s.")
 		. += span_notice("Hit with harm intent to begin disassembly.")
 	else
-		. += span_notice("Load EGO weapons to begin disassembly.")
+		. += span_notice("Load weaponry to begin disassembly.")
 
-/obj/structure/ego_disassembler/attackby(obj/item/I, mob/living/user, params)
+/obj/structure/weaponry_disassembler/attackby(obj/item/I, mob/living/user, params)
 	if(processing)
 		to_chat(user, span_warning("[src] is currently processing!"))
 		return
 
 	if(!istype(I, /obj/item/ego_weapon))
-		to_chat(user, span_warning("[src] only accepts EGO weapons!"))
+		to_chat(user, span_warning("[src] only accepts weaponry!"))
 		return ..()
 
 	if(!user.transferItemToLoc(I, src))
@@ -97,7 +97,7 @@
 	to_chat(user, span_notice("You load [I] into [src]. ([loaded_weapons.len] loaded)"))
 	playsound(src, 'sound/machines/click.ogg', 50, TRUE)
 
-/obj/structure/ego_disassembler/attack_hand(mob/living/user)
+/obj/structure/weaponry_disassembler/attack_hand(mob/living/user)
 	if(user.a_intent != INTENT_HARM)
 		to_chat(user, span_notice("Use harm intent to activate [src]."))
 		return
@@ -112,7 +112,7 @@
 
 	StartProcessing(user)
 
-/obj/structure/ego_disassembler/proc/StartProcessing(mob/user)
+/obj/structure/weaponry_disassembler/proc/StartProcessing(mob/user)
 	processing = TRUE
 	icon_state = "smoke1"
 	visible_message(span_notice("[user] activates [src]."))
@@ -120,7 +120,7 @@
 
 	addtimer(CALLBACK(src, PROC_REF(FinishProcessing)), processing_time)
 
-/obj/structure/ego_disassembler/proc/FinishProcessing()
+/obj/structure/weaponry_disassembler/proc/FinishProcessing()
 	var/turf/T = get_turf(src)
 
 	for(var/obj/item/ego_weapon/W in loaded_weapons)
@@ -145,12 +145,14 @@
 
 		var/material_rarity = round(average_requirement / 30)
 
-		// Create material
-		var/obj/item/ego_material/M = new(T)
-		M.damage_type = W.damtype
-		M.material_density = material_density
-		M.rarity = material_rarity
-		M.UpdateAppearance()
+		// Create multiple shards (4-7)
+		var/shard_count = rand(4, 7)
+		for(var/i = 1 to shard_count)
+			var/obj/item/weapon_shard/M = new(T)
+			M.damage_type = W.damtype
+			M.material_density = material_density
+			M.rarity = material_rarity
+			M.UpdateAppearance()
 
 		// Destroy the weapon
 		qdel(W)
