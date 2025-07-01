@@ -9,6 +9,10 @@
 	if(SSmaptype.maptype in SSmaptype.citymaps)
 		ChangeResistances(list(RED_DAMAGE = 0.8, WHITE_DAMAGE = 1.3, BLACK_DAMAGE = 2, PALE_DAMAGE = 2))
 
+		if(SSmaptype.maptype == "office")
+			melee_damage_lower = 14
+			melee_damage_upper = 18
+
 /mob/living/simple_animal/hostile/ordeal/steel_dawn/steel_noon/Initialize()
 	. = ..()
 	if(SSmaptype.maptype in SSmaptype.citymaps)
@@ -23,6 +27,16 @@
 	if(SSmaptype.maptype in SSmaptype.citymaps)
 		ChangeResistances(list(RED_DAMAGE = 1, WHITE_DAMAGE = 1.5, BLACK_DAMAGE = 0.5, PALE_DAMAGE = 1.5))
 
+		if(SSmaptype.maptype == "office")
+			melee_damage_lower = 12
+			melee_damage_upper = 15
+
+/mob/living/simple_animal/hostile/ordeal/indigo_noon/Initialize()
+	. = ..()
+	if(SSmaptype.maptype == "office")
+		melee_damage_lower = 15
+		melee_damage_upper = 17
+
 /mob/living/simple_animal/hostile/ordeal/green_bot_big/Initialize()
 	. = ..()
 	if(SSmaptype.maptype in SSmaptype.citymaps)
@@ -33,6 +47,12 @@
 		ranged_cooldown_time = 30
 		ChangeResistances(list(RED_DAMAGE = 0.8, WHITE_DAMAGE = 1.3, BLACK_DAMAGE = 2, PALE_DAMAGE = 2))
 
+/mob/living/simple_animal/hostile/ordeal/amber_bug/Initialize()
+	. = ..()
+	if(SSmaptype.maptype == "office")
+		melee_damage_lower = 3
+		melee_damage_upper = 4
+
 /mob/living/simple_animal/hostile/ordeal/amber_dusk/Initialize()
 	. = ..()
 	if(SSmaptype.maptype in SSmaptype.citymaps)
@@ -41,7 +61,7 @@
 		maxHealth = 700
 		health = 700
 		can_burrow = FALSE
-		attack_cooldown = 100
+		attack_cooldown = 50
 
 /mob/living/simple_animal/hostile/ordeal/dog_corrosion/Initialize()
 	. = ..()
@@ -61,3 +81,14 @@
 	if(SSmaptype.maptype in SSmaptype.citymaps)
 		maxHealth = 3000
 		health = 3000
+
+/mob/living/simple_animal/hostile/shrimp/Initialize()
+	. = ..()
+	if(SSmaptype.maptype == "office")
+		melee_damage_lower = 12
+		melee_damage_upper = 15
+
+/mob/living/simple_animal/hostile/shrimp_soldier/Initialize()
+	. = ..()
+	if(SSmaptype.maptype == "office")
+		casingtype = /obj/item/ammo_casing/caseless/ego_shrimprifle

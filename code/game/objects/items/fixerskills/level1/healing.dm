@@ -23,7 +23,7 @@
 		return FALSE
 
 	for(var/mob/living/carbon/human/H in view(2, get_turf(src)))
-		if(H == owner)
+		if(H == owner && SSmaptype.maptype != "office")
 			continue
 		if(H.stat >= HARD_CRIT)
 			continue
@@ -56,7 +56,7 @@
 		return FALSE
 
 	for(var/mob/living/carbon/human/H in view(2, get_turf(src)))
-		if(H == owner)
+		if(H == owner && SSmaptype.maptype != "office")
 			continue
 		if(H.stat >= HARD_CRIT)
 			continue
@@ -90,7 +90,7 @@
 		return FALSE
 
 	for(var/mob/living/carbon/human/H in view(2, get_turf(src)))
-		if(H == owner)
+		if(H == owner && SSmaptype.maptype != "office")
 			continue
 		if(H.stat >= HARD_CRIT)
 			continue
