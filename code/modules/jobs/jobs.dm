@@ -188,6 +188,16 @@ GLOBAL_LIST_INIT(r_corp_positions, list(
 	"R-Corp Raccoon Spy",
 	"R-Corp Raccoon Sniper",
 	"R-Corp Roadrunner",
+	
+	// R-Corp Abnormalities
+	"Easy Combat Abno",
+	"Easy Support Abno",
+	"Easy Tank Abno",
+	"Hard Combat Abno",
+	"Hard Support Abno",
+	"Hard Tank Abno",
+	"Rhinobuster Abno",
+	"Raidboss",
 ))
 
 GLOBAL_LIST_INIT(hana_positions, list(

@@ -1,3 +1,13 @@
+// Global lists to store landmark locations for job spawning
+GLOBAL_LIST_EMPTY(landmark_positions_easycombat)
+GLOBAL_LIST_EMPTY(landmark_positions_easysupport)
+GLOBAL_LIST_EMPTY(landmark_positions_easytank)
+GLOBAL_LIST_EMPTY(landmark_positions_hardcombat)
+GLOBAL_LIST_EMPTY(landmark_positions_hardsupport)
+GLOBAL_LIST_EMPTY(landmark_positions_hardtank)
+GLOBAL_LIST_EMPTY(landmark_positions_rhinobuster)
+GLOBAL_LIST_EMPTY(landmark_positions_raidboss)
+
 GLOBAL_LIST_INIT(easycombat, list(
 	/mob/living/simple_animal/hostile/abnormality/blue_shepherd,
 	/mob/living/simple_animal/hostile/abnormality/helper,
@@ -84,10 +94,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/easycombat/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.easycombat)
-	var/mob/living/simple_animal/hostile/abnormality/A = new spawning(get_turf(src))
-	A.rcorp_team = "easy"
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_easycombat += get_turf(src)
+	initialize_abnormality_job_positions()
 
 /obj/effect/landmark/abnospawn/easysupport
 	name = "easy support abno spawner"
@@ -97,10 +105,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/easysupport/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.easysupport)
-	var/mob/living/simple_animal/hostile/abnormality/A = new spawning(get_turf(src))
-	A.rcorp_team = "easy"
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_easysupport += get_turf(src)
+	initialize_abnormality_job_positions()
 
 /obj/effect/landmark/abnospawn/easytank
 	name = "easy tank abno spawner"
@@ -110,10 +116,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/easytank/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.easytank)
-	var/mob/living/simple_animal/hostile/abnormality/A = new spawning(get_turf(src))
-	A.rcorp_team = "easy"
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_easytank += get_turf(src)
+	initialize_abnormality_job_positions()
 
 /obj/effect/landmark/abnospawn/hardcombat
 	name = "hard combat abno spawner"
@@ -123,9 +127,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/hardcombat/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.hardcombat)
-	new spawning(get_turf(src))
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_hardcombat += get_turf(src)
+	initialize_abnormality_job_positions()
 
 
 /obj/effect/landmark/abnospawn/hardsupport
@@ -136,9 +139,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/hardsupport/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.hardsupport)
-	new spawning(get_turf(src))
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_hardsupport += get_turf(src)
+	initialize_abnormality_job_positions()
 
 
 /obj/effect/landmark/abnospawn/hardtank
@@ -149,9 +151,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/hardtank/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.hardtank)
-	new spawning(get_turf(src))
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_hardtank += get_turf(src)
+	initialize_abnormality_job_positions()
 
 
 /obj/effect/landmark/abnospawn/rhinobuster
@@ -162,9 +163,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/rhinobuster/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.rhinobuster)
-	new spawning(get_turf(src))
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_rhinobuster += get_turf(src)
+	initialize_abnormality_job_positions()
 
 /obj/effect/landmark/abnospawn/raidboss
 	name = "raidboss spawner"
@@ -174,9 +174,8 @@ GLOBAL_LIST_INIT(raidboss, list(/mob/living/simple_animal/hostile/distortion/shr
 
 /obj/effect/landmark/abnospawn/raidboss/Initialize()
 	..()
-	var/spawning = pick_n_take(GLOB.raidboss)
-	new spawning(get_turf(src))
-	return INITIALIZE_HINT_QDEL
+	GLOB.landmark_positions_raidboss += get_turf(src)
+	initialize_abnormality_job_positions()
 
 //To do: Deshit this.
 
