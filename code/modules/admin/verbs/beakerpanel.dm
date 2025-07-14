@@ -60,13 +60,18 @@
 		reagents.add_reagent(reagenttype, amount)
 	return container
 
-/datum/admins/proc/beaker_panel()
+/client/proc/beaker_panel()
 	set category = "Admin.Events"
 	set name = "Spawn reagent container"
+	if(!holder)
+		return
+	holder.beaker_panel()
+
+/datum/admins/proc/beaker_panel()
 	if(!check_rights())
 		return
 	var/datum/asset/asset_datum = get_asset_datum(/datum/asset/simple/namespaced/common)
-	asset_datum.send()
+	asset_datum.send(usr)
 	//Could somebody tell me why this isn't using the browser datum, given that it copypastes all of browser datum's html
 	var/dat = {"
 		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -162,7 +167,7 @@
 					      url: '',
 					      data: {
 									"_src_": "holder",
-									"admin_token": "[RawHrefToken()]",
+									"admin_token": "[src.href_token]",
 									"beakerpanel": "spawngrenade",
 									"containers": JSON.stringify(containers),
 									"grenadetype": grenadeType,
@@ -181,7 +186,7 @@
 					  	url: '',
 					    data: {
 								"_src_": "holder",
-								"admin_token": "[RawHrefToken()]",
+								"admin_token": "[src.href_token]",
 								"beakerpanel": "spawncontainer",
 								"container": JSON.stringify({"container": type, "reagents": reagents }),
 
