@@ -5,9 +5,10 @@
 /obj/item/ego_weapon/ranged/branch12/stitched_eyes
 	name = "stitched eyes"
 	desc = "See no evil. The dead have no need for sight."
-	special = "This weapon fires explosive rounds that deal area damage and inflict heavy bleeding. \
+	special = "This weapon fires explosive rounds that deal area damage and inflict heavy bleeding and Mental Decay. \
+	Shots inflict 3 Mental Decay (6 when charged). Area damage inflicts 2 Mental Decay (3 when charged). \
 	Every 8 seconds, if you haven't fired recently, your next shot will deal massive bonus damage in a larger area. \
-	Secondary fire consumes 5 bullets to unleash a devastating ground slam attack."
+	Use in hand to perform a ground slam (5 bullets) or shatter Mental Detonation for a blinding 'See No Evil' effect."
 	icon_state = "stitched_eyes"
 	inhand_icon_state = "stitched_eyes"
 	force = 20
@@ -24,6 +25,8 @@
 	var/charged = FALSE
 	var/charge_time = 0
 	var/charge_cooldown = 8 SECONDS
+	var/ground_slam_cooldown = 0
+	var/ground_slam_cooldown_time = 10 SECONDS
 
 /obj/item/ego_weapon/ranged/branch12/stitched_eyes/equipped(mob/user, slot)
 	. = ..() 
@@ -50,11 +53,41 @@
 		charge_time = world.time + charge_cooldown
 		charged = FALSE
 
-/obj/item/ego_weapon/ranged/branch12/stitched_eyes/attack_self_secondary(mob/user)
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes/attack_self(mob/user)
 	if(!CanUseEgo(user))
 		return
+	
+	if(ground_slam_cooldown > world.time)
+		to_chat(user, span_warning("The deathly energy hasn't recharged yet. ([round((ground_slam_cooldown - world.time) / 10)] seconds remaining)"))
+		return
+	
+	// Check for mental detonation on any nearby enemy to trigger "see no evil"
+	var/shattered = FALSE
+	for(var/mob/living/L in view(3, user))
+		if(L == user)
+			continue
+		var/datum/status_effect/mental_detonate/MD = L.has_status_effect(/datum/status_effect/mental_detonate)
+		if(MD && !shattered)
+			MD.shatter()
+			shattered = TRUE
+			// "See no evil" - blind all enemies in large area
+			to_chat(user, span_boldwarning("SEE NO EVIL! The dead have no need for sight!"))
+			playsound(user, 'sound/effects/his_grace_ascend.ogg', 100, TRUE)
+			ground_slam_cooldown = world.time + ground_slam_cooldown_time
+			for(var/mob/living/victim in viewers(6, user))
+				if(victim == user)
+					continue
+				victim.blind_eyes(10)
+				victim.blur_eyes(20)
+				victim.deal_damage(50, RED_DAMAGE)
+				victim.apply_lc_mental_decay(8)
+				to_chat(victim, span_userdanger("Your eyes! YOU CAN'T SEE!"))
+			return
+	
+	// Normal ground slam if no detonation to shatter
 	if(chambered?.loaded_projectile && shotsleft >= 5)
 		shotsleft -= 5
+		ground_slam_cooldown = world.time + ground_slam_cooldown_time
 		var/turf/T = get_turf(user)
 		playsound(T, 'sound/weapons/fixer/hana_blunt.ogg', 75, FALSE, 4)
 		for(var/turf/open/OT in view(4, T))
@@ -64,6 +97,7 @@
 					continue
 				L.deal_damage(60, RED_DAMAGE)
 				L.apply_lc_bleed(40)
+				L.apply_lc_mental_decay(5) // The ground slam shatters minds
 		to_chat(user, span_boldwarning("You slam the ground with devastating force!"))
 	else
 		to_chat(user, span_warning("You need at least 5 bullets loaded to perform this attack."))
@@ -82,6 +116,11 @@
 		damage = initial(damage) * 2
 		aoe_range = 2
 		bleed_amount = 40
+		// Apply mental detonation when charged - "see no evil"
+		if(isliving(target))
+			var/mob/living/L = target
+			L.apply_status_effect(/datum/status_effect/mental_detonate)
+			to_chat(gun.loc, span_boldwarning("The deathly energy marks [L] for mental detonation!"))
 	
 	var/turf/T = get_turf(target)
 	for(var/turf/open/OT in range(aoe_range, T))
@@ -91,17 +130,20 @@
 				continue
 			L.deal_damage(damage * 0.5, damage_type)
 			L.apply_lc_bleed(bleed_amount)
+			L.apply_lc_mental_decay(gun?.charged ? 3 : 2) // Splash damage also affects minds
 	
 	if(isliving(target))
 		var/mob/living/L = target
 		L.apply_lc_bleed(bleed_amount)
+		L.apply_lc_mental_decay(gun?.charged ? 6 : 3) // "See no evil" - the sight causes mental strain
 
 //Retribution
 /obj/item/ego_weapon/branch12/retribution
 	name = "retribution"
 	desc = "Your sins have caught up to you."
-	special = "This weapon marks enemies for death. Marked enemies take increased damage from all sources. \
-	When a marked enemy dies, you gain a significant damage boost for 10 seconds. \
+	special = "This weapon marks enemies for death. Marked enemies take increased damage from all sources and suffer 4 Mental Decay. \
+	At 30+ Mental Decay stacks, targets receive Mental Detonation as divine judgment. \
+	When a marked enemy dies, you gain a significant damage boost for 10 seconds. Empowered attacks inflict additional Mental Decay. \
 	Using this weapon in hand will mark yourself, gaining movement speed but taking increased damage."
 	icon_state = "retribution"
 	force = 55
@@ -124,6 +166,30 @@
 	if(!isliving(target))
 		return
 	
+	// Check for mental detonation to execute divine judgment
+	var/datum/status_effect/mental_detonate/MD = target.has_status_effect(/datum/status_effect/mental_detonate)
+	if(MD)
+		MD.shatter()
+		// Divine execution - instant kill if below 25% HP, massive damage otherwise
+		to_chat(user, span_boldwarning("DIVINE RETRIBUTION! The guilty shall be punished!"))
+		playsound(target, 'sound/magic/clockwork/ratvar_attack.ogg', 100, TRUE)
+		new /obj/effect/temp_visual/cult/sparks(get_turf(target))
+		
+		if(target.health <= target.maxHealth * 0.25)
+			// Execute low health targets
+			target.visible_message(span_boldwarning("[target] is executed by divine judgment!"))
+			target.gib()
+			// Grant massive damage boost
+			damage_boost = 100
+			to_chat(user, span_nicegreen("Justice has been served! Your weapon surges with righteous power!"))
+			addtimer(CALLBACK(src, PROC_REF(remove_boost)), boost_duration * 2)
+		else
+
+			// Deal massive damage to healthy targets
+			target.deal_damage(150, damtype)
+			target.apply_lc_mental_decay(10)
+		return
+	
 	// Mark the target
 	if(!(target in marked_targets))
 		marked_targets += target
@@ -136,11 +202,21 @@
 		target.physiology.white_mod *= 1.2
 		target.physiology.black_mod *= 1.2
 		target.physiology.pale_mod *= 1.2
+		
+		// Apply mental decay - the weight of sin crushes the mind
+		target.apply_lc_mental_decay(4)
+		// If they have enough decay, apply detonation mark as divine judgment
+		var/datum/status_effect/stacking/lc_mental_decay/D = target.has_status_effect(/datum/status_effect/stacking/lc_mental_decay)
+		if(D && D.stacks >= 30)
+			target.apply_status_effect(/datum/status_effect/mental_detonate)
+			to_chat(user, span_boldwarning("Divine judgment approaches!"))
 	
 	// Apply current damage boost
 	if(damage_boost > 0)
 		var/bonus_damage = force * (damage_boost / 100)
 		target.deal_damage(bonus_damage, damtype)
+		// Extra mental decay when empowered by retribution
+		target.apply_lc_mental_decay(2)
 
 /obj/item/ego_weapon/branch12/retribution/proc/on_marked_death(mob/living/source)
 	SIGNAL_HANDLER
@@ -211,8 +287,10 @@
 	name = "dimensional tear"
 	desc = "From another time and another place..."
 	special = "This weapon can tear reality itself. Each strike has a chance to teleport the target randomly. \
-	Using this weapon in hand will create a portal that teleports you to a random department. \
-	Secondary use will summon a hostile shadow clone of a random employee for 30 seconds."
+	Shatters Mental Detonation to create a reality rift that damages and teleports nearby enemies. \
+	Use in hand: Activate current mode. Grab intent toggles between modes. \
+	Portal mode: Teleports you to a random department (30s cooldown). \
+	Shadow mode: Summons a hostile shadow clone of a random employee for 30 seconds (60s cooldown)."
 	icon_state = "dimensional_tear"
 	force = 50
 	damtype = BLACK_DAMAGE
@@ -228,11 +306,54 @@
 	var/portal_cooldown_time = 30 SECONDS
 	var/clone_cooldown = 0
 	var/clone_cooldown_time = 60 SECONDS
+	var/list/consecutive_hits = list() // Track consecutive hits on same target
+	var/mode = "portal" // "portal" or "shadow"
 
 /obj/item/ego_weapon/branch12/dimensional_tear/attack(mob/living/target, mob/living/user)
 	. = ..() 
 	if(!isliving(target))
 		return
+	
+	// Check for mental detonation to shatter first
+	var/datum/status_effect/mental_detonate/MD = target.has_status_effect(/datum/status_effect/mental_detonate)
+	if(MD)
+		MD.shatter()
+		// Create reality rift that damages all nearby enemies
+		to_chat(user, span_boldwarning("Reality completely shatters! A dimensional rift opens!"))
+		playsound(target, 'sound/magic/warp_arrival.ogg', 100, TRUE)
+		new /obj/effect/temp_visual/portal(get_turf(target))
+		
+		// Damage and randomly teleport all enemies in range
+		for(var/mob/living/L in range(3, target))
+			if(L == user || L == target)
+				continue
+			L.deal_damage(80, BLACK_DAMAGE)
+			if(prob(50))
+				var/list/possible_turfs = list()
+				for(var/turf/T in range(5, L))
+					if(!T.density)
+						possible_turfs += T
+				if(possible_turfs.len)
+					do_teleport(L, pick(possible_turfs), 0, asoundin = 'sound/effects/portal_enter.ogg')
+			to_chat(L, span_userdanger("Reality tears around you!"))
+		return
+	
+	// Track consecutive hits
+	if(!(target in consecutive_hits))
+		consecutive_hits[target] = 0
+	consecutive_hits[target]++
+	
+	// Clean up old entries
+	for(var/mob/M in consecutive_hits)
+		if(M != target)
+			consecutive_hits -= M
+	
+	// Apply mental detonation after 3 consecutive tears in reality
+	if(consecutive_hits[target] >= 3)
+		target.apply_status_effect(/datum/status_effect/mental_detonate)
+		to_chat(user, span_boldwarning("Reality completely tears around [target]! Mental detonation applied!"))
+		playsound(target, 'sound/effects/portal_travel.ogg', 75, TRUE)
+		consecutive_hits[target] = 0
 	
 	// Chance to teleport target
 	if(prob(teleport_chance))
@@ -254,28 +375,38 @@
 	if(!ishuman(user))
 		return
 	
-	if(portal_cooldown > world.time)
-		to_chat(user, span_warning("The dimensional energy hasn't recharged yet."))
+	// Shift-click to toggle mode
+	if(user.a_intent == INTENT_GRAB)
+		if(mode == "portal")
+			mode = "shadow"
+			to_chat(user, span_notice("Shadow clone mode activated."))
+		else
+			mode = "portal"
+			to_chat(user, span_notice("Portal mode activated."))
 		return
 	
-	portal_cooldown = world.time + portal_cooldown_time
-	var/chosen_center = pick(GLOB.department_centers)
-	to_chat(user, span_notice("You tear open a portal through reality!"))
-	playsound(user, 'sound/effects/portal_enter.ogg', 50, TRUE)
-	new /obj/effect/temp_visual/portal(get_turf(user))
-	SLEEP_CHECK_DEATH(10)
-	do_teleport(user, chosen_center, 0, asoundin = 'sound/effects/portal_enter.ogg', asoundout = 'sound/effects/portal_exit.ogg')
+	// Execute based on current mode
+	if(mode == "portal")
+		if(portal_cooldown > world.time)
+			to_chat(user, span_warning("The dimensional energy hasn't recharged yet. ([round((portal_cooldown - world.time) / 10)] seconds remaining)"))
+			return
+		
+		portal_cooldown = world.time + portal_cooldown_time
+		var/chosen_center = pick(GLOB.department_centers)
+		to_chat(user, span_notice("You tear open a portal through reality!"))
+		playsound(user, 'sound/effects/portal_enter.ogg', 50, TRUE)
+		new /obj/effect/temp_visual/portal(get_turf(user))
+		SLEEP_CHECK_DEATH(10)
+		do_teleport(user, chosen_center, 0, asoundin = 'sound/effects/portal_enter.ogg', asoundout = 'sound/effects/portal_exit.ogg')
+	
+	else // shadow mode
+		if(clone_cooldown > world.time)
+			to_chat(user, span_warning("The dimensional energy is too unstable for another summoning. ([round((clone_cooldown - world.time) / 10)] seconds remaining)"))
+			return
+		
+		summon_shadow_clone(user)
 
-/obj/item/ego_weapon/branch12/dimensional_tear/attack_self_secondary(mob/user)
-	if(!CanUseEgo(user))
-		return
-	if(!ishuman(user))
-		return
-	
-	if(clone_cooldown > world.time)
-		to_chat(user, span_warning("The dimensional energy is too unstable for another summoning."))
-		return
-	
+/obj/item/ego_weapon/branch12/dimensional_tear/proc/summon_shadow_clone(mob/user)
 	clone_cooldown = world.time + clone_cooldown_time
 	
 	// Find a random human to copy

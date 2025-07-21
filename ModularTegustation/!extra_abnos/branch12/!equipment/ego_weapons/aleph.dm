@@ -6,10 +6,10 @@
 	desc = "Command and control from orbit."
 	special = "This weapon has multiple firing modes representing different station departments. \
 	Cycle through modes using the weapon in hand. Each mode consumes different resources but provides unique benefits: \
-	Security: High damage, consumes ammo quickly. \
-	Engineering: Repairs armor of allies hit, uses fuel charges. \
-	Research: Marks enemies for increased damage, builds up research points. \
-	Cargo: Spawns supply crates on kill."
+	Security: High damage, consumes ammo quickly. Applies Mental Detonation to targets with high Mental Decay. \
+	Engineering: Repairs armor of allies hit, uses fuel charges. Applies steady Mental Decay. \
+	Research: Marks enemies for increased damage, builds up research points. Mental Decay scales with research. \
+	Cargo: Spawns supply crates on kill. Spreads Mental Decay to nearby enemies on kill."
 	icon_state = "station_command"
 	inhand_icon_state = "station_command"
 	force = 25
@@ -93,12 +93,59 @@
 	
 	var/mob/living/L = target
 	
+	// Check for mental detonation to shatter with mode-specific effects
+	var/datum/status_effect/mental_detonate/MD = L.has_status_effect(/datum/status_effect/mental_detonate)
+	if(MD)
+		MD.shatter()
+		switch(gun.mode)
+			if("security")
+				// Instant execution on low HP targets
+				if(L.health <= L.maxHealth * 0.3)
+					to_chat(firer, span_boldwarning("SECURITY PROTOCOL: Threat eliminated!"))
+					L.gib()
+				else
+					L.deal_damage(200, damage_type)
+					to_chat(firer, span_boldwarning("SECURITY PROTOCOL: Maximum force authorized!"))
+			
+			if("engineering")
+				// Massive repair burst for all allies
+				to_chat(firer, span_boldwarning("ENGINEERING PROTOCOL: Emergency repairs initiated!"))
+				for(var/mob/living/carbon/human/H in range(5, L))
+					if(H.stat != DEAD)
+						H.heal_overall_damage(50, 50)
+						H.adjustSanityLoss(-20)
+						to_chat(H, span_nicegreen("Emergency engineering repairs restore you!"))
+			
+			if("research")
+				// Grant knowledge - temporary massive stat boost
+				to_chat(firer, span_boldwarning("RESEARCH PROTOCOL: Knowledge downloaded!"))
+				if(ishuman(firer))
+					var/mob/living/carbon/human/researcher = firer
+					researcher.adjust_all_attribute_buffs(20)
+					addtimer(CALLBACK(src, PROC_REF(remove_research_boost), researcher), 30 SECONDS)
+			
+			if("cargo")
+				// Spawn valuable loot explosion
+				to_chat(firer, span_boldwarning("CARGO PROTOCOL: Supply drop authorized!"))
+				for(var/i in 1 to 5)
+					new /obj/item/stack/spacecash/c1000(get_turf(L))
+				if(prob(50))
+					new /obj/item/storage/box/donkpockets(get_turf(L))
+		
+		playsound(L, 'sound/magic/teleport_app.ogg', 100, TRUE)
+		return
+	
 	switch(gun.mode)
 		if("security")
 			// High damage already applied, consume extra ammo
 			damage = 120
 			if(gun.shotsleft > 0)
 				gun.shotsleft--
+			// Security mode applies mental detonation mark
+			var/datum/status_effect/stacking/lc_mental_decay/D = L.has_status_effect(/datum/status_effect/stacking/lc_mental_decay)
+			if(D && D.stacks >= 20)
+				L.apply_status_effect(/datum/status_effect/mental_detonate)
+				to_chat(firer, span_warning("Target marked for mental detonation!"))
 		
 		if("engineering")
 			// Lower damage, but heal nearby allies' armor
@@ -109,6 +156,8 @@
 				if(H.mind?.assigned_role in GLOB.security_positions)
 					H.heal_overall_damage(20, 20)
 					to_chat(H, span_nicegreen("Station engineering repairs your equipment!"))
+			// Engineering mode applies steady mental decay
+			L.apply_lc_mental_decay(3)
 		
 		if("research")
 			// Medium damage, mark for extra damage
@@ -124,6 +173,8 @@
 				SSlobotomy_corp.AdjustAvailableBoxes(1)
 				to_chat(firer, span_notice("Research complete! PE boxes increased."))
 			addtimer(CALLBACK(src, PROC_REF(remove_research_mark), L), 10 SECONDS)
+			// Research mode applies mental decay that scales with research points
+			L.apply_lc_mental_decay(2 + round(gun.research_points/5))
 		
 		if("cargo")
 			// Low damage, chance to spawn supplies on kill
@@ -131,6 +182,11 @@
 			if(L.stat == DEAD && prob(gun.supply_spawn_chance))
 				new /obj/item/stack/spacecash/c1000(get_turf(L))
 				to_chat(firer, span_notice("Cargo delivery successful!"))
+			// Cargo mode applies mental decay on successful delivery
+			if(L.stat == DEAD)
+				for(var/mob/living/M in range(2, L))
+					if(M != L)
+						M.apply_lc_mental_decay(2)
 
 /obj/projectile/ego_bullet/branch12/station_command/proc/remove_research_mark(mob/living/L)
 	if(!L || QDELETED(L))
@@ -140,6 +196,12 @@
 	L.physiology.white_mod /= 1.15
 	L.physiology.black_mod /= 1.15
 	L.physiology.pale_mod /= 1.15
+
+/obj/projectile/ego_bullet/branch12/station_command/proc/remove_research_boost(mob/living/carbon/human/H)
+	if(!H || QDELETED(H))
+		return
+	H.adjust_all_attribute_buffs(-20)
+	to_chat(H, span_notice("The downloaded knowledge fades..."))
 
 //Pulsating Insanity
 /obj/item/ego_weapon/branch12/mini/insanity
@@ -216,7 +278,7 @@
 	desc = "To be pure is to be different than Innocent, for innocence requires ignorance while the pure takes in the experiences \
 	they go through grows while never losing that spark of light inside. To hold the weight of the world requires someone Pure, \
 	and the same can be said for this EGO which is weighed down by a heavy past that might as well be the weight of the world."
-	special = "This weapon has a ranged attack which inflicts 5 Mental Decay. Attacking a target with Mental Decay will cause it to be triggered 3 time in a row, this has a cooldown. <br>\
+	special = "This weapon has a ranged attack which inflicts 8 Mental Decay. Attacking a target with Mental Decay will cause it to be triggered 3 time in a row, this has a cooldown. <br>\
 	When attacking a target with Mental Detonation, cause a Shatter 3 times in a row. <br><br>\
 	(Mental Detonation: Does nothing until it is 'Shattered.' Once it is 'Shattered,' it will cause Mental Decay to trigger without reducing it's stack. Weapons that cause 'Shatter' gain other benefits as well.) <br>\
 	(Mental Decay: Deals White damage every 5 seconds, equal to its stack, and then halves it. If it is on a mob, then it deals *4 more damage.)"
@@ -613,11 +675,47 @@
 							)
 	var/tile_cooldown = 0
 	var/tile_cooldown_time = 5 SECONDS
+	var/hit_counter = 0 // Track hits for XXI (21) theme
 
 /obj/item/ego_weapon/branch12/XXI/attack(mob/living/target, mob/living/user)
 	// Random damage type each hit
 	damtype = pick(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
 	. = ..() 
+	
+	if(!isliving(target))
+		return
+	
+	// Check for mental detonation to complete the cycle
+	var/datum/status_effect/mental_detonate/MD = target.has_status_effect(/datum/status_effect/mental_detonate)
+	if(MD)
+		MD.shatter()
+		// The World completes - deal damage of ALL types and reset the cycle
+		to_chat(user, span_boldwarning("THE WORLD! Time has stopped!"))
+		playsound(target, 'sound/magic/clockwork/narsie_attack.ogg', 100, TRUE)
+		new /obj/effect/temp_visual/dir_setting/cult/phase(get_turf(target))
+		
+		// Stop time effect - freeze target
+		target.Stun(30)
+		
+		// Deal damage of all types representing completion
+		target.deal_damage(50, RED_DAMAGE)
+		target.deal_damage(50, WHITE_DAMAGE)
+		target.deal_damage(50, BLACK_DAMAGE)
+		target.deal_damage(50, PALE_DAMAGE)
+		
+		// Reset hit counter as the cycle completes
+		hit_counter = 0
+		to_chat(user, span_nicegreen("The cycle begins anew..."))
+		return
+	
+	// Track hits for XXI theme
+	hit_counter++
+	if(hit_counter >= 21)
+		hit_counter = 0
+		target.apply_status_effect(/datum/status_effect/mental_detonate)
+		to_chat(user, span_boldwarning("The World completes its cycle! Mental detonation applied!"))
+		playsound(target, 'sound/magic/clockwork/invoke_general.ogg', 75, TRUE)
+		new /obj/effect/temp_visual/cult/sparks(get_turf(target))
 	
 	// Small chance for special effect based on damage type
 	if(prob(25))

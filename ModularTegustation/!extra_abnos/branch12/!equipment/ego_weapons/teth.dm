@@ -24,8 +24,9 @@
 /obj/item/ego_weapon/branch12/misfortune
 	name = "Misfortune"
 	desc = "Don't worry, you want it, I got it."
-	special = "This weapon has a chance to trip enemies on hit, dealing extra damage and stunning them briefly. \
-	Every third successful hit will cause the target to become drugged, decreasing their movement speed. \
+	special = "This weapon has a chance to trip enemies on hit, dealing extra damage, stunning them briefly, and inflicting 2 Mental Decay. \
+	Every third successful hit will cause the target to become drugged, decreasing their movement speed and inflicting 3 Mental Decay. \
+	There's a 13% chance to apply Mental Detonation to confused targets with 10+ Mental Decay stacks. \
 	If you use this weapon in hand, you will gain a brief speed boost but take minor toxin damage."
 	icon_state = "misfortune"
 	force = 18
@@ -55,6 +56,7 @@
 			L.add_movespeed_modifier(/datum/movespeed_modifier/misfortune_trip)
 			addtimer(CALLBACK(src, PROC_REF(RemoveTripSlow), L), 2 SECONDS)
 			L.deal_damage(trip_damage, BLACK_DAMAGE)
+			L.apply_lc_mental_decay(2) // Bad luck clouds the mind
 		playsound(target, 'sound/misc/slip.ogg', 50, TRUE)
 
 	// Confusion mechanic every third hit
@@ -64,6 +66,13 @@
 			var/mob/living/L = target
 			L.add_movespeed_modifier(/datum/movespeed_modifier/misfortune_confused)
 			addtimer(CALLBACK(src, PROC_REF(RemoveConfusion), L), 5 SECONDS)
+			L.apply_lc_mental_decay(3) // Confusion deepens mental strain
+			// Small chance for mental detonation on unlucky victims
+			if(prob(13)) // Unlucky number
+				var/datum/status_effect/stacking/lc_mental_decay/D = L.has_status_effect(/datum/status_effect/stacking/lc_mental_decay)
+				if(D && D.stacks >= 10)
+					L.apply_status_effect(/datum/status_effect/mental_detonate)
+					to_chat(user, span_boldwarning("What terrible luck!"))
 		to_chat(target, span_warning("You feel a tiny prick..."))
 
 /obj/item/ego_weapon/branch12/misfortune/attack_self(mob/user)
@@ -190,7 +199,7 @@
 	var/inject_cooldown_time = 5.1 SECONDS
 	var/justice_buff = 30
 	var/normal_mental_decay_inflict = 3
-	var/mental_decay_inflict = 0
+	var/mental_decay_inflict = 2
 
 /obj/item/ego_weapon/branch12/mini/acupuncture/attack(mob/living/target, mob/living/user)
 	..()
@@ -208,7 +217,7 @@
 		drugie.set_drugginess(15)
 		drugie.adjustToxLoss(7)
 		to_chat(drugie, span_nicegreen("Wow... I can taste the colors..."))
-		mental_decay_inflict = normal_mental_decay_inflict
+		mental_decay_inflict = normal_mental_decay_inflict + 2
 		if(prob(20))
 			drugie.emote(pick("twitch","drool","moan","giggle"))
 		drugie.adjust_attribute_buff(JUSTICE_ATTRIBUTE, justice_buff)
@@ -218,7 +227,7 @@
 
 /obj/item/ego_weapon/branch12/mini/acupuncture/proc/RemoveBuff(mob/user)
 	var/mob/living/carbon/human/human = user
-	mental_decay_inflict = 0
+	mental_decay_inflict = 2
 	human.adjust_attribute_buff(JUSTICE_ATTRIBUTE, -justice_buff)
 
 //One Starry Night

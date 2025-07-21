@@ -236,9 +236,9 @@
 /obj/item/ego_weapon/branch12/solar_day
 	name = "solar day"
 	desc = "The burning light of day incarnate."
-	special = "This weapon burns enemies and has a chance to blind them on hit. \
-	Every third hit creates a solar flare that damages and blinds all enemies in a small area. \
-	Using this weapon in hand creates a blinding flash that stuns nearby enemies."
+	special = "This weapon burns enemies and has a chance to blind them on hit. Each hit inflicts 2 Mental Decay. \
+	Every third hit creates a solar flare that damages and blinds all enemies in a small area, inflicting 3 Mental Decay. \
+	Using this weapon in hand creates a blinding flash that stuns nearby enemies and inflicts 4 Mental Decay."
 	icon_state = "solar_day"
 	force = 32
 	damtype = WHITE_DAMAGE
@@ -261,8 +261,32 @@
 	if(!isliving(target))
 		return
 	
+	// Check for mental detonation to shatter - solar judgment
+	var/datum/status_effect/mental_detonate/MD = target.has_status_effect(/datum/status_effect/mental_detonate)
+	if(MD)
+		MD.shatter()
+		// Create massive solar explosion
+		to_chat(user, span_boldwarning("The sun's judgment descends! SOLAR DETONATION!"))
+		playsound(target, 'sound/magic/lightningbolt.ogg', 100, TRUE)
+		new /obj/effect/temp_visual/emp/pulse(get_turf(target))
+		
+		// Blind and burn all enemies in large radius
+		for(var/mob/living/L in viewers(4, target))
+			if(L == user)
+				continue
+			L.deal_damage(30, WHITE_DAMAGE)
+			L.deal_damage(30, RED_DAMAGE)
+			L.apply_lc_mental_decay(5)
+			L.add_movespeed_modifier(/datum/movespeed_modifier/solar_flash)
+			addtimer(CALLBACK(src, PROC_REF(RemoveFlash), L), 4 SECONDS)
+			to_chat(L, span_userdanger("THE SUN! IT BURNS!"))
+		return
+	
 	// Burn damage
 	target.deal_damage(5, RED_DAMAGE)
+	
+	// Apply mental decay - sunlight burns the mind
+	target.apply_lc_mental_decay(2)
 	
 	// Chance to disorient
 	if(prob(blind_chance) && isliving(target))
@@ -276,6 +300,10 @@
 	if(hit_counter >= 3)
 		hit_counter = 0
 		solar_flare(target, user)
+		// Apply mental detonation during solar flare if target is dazzled
+		if(L.has_movespeed_modifier(/datum/movespeed_modifier/solar_dazzle))
+			L.apply_status_effect(/datum/status_effect/mental_detonate)
+			to_chat(user, span_boldwarning("The solar flare marks [L] for mental detonation!"))
 
 /obj/item/ego_weapon/branch12/solar_day/proc/solar_flare(atom/center, mob/living/user)
 	playsound(center, 'sound/magic/lightningshock.ogg', 50, TRUE)
@@ -286,6 +314,7 @@
 			continue
 		L.deal_damage(flare_damage, WHITE_DAMAGE)
 		L.deal_damage(10, RED_DAMAGE)
+		L.apply_lc_mental_decay(3) // Solar flare burns minds
 		
 		if(isliving(L))
 			L.add_movespeed_modifier(/datum/movespeed_modifier/solar_dazzle)
@@ -314,13 +343,14 @@
 			L.add_movespeed_modifier(/datum/movespeed_modifier/solar_flash)
 			addtimer(CALLBACK(src, PROC_REF(RemoveFlash), L), 2 SECONDS)
 			L.deal_damage(15, WHITE_DAMAGE)
+			L.apply_lc_mental_decay(4) // Intense solar burst sears the mind
 			to_chat(L, span_userdanger("You are dazzled by the solar flash!"))
 
 //Golden Needle
 /obj/item/ego_weapon/branch12/mini/gold_needle
 	name = "Gold Needle"
 	desc = "A needle that is made of gold, and a red "
-	special = "When throwing this weapon, cause Slowdown on hit."
+	special = "When throwing this weapon, cause Slowdown on hit. Has a chance to apply Mental Detonation on critical strikes."
 	icon_state = "needle"
 	force = 26
 	damtype = RED_DAMAGE
@@ -332,6 +362,19 @@
 	attribute_requirements = list(
 							TEMPRANCE_ATTRIBUTE = 40
 							)
+	crit_multiplier = 1.5
+	var/detonation_crit_chance = 30
+
+/obj/item/ego_weapon/branch12/mini/gold_needle/attack(mob/living/target, mob/living/user)
+	..()
+	if(!isliving(target))
+		return
+	
+	// Apply mental detonation on critical precision strikes
+	if(prob(detonation_crit_chance))
+		target.apply_status_effect(/datum/status_effect/mental_detonate)
+		to_chat(user, span_boldwarning("Perfect acupuncture point! Mental detonation applied!"))
+		playsound(target, 'sound/effects/wounds/crack1.ogg', 50, TRUE)
 
 /obj/item/ego_weapon/branch12/mini/gold_needle/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(isliving(hit_atom))
