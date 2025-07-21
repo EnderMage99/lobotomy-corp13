@@ -36,8 +36,8 @@
 	work_damage_type = BLACK_DAMAGE
 
 	ego_list = list(
-		/datum/ego_datum/weapon/branch12/acupuncture,
-		/datum/ego_datum/armor/branch12/acupuncture,
+		/datum/ego_datum/weapon/branch12/misfortune,
+		/datum/ego_datum/armor/branch12/misfortune,
 	)
 	//gift_type =  /datum/ego_gifts/acupuncture
 	abnormality_origin = ABNORMALITY_ORIGIN_BRANCH12

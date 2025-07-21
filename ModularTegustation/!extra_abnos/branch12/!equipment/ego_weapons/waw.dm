@@ -1,6 +1,334 @@
 
 
 // --------WAW---------
+//Stitched Eyes
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes
+	name = "stitched eyes"
+	desc = "See no evil. The dead have no need for sight."
+	special = "This weapon fires explosive rounds that deal area damage and inflict heavy bleeding. \
+	Every 8 seconds, if you haven't fired recently, your next shot will deal massive bonus damage in a larger area. \
+	Secondary fire consumes 5 bullets to unleash a devastating ground slam attack."
+	icon_state = "stitched_eyes"
+	inhand_icon_state = "stitched_eyes"
+	force = 20
+	projectile_path = /obj/projectile/ego_bullet/branch12/stitched_eyes
+	fire_delay = 10
+	spread = 2
+	shotsleft = 20
+	reloadtime = 2.5 SECONDS
+	fire_sound = 'sound/weapons/gun/rifle/shot_heavy.ogg'
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 60,
+							JUSTICE_ATTRIBUTE = 60
+							)
+	var/charged = FALSE
+	var/charge_time = 0
+	var/charge_cooldown = 8 SECONDS
+
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes/equipped(mob/user, slot)
+	. = ..() 
+	if(ishuman(user))
+		START_PROCESSING(SSobj, src)
+		charge_time = world.time + charge_cooldown
+
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes/dropped(mob/user)
+	. = ..() 
+	STOP_PROCESSING(SSobj, src)
+	charged = FALSE
+
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes/process()
+	if(world.time >= charge_time && !charged)
+		charged = TRUE
+		if(isliving(loc))
+			var/mob/living/user = loc
+			to_chat(user, span_notice("[src] pulses with deathly energy!"))
+			playsound(user, 'sound/effects/wounds/crack1.ogg', 50, TRUE)
+
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes/afterattack(atom/target, mob/living/user, flag, params)
+	. = ..() 
+	if(fired_something)
+		charge_time = world.time + charge_cooldown
+		charged = FALSE
+
+/obj/item/ego_weapon/ranged/branch12/stitched_eyes/attack_self_secondary(mob/user)
+	if(!CanUseEgo(user))
+		return
+	if(chambered?.loaded_projectile && shotsleft >= 5)
+		shotsleft -= 5
+		var/turf/T = get_turf(user)
+		playsound(T, 'sound/weapons/fixer/hana_blunt.ogg', 75, FALSE, 4)
+		for(var/turf/open/OT in view(4, T))
+			new /obj/effect/temp_visual/smash_effect(OT)
+			for(var/mob/living/L in OT.contents)
+				if(L == user)
+					continue
+				L.deal_damage(60, RED_DAMAGE)
+				L.apply_lc_bleed(40)
+		to_chat(user, span_boldwarning("You slam the ground with devastating force!"))
+	else
+		to_chat(user, span_warning("You need at least 5 bullets loaded to perform this attack."))
+
+/obj/projectile/ego_bullet/branch12/stitched_eyes
+	name = "deathly shot"
+	damage = 50
+	damage_type = RED_DAMAGE
+	var/aoe_range = 1
+	var/bleed_amount = 20
+
+/obj/projectile/ego_bullet/branch12/stitched_eyes/on_hit(atom/target, blocked = FALSE)
+	. = ..() 
+	var/obj/item/ego_weapon/ranged/branch12/stitched_eyes/gun = fired_from
+	if(istype(gun) && gun.charged)
+		damage = initial(damage) * 2
+		aoe_range = 2
+		bleed_amount = 40
+	
+	var/turf/T = get_turf(target)
+	for(var/turf/open/OT in range(aoe_range, T))
+		new /obj/effect/temp_visual/smash_effect(OT)
+		for(var/mob/living/L in OT.contents)
+			if(L == target)
+				continue
+			L.deal_damage(damage * 0.5, damage_type)
+			L.apply_lc_bleed(bleed_amount)
+	
+	if(isliving(target))
+		var/mob/living/L = target
+		L.apply_lc_bleed(bleed_amount)
+
+//Retribution
+/obj/item/ego_weapon/branch12/retribution
+	name = "retribution"
+	desc = "Your sins have caught up to you."
+	special = "This weapon marks enemies for death. Marked enemies take increased damage from all sources. \
+	When a marked enemy dies, you gain a significant damage boost for 10 seconds. \
+	Using this weapon in hand will mark yourself, gaining movement speed but taking increased damage."
+	icon_state = "retribution"
+	force = 55
+	damtype = BLACK_DAMAGE
+	attack_speed = 1.2
+	reach = 2
+	attack_verb_continuous = list("judges", "condemns", "sentences")
+	attack_verb_simple = list("judge", "condemn", "sentence")
+	hitsound = 'sound/weapons/fixer/generic/gen1.ogg'
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 60,
+							PRUDENCE_ATTRIBUTE = 60
+							)
+	var/damage_boost = 0
+	var/boost_duration = 10 SECONDS
+	var/list/marked_targets = list()
+
+/obj/item/ego_weapon/branch12/retribution/attack(mob/living/target, mob/living/user)
+	. = ..() 
+	if(!isliving(target))
+		return
+	
+	// Mark the target
+	if(!(target in marked_targets))
+		marked_targets += target
+		target.add_overlay(mutable_appearance('icons/effects/effects.dmi', "blessed"))
+		to_chat(target, span_userdanger("You feel marked for death!"))
+		RegisterSignal(target, COMSIG_LIVING_DEATH, PROC_REF(on_marked_death))
+		
+		// Apply vulnerability
+		target.physiology.red_mod *= 1.2
+		target.physiology.white_mod *= 1.2
+		target.physiology.black_mod *= 1.2
+		target.physiology.pale_mod *= 1.2
+	
+	// Apply current damage boost
+	if(damage_boost > 0)
+		var/bonus_damage = force * (damage_boost / 100)
+		target.deal_damage(bonus_damage, damtype)
+
+/obj/item/ego_weapon/branch12/retribution/proc/on_marked_death(mob/living/source)
+	SIGNAL_HANDLER
+	marked_targets -= source
+	source.cut_overlay(mutable_appearance('icons/effects/effects.dmi', "blessed"))
+	
+	// Restore normal damage modifiers
+	source.physiology.red_mod /= 1.2
+	source.physiology.white_mod /= 1.2
+	source.physiology.black_mod /= 1.2
+	source.physiology.pale_mod /= 1.2
+	
+	// Grant damage boost
+	if(isliving(loc))
+		var/mob/living/user = loc
+		damage_boost = 50
+		to_chat(user, span_nicegreen("Retribution has been served! Your weapon pulses with power!"))
+		addtimer(CALLBACK(src, PROC_REF(remove_boost)), boost_duration)
+
+/obj/item/ego_weapon/branch12/retribution/proc/remove_boost()
+	damage_boost = 0
+	if(isliving(loc))
+		var/mob/living/user = loc
+		to_chat(user, span_notice("The vengeful power fades."))
+
+/obj/item/ego_weapon/branch12/retribution/attack_self(mob/user)
+	if(!CanUseEgo(user))
+		return
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	
+	if(H in marked_targets)
+		to_chat(H, span_warning("You are already marked!"))
+		return
+	
+	// Self-mark for speed boost but vulnerability
+	marked_targets += H
+	H.add_overlay(mutable_appearance('icons/effects/effects.dmi', "blessed"))
+	to_chat(H, span_boldwarning("You mark yourself for retribution, gaining speed but becoming vulnerable!"))
+	RegisterSignal(H, COMSIG_LIVING_DEATH, PROC_REF(on_marked_death))
+	
+	// Apply effects
+	H.physiology.red_mod *= 1.3
+	H.physiology.white_mod *= 1.3
+	H.physiology.black_mod *= 1.3
+	H.physiology.pale_mod *= 1.3
+	H.add_movespeed_modifier(/datum/movespeed_modifier/retribution)
+	addtimer(CALLBACK(src, PROC_REF(remove_self_mark), H), 15 SECONDS)
+
+/obj/item/ego_weapon/branch12/retribution/proc/remove_self_mark(mob/living/carbon/human/H)
+	if(H in marked_targets)
+		marked_targets -= H
+		H.cut_overlay(mutable_appearance('icons/effects/effects.dmi', "blessed"))
+		H.physiology.red_mod /= 1.3
+		H.physiology.white_mod /= 1.3
+		H.physiology.black_mod /= 1.3
+		H.physiology.pale_mod /= 1.3
+		H.remove_movespeed_modifier(/datum/movespeed_modifier/retribution)
+		to_chat(H, span_notice("The mark of retribution fades."))
+
+/datum/movespeed_modifier/retribution
+	variable = TRUE
+	multiplicative_slowdown = -0.7
+
+//Dimensional Tear
+/obj/item/ego_weapon/branch12/dimensional_tear
+	name = "dimensional tear"
+	desc = "From another time and another place..."
+	special = "This weapon can tear reality itself. Each strike has a chance to teleport the target randomly. \
+	Using this weapon in hand will create a portal that teleports you to a random department. \
+	Secondary use will summon a hostile shadow clone of a random employee for 30 seconds."
+	icon_state = "dimensional_tear"
+	force = 50
+	damtype = BLACK_DAMAGE
+	attack_verb_continuous = list("tears", "rips", "displaces")
+	attack_verb_simple = list("tear", "rip", "displace")
+	hitsound = 'sound/effects/portal_enter.ogg'
+	attribute_requirements = list(
+							PRUDENCE_ATTRIBUTE = 60,
+							TEMPERANCE_ATTRIBUTE = 60
+							)
+	var/teleport_chance = 25
+	var/portal_cooldown = 0
+	var/portal_cooldown_time = 30 SECONDS
+	var/clone_cooldown = 0
+	var/clone_cooldown_time = 60 SECONDS
+
+/obj/item/ego_weapon/branch12/dimensional_tear/attack(mob/living/target, mob/living/user)
+	. = ..() 
+	if(!isliving(target))
+		return
+	
+	// Chance to teleport target
+	if(prob(teleport_chance))
+		var/list/possible_turfs = list()
+		for(var/turf/T in range(7, target))
+			if(T.density)
+				continue
+			possible_turfs += T
+		
+		if(possible_turfs.len)
+			var/turf/target_turf = pick(possible_turfs)
+			new /obj/effect/temp_visual/small_smoke/halfsecond(get_turf(target))
+			do_teleport(target, target_turf, 0, asoundin = 'sound/effects/portal_enter.ogg', asoundout = 'sound/effects/portal_exit.ogg')
+			to_chat(target, span_userdanger("Reality tears around you!"))
+
+/obj/item/ego_weapon/branch12/dimensional_tear/attack_self(mob/user)
+	if(!CanUseEgo(user))
+		return
+	if(!ishuman(user))
+		return
+	
+	if(portal_cooldown > world.time)
+		to_chat(user, span_warning("The dimensional energy hasn't recharged yet."))
+		return
+	
+	portal_cooldown = world.time + portal_cooldown_time
+	var/chosen_center = pick(GLOB.department_centers)
+	to_chat(user, span_notice("You tear open a portal through reality!"))
+	playsound(user, 'sound/effects/portal_enter.ogg', 50, TRUE)
+	new /obj/effect/temp_visual/portal(get_turf(user))
+	SLEEP_CHECK_DEATH(10)
+	do_teleport(user, chosen_center, 0, asoundin = 'sound/effects/portal_enter.ogg', asoundout = 'sound/effects/portal_exit.ogg')
+
+/obj/item/ego_weapon/branch12/dimensional_tear/attack_self_secondary(mob/user)
+	if(!CanUseEgo(user))
+		return
+	if(!ishuman(user))
+		return
+	
+	if(clone_cooldown > world.time)
+		to_chat(user, span_warning("The dimensional energy is too unstable for another summoning."))
+		return
+	
+	clone_cooldown = world.time + clone_cooldown_time
+	
+	// Find a random human to copy
+	var/list/possible_targets = list()
+	for(var/mob/living/carbon/human/H in GLOB.player_list)
+		if(H.stat != DEAD && H.z == user.z)
+			possible_targets += H
+	
+	if(!possible_targets.len)
+		to_chat(user, span_warning("There's no one to pull from beyond the veil."))
+		return
+	
+	var/mob/living/carbon/human/target = pick(possible_targets)
+	var/turf/spawn_turf = get_step(user, user.dir)
+	
+	to_chat(user, span_boldwarning("You pull something from beyond the veil!"))
+	playsound(user, 'sound/effects/portal_exit.ogg', 50, TRUE)
+	new /obj/effect/temp_visual/portal(spawn_turf)
+	
+	// Create hostile shadow clone
+	var/mob/living/simple_animal/hostile/shadow_clone/clone = new(spawn_turf)
+	clone.copy_appearance(target)
+	clone.name = "Unknown Hostile"
+	clone.desc = "What is that thing?"
+	addtimer(CALLBACK(clone, TYPE_PROC_REF(/mob/living, death)), 30 SECONDS)
+
+// Shadow clone mob
+/mob/living/simple_animal/hostile/shadow_clone
+	name = "shadow clone"
+	desc = "A dark reflection from beyond."
+	icon = 'icons/mob/simple_human.dmi'
+	icon_state = "syndicate"
+	icon_living = "syndicate"
+	maxHealth = 200
+	health = 200
+	melee_damage_lower = 20
+	melee_damage_upper = 30
+	melee_damage_type = BLACK_DAMAGE
+	attack_verb_continuous = "attacks"
+	attack_verb_simple = "attack"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	faction = list("hostile")
+	speed = 0
+	robust_searching = TRUE
+
+/mob/living/simple_animal/hostile/shadow_clone/proc/copy_appearance(mob/living/carbon/human/target)
+	if(!target)
+		return
+	appearance = target.appearance
+	transform = initial(transform)
+	pixel_x = initial(pixel_x)
+	pixel_y = initial(pixel_y)
+
 //Plagiarism
 /obj/item/ego_weapon/branch12/plagiarism
 	name = "plagiarism"

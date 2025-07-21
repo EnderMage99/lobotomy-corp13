@@ -16,8 +16,8 @@
 	threat_level = TETH_LEVEL
 
 	ego_list = list(
-	//the weapons are the EGO
-	/datum/ego_datum/armor/branch12/workshopping
+		/datum/ego_datum/weapon/branch12/workshopping,
+		/datum/ego_datum/armor/branch12/workshopping,
 	)
 	//gift_type =  /datum/ego_gifts/signal
 

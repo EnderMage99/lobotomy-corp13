@@ -1,5 +1,82 @@
 
 // --------HE---------
+//Rhythm
+/obj/item/ego_weapon/ranged/branch12/rhythm
+	name = "rhythm"
+	desc = "Never stop moving. The beat goes on."
+	special = "This weapon gains increased damage and fire rate based on how much you've moved recently. \
+	Standing still will reset your momentum bonus. \
+	Every shot inflicts 1 Mental Decay, increased by your momentum level."
+	icon_state = "rhythm"
+	inhand_icon_state = "rhythm"
+	force = 15
+	projectile_path = /obj/projectile/ego_bullet/branch12/rhythm
+	fire_delay = 6
+	spread = 5
+	shotsleft = 12
+	reloadtime = 1.2 SECONDS
+	fire_sound = 'sound/weapons/gun/pistol/shot.ogg'
+	var/momentum_level = 0
+	var/max_momentum = 5
+	var/last_turf
+	var/movement_counter = 0
+	var/check_time = 0
+
+/obj/item/ego_weapon/ranged/branch12/rhythm/equipped(mob/user, slot)
+	. = ..() 
+	if(ishuman(user))
+		START_PROCESSING(SSobj, src)
+		last_turf = get_turf(user)
+
+/obj/item/ego_weapon/ranged/branch12/rhythm/dropped(mob/user)
+	. = ..() 
+	STOP_PROCESSING(SSobj, src)
+	momentum_level = 0
+	movement_counter = 0
+
+/obj/item/ego_weapon/ranged/branch12/rhythm/process()
+	if(!isliving(loc))
+		return
+	var/mob/living/user = loc
+	var/current_turf = get_turf(user)
+	
+	if(current_turf != last_turf)
+		movement_counter++
+		last_turf = current_turf
+	
+	if(world.time >= check_time)
+		check_time = world.time + 2 SECONDS
+		if(movement_counter >= 4)
+			if(momentum_level < max_momentum)
+				momentum_level++
+				to_chat(user, span_notice("Your momentum increases! [momentum_level]/[max_momentum]"))
+				fire_delay = max(3, initial(fire_delay) - momentum_level)
+		else if(movement_counter < 2)
+			if(momentum_level > 0)
+				momentum_level = 0
+				fire_delay = initial(fire_delay)
+				to_chat(user, span_warning("You lose your rhythm!"))
+		movement_counter = 0
+
+/obj/projectile/ego_bullet/branch12/rhythm
+	name = "rhythmic shot"
+	damage = 25
+	damage_type = BLACK_DAMAGE
+	var/decay_inflict = 1
+
+/obj/projectile/ego_bullet/branch12/rhythm/on_hit(atom/target, blocked = FALSE)
+	. = ..() 
+	if(!isliving(target) || !isliving(firer))
+		return
+	
+	var/obj/item/ego_weapon/ranged/branch12/rhythm/gun = fired_from
+	if(istype(gun))
+		damage = initial(damage) + (gun.momentum_level * 5)
+		decay_inflict = 1 + gun.momentum_level
+	
+	var/mob/living/L = target
+	L.apply_lc_mental_decay(decay_inflict)
+
 //Perfectionist
 /obj/item/ego_weapon/branch12/perfectionist
 	name = "perfectionist"
@@ -155,6 +232,89 @@
 /obj/item/ego_weapon/branch12/egoification/get_clamped_volume()
 	return 25
 
+//Solar Day
+/obj/item/ego_weapon/branch12/solar_day
+	name = "solar day"
+	desc = "The burning light of day incarnate."
+	special = "This weapon burns enemies and has a chance to blind them on hit. \
+	Every third hit creates a solar flare that damages and blinds all enemies in a small area. \
+	Using this weapon in hand creates a blinding flash that stuns nearby enemies."
+	icon_state = "solar_day"
+	force = 32
+	damtype = WHITE_DAMAGE
+	attack_speed = 1.1
+	reach = 2
+	attack_verb_continuous = list("burns", "scorches", "sears")
+	attack_verb_simple = list("burn", "scorch", "sear")
+	hitsound = 'sound/items/welder.ogg'
+	attribute_requirements = list(
+							PRUDENCE_ATTRIBUTE = 40
+							)
+	var/hit_counter = 0
+	var/flare_damage = 20
+	var/blind_chance = 30
+	var/flash_cooldown = 0
+	var/flash_cooldown_time = 20 SECONDS
+
+/obj/item/ego_weapon/branch12/solar_day/attack(mob/living/target, mob/living/user)
+	. = ..() 
+	if(!isliving(target))
+		return
+	
+	// Burn damage
+	target.deal_damage(5, RED_DAMAGE)
+	
+	// Chance to disorient
+	if(prob(blind_chance) && isliving(target))
+		var/mob/living/L = target
+		L.add_movespeed_modifier(/datum/movespeed_modifier/solar_dazzle)
+		addtimer(CALLBACK(src, PROC_REF(RemoveDazzle), L), 3 SECONDS)
+		to_chat(L, span_userdanger("The burning light dazzles you!"))
+	
+	// Solar flare every third hit
+	hit_counter++
+	if(hit_counter >= 3)
+		hit_counter = 0
+		solar_flare(target, user)
+
+/obj/item/ego_weapon/branch12/solar_day/proc/solar_flare(atom/center, mob/living/user)
+	playsound(center, 'sound/magic/lightningshock.ogg', 50, TRUE)
+	new /obj/effect/temp_visual/emp/pulse(get_turf(center))
+	
+	for(var/mob/living/L in range(2, center))
+		if(L == user)
+			continue
+		L.deal_damage(flare_damage, WHITE_DAMAGE)
+		L.deal_damage(10, RED_DAMAGE)
+		
+		if(isliving(L))
+			L.add_movespeed_modifier(/datum/movespeed_modifier/solar_dazzle)
+			addtimer(CALLBACK(src, PROC_REF(RemoveDazzle), L), 4 SECONDS)
+
+/obj/item/ego_weapon/branch12/solar_day/attack_self(mob/user)
+	if(!CanUseEgo(user))
+		return
+	if(!ishuman(user))
+		return
+	
+	if(flash_cooldown > world.time)
+		to_chat(user, span_warning("The solar energy hasn't recharged yet."))
+		return
+	
+	flash_cooldown = world.time + flash_cooldown_time
+	to_chat(user, span_notice("You unleash a blinding solar flash!"))
+	playsound(user, 'sound/weapons/flash.ogg', 100, TRUE)
+	
+	// Create flash effect
+	for(var/mob/living/L in viewers(5, user))
+		if(L == user)
+			continue
+		
+		if(isliving(L))
+			L.add_movespeed_modifier(/datum/movespeed_modifier/solar_flash)
+			addtimer(CALLBACK(src, PROC_REF(RemoveFlash), L), 2 SECONDS)
+			L.deal_damage(15, WHITE_DAMAGE)
+			to_chat(L, span_userdanger("You are dazzled by the solar flash!"))
 
 //Golden Needle
 /obj/item/ego_weapon/branch12/mini/gold_needle
@@ -240,6 +400,20 @@
 		L.apply_damage(45, RED_DAMAGE, null, L.run_armor_check(null, RED_DAMAGE), spread_damage = TRUE)
 	return BULLET_ACT_HIT
 
+
+/obj/item/ego_weapon/branch12/solar_day/proc/RemoveDazzle(mob/living/L)
+	L.remove_movespeed_modifier(/datum/movespeed_modifier/solar_dazzle)
+
+/obj/item/ego_weapon/branch12/solar_day/proc/RemoveFlash(mob/living/L)
+	L.remove_movespeed_modifier(/datum/movespeed_modifier/solar_flash)
+
+/datum/movespeed_modifier/solar_dazzle
+	variable = TRUE
+	multiplicative_slowdown = 1
+
+/datum/movespeed_modifier/solar_flash
+	variable = TRUE
+	multiplicative_slowdown = 3
 
 //Exterminator
 /obj/item/ego_weapon/ranged/branch12/mini/exterminator

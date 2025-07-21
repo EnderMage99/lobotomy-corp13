@@ -18,8 +18,8 @@
 	ego_list = list(
 		/datum/ego_datum/weapon/branch12/lucifer,
 		/datum/ego_datum/weapon/branch12/executioner,
-		/datum/ego_datum/armor/arcadia
-		)
+		/datum/ego_datum/armor/branch12/black_sun,
+	)
 //	gift_type = /datum/ego_gifts/arcadia
 
 	abnormality_origin = ABNORMALITY_ORIGIN_BRANCH12

@@ -37,8 +37,8 @@
 	light_power = 7
 
 	ego_list = list(
-		//datum/ego_datum/weapon/departure,
-		//datum/ego_datum/armor/departure,
+		/datum/ego_datum/weapon/branch12/retribution,
+		/datum/ego_datum/armor/branch12/retribution,
 	)
 	//gift_type =  /datum/ego_gifts/departure
 	abnormality_origin = ABNORMALITY_ORIGIN_BRANCH12

@@ -1,5 +1,146 @@
 
 // --------ALEPH---------
+//Station Command
+/obj/item/ego_weapon/ranged/branch12/station_command
+	name = "station command"
+	desc = "Command and control from orbit."
+	special = "This weapon has multiple firing modes representing different station departments. \
+	Cycle through modes using the weapon in hand. Each mode consumes different resources but provides unique benefits: \
+	Security: High damage, consumes ammo quickly. \
+	Engineering: Repairs armor of allies hit, uses fuel charges. \
+	Research: Marks enemies for increased damage, builds up research points. \
+	Cargo: Spawns supply crates on kill."
+	icon_state = "station_command"
+	inhand_icon_state = "station_command"
+	force = 25
+	projectile_path = /obj/projectile/ego_bullet/branch12/station_command
+	fire_delay = 8
+	spread = 0
+	shotsleft = 30
+	reloadtime = 3 SECONDS
+	fire_sound = 'sound/weapons/laser.ogg'
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 100,
+							PRUDENCE_ATTRIBUTE = 80,
+							TEMPERANCE_ATTRIBUTE = 80,
+							JUSTICE_ATTRIBUTE = 80
+							)
+	var/mode = "security"
+	var/fuel_charges = 10
+	var/max_fuel = 10
+	var/research_points = 0
+	var/supply_spawn_chance = 33
+
+/obj/item/ego_weapon/ranged/branch12/station_command/attack_self(mob/user)
+	if(!CanUseEgo(user))
+		return
+	
+	switch(mode)
+		if("security")
+			mode = "engineering"
+			fire_sound = 'sound/weapons/pulse.ogg'
+			to_chat(user, span_notice("Switched to Engineering mode. Fuel charges: [fuel_charges]/[max_fuel]"))
+		if("engineering")
+			mode = "research"
+			fire_sound = 'sound/weapons/taser.ogg'
+			to_chat(user, span_notice("Switched to Research mode. Research points: [research_points]"))
+		if("research")
+			mode = "cargo"
+			fire_sound = 'sound/weapons/shotgunshot.ogg'
+			to_chat(user, span_notice("Switched to Cargo mode. Supply spawn chance: [supply_spawn_chance]%"))
+		if("cargo")
+			mode = "security"
+			fire_sound = 'sound/weapons/laser.ogg'
+			to_chat(user, span_notice("Switched to Security mode. High damage output."))
+
+/obj/item/ego_weapon/ranged/branch12/station_command/afterattack(atom/target, mob/living/user, flag, params)
+	if(mode == "engineering" && fuel_charges <= 0)
+		to_chat(user, span_warning("Engineering mode requires fuel charges! Current: [fuel_charges]/[max_fuel]"))
+		return
+	
+	if(mode == "engineering")
+		fuel_charges--
+	
+	. = ..() 
+
+/obj/item/ego_weapon/ranged/branch12/station_command/equipped(mob/user, slot)
+	. = ..() 
+	if(ishuman(user))
+		START_PROCESSING(SSobj, src)
+
+/obj/item/ego_weapon/ranged/branch12/station_command/dropped(mob/user)
+	. = ..() 
+	STOP_PROCESSING(SSobj, src)
+
+/obj/item/ego_weapon/ranged/branch12/station_command/process()
+	// Slowly regenerate fuel
+	if(fuel_charges < max_fuel && prob(10))
+		fuel_charges++
+
+/obj/projectile/ego_bullet/branch12/station_command
+	name = "station command"
+	damage = 80
+	damage_type = BLACK_DAMAGE
+
+/obj/projectile/ego_bullet/branch12/station_command/on_hit(atom/target, blocked = FALSE)
+	. = ..() 
+	if(!isliving(target) || !isliving(firer))
+		return
+	
+	var/obj/item/ego_weapon/ranged/branch12/station_command/gun = fired_from
+	if(!istype(gun))
+		return
+	
+	var/mob/living/L = target
+	
+	switch(gun.mode)
+		if("security")
+			// High damage already applied, consume extra ammo
+			damage = 120
+			if(gun.shotsleft > 0)
+				gun.shotsleft--
+		
+		if("engineering")
+			// Lower damage, but heal nearby allies' armor
+			damage = 60
+			for(var/mob/living/carbon/human/H in range(3, target))
+				if(H.stat == DEAD || !ishuman(H))
+					continue
+				if(H.mind?.assigned_role in GLOB.security_positions)
+					H.heal_overall_damage(20, 20)
+					to_chat(H, span_nicegreen("Station engineering repairs your equipment!"))
+		
+		if("research")
+			// Medium damage, mark for extra damage
+			damage = 80
+			L.add_overlay(mutable_appearance('icons/effects/effects.dmi', "shield-red"))
+			L.physiology.red_mod *= 1.15
+			L.physiology.white_mod *= 1.15
+			L.physiology.black_mod *= 1.15
+			L.physiology.pale_mod *= 1.15
+			gun.research_points++
+			if(gun.research_points >= 20)
+				gun.research_points = 0
+				SSlobotomy_corp.AdjustAvailableBoxes(1)
+				to_chat(firer, span_notice("Research complete! PE boxes increased."))
+			addtimer(CALLBACK(src, PROC_REF(remove_research_mark), L), 10 SECONDS)
+		
+		if("cargo")
+			// Low damage, chance to spawn supplies on kill
+			damage = 60
+			if(L.stat == DEAD && prob(gun.supply_spawn_chance))
+				new /obj/item/stack/spacecash/c1000(get_turf(L))
+				to_chat(firer, span_notice("Cargo delivery successful!"))
+
+/obj/projectile/ego_bullet/branch12/station_command/proc/remove_research_mark(mob/living/L)
+	if(!L || QDELETED(L))
+		return
+	L.cut_overlay(mutable_appearance('icons/effects/effects.dmi', "shield-red"))
+	L.physiology.red_mod /= 1.15
+	L.physiology.white_mod /= 1.15
+	L.physiology.black_mod /= 1.15
+	L.physiology.pale_mod /= 1.15
+
 //Pulsating Insanity
 /obj/item/ego_weapon/branch12/mini/insanity
 	name = "pulsating insanity"
@@ -448,6 +589,163 @@
 	consuming_range = 4
 	appearing_time = 50
 
+//XXI (The World)
+/obj/item/ego_weapon/branch12/XXI
+	name = "XXI"
+	desc = "The World card represents completion, fulfillment, and the end of a journey."
+	special = "This weapon's damage type changes randomly on each hit. \
+	Using this weapon in hand places a random damaging tile at your feet that lasts 10 seconds. \
+	Throwing this weapon creates a bouncing projectile that ricochets and gains damage with each bounce."
+	icon_state = "XXI"
+	force = 90
+	damtype = RED_DAMAGE
+	throwforce = 50
+	throw_speed = 2
+	throw_range = 10
+	attack_verb_continuous = list("tricks", "jests", "mocks")
+	attack_verb_simple = list("trick", "jest", "mock")
+	hitsound = 'sound/items/bikehorn.ogg'
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 100,
+							PRUDENCE_ATTRIBUTE = 100,
+							TEMPERANCE_ATTRIBUTE = 80,
+							JUSTICE_ATTRIBUTE = 80
+							)
+	var/tile_cooldown = 0
+	var/tile_cooldown_time = 5 SECONDS
+
+/obj/item/ego_weapon/branch12/XXI/attack(mob/living/target, mob/living/user)
+	// Random damage type each hit
+	damtype = pick(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
+	. = ..() 
+	
+	// Small chance for special effect based on damage type
+	if(prob(25))
+		switch(damtype)
+			if(RED_DAMAGE)
+				target.apply_lc_bleed(20)
+			if(WHITE_DAMAGE)
+				target.apply_lc_mental_decay(5)
+			if(BLACK_DAMAGE)
+				target.deal_damage(10, RED_DAMAGE)
+			if(PALE_DAMAGE)
+				target.add_movespeed_modifier(/datum/movespeed_modifier/XXI_curse)
+				addtimer(CALLBACK(src, PROC_REF(RemoveCurse), target), 5 SECONDS)
+
+/obj/item/ego_weapon/branch12/XXI/attack_self(mob/user)
+	if(!CanUseEgo(user))
+		return
+	if(!ishuman(user))
+		return
+	
+	if(tile_cooldown > world.time)
+		to_chat(user, span_warning("The jester's magic hasn't recharged yet."))
+		return
+	
+	tile_cooldown = world.time + tile_cooldown_time
+	var/turf/T = get_turf(user)
+	
+	// Create a random damage zone
+	var/damage_type = pick(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
+	var/damage_amount = rand(20, 40)
+	var/obj/effect/jester_zone/zone = new(T, damage_type, damage_amount)
+	zone.owner = user
+	
+	to_chat(user, span_notice("You conjure a chaotic damage zone!"))
+	playsound(T, 'sound/magic/summon_karp.ogg', 50, TRUE)
+	QDEL_IN(zone, 10 SECONDS)
+
+/obj/item/ego_weapon/branch12/XXI/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
+	// Create a bouncing projectile instead of normal throw impact
+	var/turf/T = get_turf(src)
+	var/obj/projectile/ego_XXI/P = new(T)
+	P.damage = throwforce
+	P.firer = thrownby
+	P.fired_from = src
+	P.original = hit_atom
+	P.preparePixelProjectile(hit_atom, T)
+	P.fire()
+	. = ..() 
+
+// Special bouncing projectile
+/obj/projectile/ego_XXI
+	name = "jester's trick"
+	icon_state = "jester_ball"
+	icon = 'ModularTegustation/Teguicons/branch12/32x32.dmi'
+	desc = "A chaotic ball of energy."
+	damage_type = RED_DAMAGE
+	speed = 3
+	damage = 50
+	projectile_piercing = NONE
+	ricochets_max = 5
+	ricochet_chance = 100
+	ricochet_decay_chance = 0.8
+	ricochet_decay_damage = 1.2 // Gains 20% damage per bounce
+	ricochet_auto_aim_range = 4
+	ricochet_incidence_leeway = 90
+
+/obj/projectile/ego_XXI/Initialize()
+	. = ..() 
+	damage_type = pick(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
+
+/obj/projectile/ego_XXI/on_ricochet(atom/A)
+	// Change damage type on each bounce
+	damage_type = pick(RED_DAMAGE, WHITE_DAMAGE, BLACK_DAMAGE, PALE_DAMAGE)
+
+/obj/projectile/ego_XXI/check_ricochet_flag(atom/A)
+	if(istype(A, /turf/closed))
+		return TRUE
+	if(istype(A, /obj/structure) && A.density)
+		return TRUE
+	return FALSE
+
+/obj/item/ego_weapon/branch12/XXI/proc/RemoveCurse(mob/living/L)
+	L.remove_movespeed_modifier(/datum/movespeed_modifier/XXI_curse)
+
+/datum/movespeed_modifier/XXI_curse
+	variable = TRUE
+	multiplicative_slowdown = 2
+
+// Damage zone effect
+/obj/effect/jester_zone
+	name = "chaotic zone"
+	desc = "A swirling vortex of chaotic energy."
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "shield-grey"
+	layer = BELOW_MOB_LAYER
+	var/damage_type = RED_DAMAGE
+	var/damage_amount = 30
+	var/mob/owner
+
+/obj/effect/jester_zone/Initialize(mapload, dtype, damount)
+	. = ..() 
+	if(dtype)
+		damage_type = dtype
+	if(damount)
+		damage_amount = damount
+	
+	// Set color based on damage type
+	switch(damage_type)
+		if(RED_DAMAGE)
+			color = "#ff0000"
+		if(WHITE_DAMAGE)
+			color = "#ffffff"
+		if(BLACK_DAMAGE)
+			color = "#000000"
+		if(PALE_DAMAGE)
+			color = "#cc99ff"
+	
+	START_PROCESSING(SSobj, src)
+
+/obj/effect/jester_zone/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	. = ..() 
+
+/obj/effect/jester_zone/process()
+	for(var/mob/living/L in get_turf(src))
+		if(L == owner)
+			continue
+		L.deal_damage(damage_amount * 0.1, damage_type) // Damage over time
 
 //Lucifer, Morning Star and Executioner
 /obj/item/ego_weapon/ranged/branch12/lucifer

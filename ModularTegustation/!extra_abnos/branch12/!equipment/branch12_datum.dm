@@ -51,6 +51,24 @@
 
 
 // --------TETH---------
+// Ghost of Misfortune - Misfortune
+/datum/ego_datum/weapon/branch12/misfortune
+	item_path = /obj/item/ego_weapon/branch12/misfortune
+	cost = 20
+
+/datum/ego_datum/armor/branch12/misfortune
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/misfortune
+	cost = 20
+
+// Remnant of the Forest - Forest's Gift
+/datum/ego_datum/weapon/branch12/forest_gift
+	item_path = /obj/item/ego_weapon/branch12/forest_gift
+	cost = 20
+
+/datum/ego_datum/armor/branch12/forest_gift
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/forest_gift
+	cost = 20
+
 // Statue Of Forgiveness - Serenity
 /datum/ego_datum/armor/branch12/serenity
 	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/serenity
@@ -117,12 +135,25 @@
 
 
 // Ulies Workshop - Workshopping
+/datum/ego_datum/weapon/branch12/workshopping
+	item_path = /obj/item/ego_weapon/branch12/workshopping
+	cost = 20
+
 /datum/ego_datum/armor/branch12/workshopping
 	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/workshopping
 	cost = 20
 
 
 // --------HE---------
+// Tempo Primo - Rhythm
+/datum/ego_datum/weapon/branch12/rhythm
+	item_path = /obj/item/ego_weapon/ranged/branch12/rhythm
+	cost = 35
+
+/datum/ego_datum/armor/branch12/rhythm
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/rhythm
+	cost = 35
+
 // The Show Goes On - Perfectionist
 /datum/ego_datum/weapon/branch12/perfectionist
 	item_path = /obj/item/ego_weapon/branch12/perfectionist
@@ -151,6 +182,10 @@
 	item_path = /obj/item/ego_weapon/branch12/egoification
 	cost = 35
 
+/datum/ego_datum/armor/branch12/egoification
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/egoification
+	cost = 35
+
 // Velvet Horizon - Something Memorable & A Big Day
 /datum/ego_datum/weapon/branch12/memorable
 	item_path = /obj/item/ego_weapon/ranged/branch12/memorable
@@ -165,6 +200,10 @@
 	cost = 35
 
 //Helios Effigy - Solar Day
+/datum/ego_datum/weapon/branch12/solar_day
+	item_path = /obj/item/ego_weapon/branch12/solar_day
+	cost = 35
+
 /datum/ego_datum/armor/branch12/solar_day
 	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/solar_day
 	cost = 35
@@ -179,6 +218,33 @@
 	cost = 35
 
 // --------WAW---------
+// Dead Bird - Stitched Eyes
+/datum/ego_datum/weapon/branch12/stitched_eyes
+	item_path = /obj/item/ego_weapon/ranged/branch12/stitched_eyes
+	cost = 50
+
+/datum/ego_datum/armor/branch12/stitched_eyes
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/stitched_eyes
+	cost = 50
+
+// Dead Man's Plan - Retribution
+/datum/ego_datum/weapon/branch12/retribution
+	item_path = /obj/item/ego_weapon/branch12/retribution
+	cost = 50
+
+/datum/ego_datum/armor/branch12/retribution
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/retribution
+	cost = 50
+
+// Beyond the Veil - Dimensional Tear
+/datum/ego_datum/weapon/branch12/dimensional_tear
+	item_path = /obj/item/ego_weapon/branch12/dimensional_tear
+	cost = 50
+
+/datum/ego_datum/armor/branch12/dimensional_tear
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/dimensional_tear
+	cost = 50
+
 // Ollieoxenfree - Plagiarism
 /datum/ego_datum/weapon/branch12/plagiarism
 	item_path = /obj/item/ego_weapon/branch12/plagiarism
@@ -243,6 +309,10 @@
 	item_path = /obj/item/ego_weapon/ranged/branch12/icon_of_chaos
 	cost = 50
 
+/datum/ego_datum/armor/branch12/icon_of_chaos
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/icon
+	cost = 50
+
 //Genie of Pentacles - 10000 dolers
 /datum/ego_datum/weapon/branch12/ten_thousand_dolers
 	item_path = /obj/item/ego_weapon/branch12/mini/ten_thousand_dolers
@@ -266,6 +336,15 @@
 	cost = 50
 
 // --------ALEPH---------
+// The 13th Space Station - Station Command
+/datum/ego_datum/weapon/branch12/station_command
+	item_path = /obj/item/ego_weapon/ranged/branch12/station_command
+	cost = 100
+
+/datum/ego_datum/armor/branch12/station_command
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/station_command
+	cost = 100
+
 // Old Man and The Pale - Purity
 /datum/ego_datum/weapon/branch12/purity
 	item_path = /obj/item/ego_weapon/branch12/purity
@@ -281,9 +360,17 @@
 	item_path = /obj/item/ego_weapon/branch12/mini/insanity
 	cost = 100
 
+/datum/ego_datum/armor/branch12/insanity
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/insanity
+	cost = 100
+
 // Consilium Fracas - Sands of Time
 /datum/ego_datum/weapon/branch12/time_sands
 	item_path = /obj/item/ego_weapon/branch12/time_sands
+	cost = 100
+
+/datum/ego_datum/armor/branch12/time_sands
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/time_sands
 	cost = 100
 
 
@@ -316,8 +403,16 @@
 	item_path = /obj/item/ego_weapon/ranged/branch12/lucifer/executioner
 	cost = 100
 
+/datum/ego_datum/armor/branch12/black_sun
+	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/black_sun
+	cost = 100
+
 
 // Sage of the World - XXI
+/datum/ego_datum/weapon/branch12/XXI
+	item_path = /obj/item/ego_weapon/branch12/XXI
+	cost = 100
+
 /datum/ego_datum/armor/branch12/XXI
 	item_path = /obj/item/clothing/suit/armor/ego_gear/branch12/XXI
 	cost = 100

@@ -22,7 +22,8 @@
 	density = FALSE
 
 	ego_list = list(
-		//	There is no EGO
+		/datum/ego_datum/weapon/branch12/forest_gift,
+		/datum/ego_datum/armor/branch12/forest_gift,
 	)
 	abnormality_origin = ABNORMALITY_ORIGIN_BRANCH12
 

@@ -38,6 +38,18 @@
 	icon_state = "serenity"
 	armor = list(RED_DAMAGE = 10, WHITE_DAMAGE = 30, BLACK_DAMAGE = -20, PALE_DAMAGE = 0)
 
+/obj/item/clothing/suit/armor/ego_gear/branch12/misfortune
+	name = "misfortune"
+	desc = "A ghostly suit that brings bad luck to those who oppose you."
+	icon_state = "misfortune"
+	armor = list(RED_DAMAGE = 10, WHITE_DAMAGE = 20, BLACK_DAMAGE = 20, PALE_DAMAGE = -10)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/forest_gift
+	name = "forest's gift"
+	desc = "Armor made from ancient bark and stone, heavy but protective."
+	icon_state = "forest_gift"
+	armor = list(RED_DAMAGE = 30, WHITE_DAMAGE = 10, BLACK_DAMAGE = 10, PALE_DAMAGE = -20)
+
 /obj/item/clothing/suit/armor/ego_gear/branch12/departure
 	name = "departure"
 	desc = "It is sadly, time for us to part."
@@ -81,6 +93,15 @@
 	armor = list(RED_DAMAGE = 10, WHITE_DAMAGE = 10, BLACK_DAMAGE = 10, PALE_DAMAGE = -10)
 
 // --------HE---------
+/obj/item/clothing/suit/armor/ego_gear/branch12/rhythm
+	name = "rhythm"
+	desc = "Keep moving to the beat, or the silence will consume you."
+	icon_state = "rhythm"
+	armor = list(RED_DAMAGE = 20, WHITE_DAMAGE = 30, BLACK_DAMAGE = 40, PALE_DAMAGE = -10)
+	attribute_requirements = list(
+							TEMPERANCE_ATTRIBUTE = 40
+							)
+
 /obj/item/clothing/suit/armor/ego_gear/branch12/perfectionist
 	name = "perfectionist"
 	desc = "They shouldn't dwell into delusions like that, it will only lead them to their doom."
@@ -137,6 +158,33 @@
 							)
 
 // --------WAW---------
+/obj/item/clothing/suit/armor/ego_gear/branch12/stitched_eyes
+	name = "stitched eyes"
+	desc = "The dead see more clearly than the living ever could."
+	icon_state = "stitched_eyes"
+	armor = list(RED_DAMAGE = 60, WHITE_DAMAGE = 30, BLACK_DAMAGE = 30, PALE_DAMAGE = 20)
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 80
+							)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/retribution
+	name = "retribution"
+	desc = "Justice delayed is not justice denied."
+	icon_state = "retribution"
+	armor = list(RED_DAMAGE = 40, WHITE_DAMAGE = 30, BLACK_DAMAGE = 60, PALE_DAMAGE = 10)
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 80
+							)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/dimensional_tear
+	name = "dimensional tear"
+	desc = "A cloak that seems to phase in and out of reality."
+	icon_state = "dimensional_tear"
+	armor = list(RED_DAMAGE = 30, WHITE_DAMAGE = 40, BLACK_DAMAGE = 70, PALE_DAMAGE = 0)
+	attribute_requirements = list(
+							PRUDENCE_ATTRIBUTE = 80
+							)
+
 /obj/item/clothing/suit/armor/ego_gear/branch12/joe
 	name = "Average Joe"
 	desc = "First impressions are always important when you are going on a job interview, so you better dress to impress!"
@@ -172,6 +220,15 @@
 	armor = list(RED_DAMAGE = 30, WHITE_DAMAGE = 30, BLACK_DAMAGE = 50, PALE_DAMAGE = 30)
 	attribute_requirements = list(
 							JUSTICE_ATTRIBUTE = 80
+							)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/egoification
+	name = "egoification!"
+	desc = "With legs this powerful, who needs wings?"
+	icon_state = "egoification"
+	armor = list(RED_DAMAGE = 50, WHITE_DAMAGE = 30, BLACK_DAMAGE = 20, PALE_DAMAGE = -10)
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 40
 							)
 
 /obj/item/clothing/suit/armor/ego_gear/branch12/nightmares
@@ -224,6 +281,30 @@
 
 
 // --------ALEPH---------
+/obj/item/clothing/suit/armor/ego_gear/branch12/insanity
+	name = "pulsating insanity"
+	desc = "A heartbeat echoes through this armor, driving its wearer to the edge."
+	icon_state = "insanity"
+	armor = list(RED_DAMAGE = 40, WHITE_DAMAGE = 70, BLACK_DAMAGE = 60, PALE_DAMAGE = 70) // 240
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 100,
+							PRUDENCE_ATTRIBUTE = 80,
+							TEMPERANCE_ATTRIBUTE = 80,
+							JUSTICE_ATTRIBUTE = 80
+							)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/station_command
+	name = "station command"
+	desc = "A commander's uniform from the orbital station, complete with integrated life support systems."
+	icon_state = "station_command"
+	armor = list(RED_DAMAGE = 60, WHITE_DAMAGE = 60, BLACK_DAMAGE = 70, PALE_DAMAGE = 50) // 240
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 100,
+							PRUDENCE_ATTRIBUTE = 80,
+							TEMPERANCE_ATTRIBUTE = 80,
+							JUSTICE_ATTRIBUTE = 80
+							)
+
 /obj/item/clothing/suit/armor/ego_gear/branch12/purity
 	name = "purity"
 	desc = "This EGO holds the weight of the user's past mistakes, sins, shame and guilt. \
@@ -254,6 +335,30 @@
 	desc = "A beautiful suit the color of darkness."
 	icon_state = "darkness"
 	armor = list(RED_DAMAGE = 60, WHITE_DAMAGE = 50, BLACK_DAMAGE = 80, PALE_DAMAGE = 50) // 240
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 80,
+							PRUDENCE_ATTRIBUTE = 80,
+							TEMPERANCE_ATTRIBUTE = 100,
+							JUSTICE_ATTRIBUTE = 80
+							)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/black_sun
+	name = "black sun"
+	desc = "Memento Mori - Remember that you must die."
+	icon_state = "black_sun"
+	armor = list(RED_DAMAGE = 70, WHITE_DAMAGE = 60, BLACK_DAMAGE = 70, PALE_DAMAGE = 40) // 240
+	attribute_requirements = list(
+							FORTITUDE_ATTRIBUTE = 80,
+							PRUDENCE_ATTRIBUTE = 80,
+							TEMPERANCE_ATTRIBUTE = 80,
+							JUSTICE_ATTRIBUTE = 100
+							)
+
+/obj/item/clothing/suit/armor/ego_gear/branch12/time_sands
+	name = "sands of time"
+	desc = "And so it was lost to the eternal desert."
+	icon_state = "time_sands"
+	armor = list(RED_DAMAGE = 80, WHITE_DAMAGE = 50, BLACK_DAMAGE = 40, PALE_DAMAGE = 70) // 240
 	attribute_requirements = list(
 							FORTITUDE_ATTRIBUTE = 80,
 							PRUDENCE_ATTRIBUTE = 80,
