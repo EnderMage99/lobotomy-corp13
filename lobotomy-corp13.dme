@@ -4474,4 +4474,7 @@
 #include "ModularTegustation\tegu_xenobio_blackcross\black_extracts.dm"
 #include "ModularTegustation\tegu_xenobio_blackcross\slime_code.dm"
 #include "ModularTegustation\zTegu_overwrite\tegu_overwrite_vars.dm"
+#include "code\modules\villains\areas.dm"
+#include "code\modules\villains\controller_simple.dm"
+#include "code\modules\villains\commands.dm"
 // END_INCLUDE

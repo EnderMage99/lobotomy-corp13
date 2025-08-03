@@ -118,6 +118,12 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/ConfigFood,
 	/client/proc/ExecutionBulletToggle,
 	/client/proc/distort_all,
+	/client/proc/villains_join,
+	/client/proc/villains_leave,
+	/client/proc/villains_status,
+	/client/proc/villains_add_player,
+	/client/proc/villains_start,
+	/client/proc/villains_force_end,
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
 GLOBAL_LIST_INIT(admin_verbs_spawn, list(/datum/admins/proc/spawn_atom, /datum/admins/proc/podspawn_atom, /datum/admins/proc/spawn_cargo, /datum/admins/proc/spawn_objasmob, /client/proc/respawn_character, /datum/admins/proc/beaker_panel))
