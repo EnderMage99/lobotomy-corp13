@@ -4445,6 +4445,7 @@
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_assassin.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_elders.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_engineer.dm"
+#include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_harvester.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_mobs.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_npcs.dm"
 #include "ModularTegustation\tegu_mobs\lc13_resurgence_clan_ranged.dm"

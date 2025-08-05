@@ -59,12 +59,18 @@
 	var/turf/selection_start_point = null
 	// Factory building
 	var/factory_blueprint_cost = 10
+	
+	// Resource system vars
+	var/metal = 100 // Starting metal
+	var/max_metal = 1000 // Maximum metal storage
+	var/list/harvester_units = list() // Track harvesters for income calculation
 
 /mob/living/simple_animal/hostile/clan/tinkerer/Initialize()
 	. = ..()
 	// Create initial factory
 	addtimer(CALLBACK(src, PROC_REF(CreateInitialFactory)), 2 SECONDS)
 	// Add abilities
+	AddAbility(new /obj/effect/proc_holder/ability/tinkerer/produce_harvester(null, src))
 	AddAbility(new /obj/effect/proc_holder/ability/tinkerer/produce_scout(null, src))
 	AddAbility(new /obj/effect/proc_holder/ability/tinkerer/produce_engineer(null, src))
 	AddAbility(new /obj/effect/proc_holder/ability/tinkerer/produce_assassin(null, src))
@@ -82,10 +88,12 @@
 
 /mob/living/simple_animal/hostile/clan/tinkerer/examine(mob/user)
 	. = ..()
+	. += span_notice("Metal: [metal]/[max_metal]")
 	. += span_notice("Charge: [charge]/[max_charge]")
 	. += span_notice("Selected units: [length(selected_units)]/[max_selected_units]")
 	. += span_notice("Controlled units: [length(controlled_units)]")
 	. += span_notice("Factories owned: [length(owned_factories)]")
+	. += span_notice("Harvesters: [length(harvester_units)]")
 	if(viewing_mode)
 		. += span_boldnotice("Currently in viewing mode (invulnerable).")
 	. += span_notice("Attack mode: [hard_lock_mode ? "Hard Lock" : "Passive"]")
@@ -382,6 +390,12 @@
 	return TRUE
 
 /mob/living/simple_animal/hostile/clan/tinkerer/proc/ProduceUnitAtFactory(unit_type)
+	// Check metal cost first
+	var/metal_cost = GetUnitMetalCost(unit_type)
+	if(metal < metal_cost)
+		to_chat(src, span_warning("Not enough metal! Need [metal_cost] metal, have [metal]."))
+		return FALSE
+	
 	// Find nearest factory with capacity
 	var/obj/structure/clan_factory/best_factory = null
 	var/min_distance = INFINITY
@@ -400,9 +414,39 @@
 		to_chat(src, span_warning("No available factory with sufficient capacity!"))
 		return FALSE
 	
-	to_chat(src, span_notice("Factory found, starting production..."))
+	// Deduct metal cost
+	metal -= metal_cost
+	to_chat(src, span_notice("Factory found, starting production... (-[metal_cost] metal)"))
 	best_factory.ProduceUnit(unit_type)
 	return TRUE
+
+/mob/living/simple_animal/hostile/clan/tinkerer/proc/GetUnitMetalCost(unit_type)
+	switch(unit_type)
+		if(/mob/living/simple_animal/hostile/clan/harvester)
+			return 50
+		if(/mob/living/simple_animal/hostile/clan/scout)
+			return 25
+		if(/mob/living/simple_animal/hostile/clan/engineer)
+			return 75
+		if(/mob/living/simple_animal/hostile/clan/drone)
+			return 100
+		if(/mob/living/simple_animal/hostile/clan/assassin)
+			return 150
+		if(/mob/living/simple_animal/hostile/clan/defender)
+			return 125
+		if(/mob/living/simple_animal/hostile/clan/demolisher)
+			return 200
+		else
+			return 100
+
+/mob/living/simple_animal/hostile/clan/tinkerer/proc/ReceiveMetal(amount)
+	var/old_metal = metal
+	metal = min(metal + amount, max_metal)
+	var/actual_amount = metal - old_metal
+	if(actual_amount > 0)
+		to_chat(src, span_notice("Received [actual_amount] metal. Total: [metal]/[max_metal]"))
+		playsound(src, 'sound/effects/cashregister.ogg', 50, TRUE)
+	return actual_amount
 
 // Override to prevent attacking
 /mob/living/simple_animal/hostile/clan/tinkerer/CanAttack(atom/the_target)
@@ -484,6 +528,8 @@
 /obj/structure/clan_factory/proc/GetUnitCost(unit_type)
 	// Define costs for different unit types
 	switch(unit_type)
+		if(/mob/living/simple_animal/hostile/clan/harvester)
+			return 2
 		if(/mob/living/simple_animal/hostile/clan/scout)
 			return 2
 		if(/mob/living/simple_animal/hostile/clan/engineer)
@@ -534,6 +580,9 @@
 
 	if(owner)
 		owner.controlled_units += unit
+		// Track harvesters separately
+		if(istype(unit, /mob/living/simple_animal/hostile/clan/harvester))
+			owner.harvester_units += unit
 
 	playsound(src, 'sound/machines/ping.ogg', 50, TRUE)
 	visible_message(span_notice("[src] completes production of [unit]!"))
@@ -787,9 +836,23 @@
 
 // Remove the aimed parent - we'll just use the base ability type instead
 
+/obj/effect/proc_holder/ability/tinkerer/produce_harvester
+	name = "Produce Harvester"
+	desc = "Order a factory to produce a harvester unit. Costs 2 capacity, 50 metal."
+	action_icon_state = "produce_harvester"
+	cooldown_time = 3 SECONDS
+
+/obj/effect/proc_holder/ability/tinkerer/produce_harvester/Perform(target, mob/user)
+	..()  // Call parent to handle cooldown
+	if(!linked_tinkerer && istype(user, /mob/living/simple_animal/hostile/clan/tinkerer))
+		linked_tinkerer = user
+	if(!linked_tinkerer)
+		return
+	linked_tinkerer.ProduceUnitAtFactory(/mob/living/simple_animal/hostile/clan/harvester)
+
 /obj/effect/proc_holder/ability/tinkerer/produce_scout
 	name = "Produce Scout"
-	desc = "Order a factory to produce a scout unit. Costs 2 capacity."
+	desc = "Order a factory to produce a scout unit. Costs 2 capacity, 25 metal."
 	action_icon_state = "produce_scout"
 	cooldown_time = 3 SECONDS
 
@@ -807,7 +870,7 @@
 
 /obj/effect/proc_holder/ability/tinkerer/produce_assassin
 	name = "Produce Assassin"
-	desc = "Order a factory to produce an assassin unit. Costs 6 capacity."
+	desc = "Order a factory to produce an assassin unit. Costs 6 capacity, 150 metal."
 	action_icon_state = "produce_assassin"
 	cooldown_time = 3 SECONDS
 
@@ -821,7 +884,7 @@
 
 /obj/effect/proc_holder/ability/tinkerer/produce_demolisher
 	name = "Produce Demolisher"
-	desc = "Order a factory to produce a demolisher unit. Costs 7 capacity."
+	desc = "Order a factory to produce a demolisher unit. Costs 7 capacity, 200 metal."
 	action_icon_state = "produce_demolisher"
 	cooldown_time = 3 SECONDS
 
@@ -835,7 +898,7 @@
 
 /obj/effect/proc_holder/ability/tinkerer/produce_defender
 	name = "Produce Defender"
-	desc = "Order a factory to produce a defender unit. Costs 5 capacity."
+	desc = "Order a factory to produce a defender unit. Costs 5 capacity, 125 metal."
 	action_icon_state = "produce_defender"
 	cooldown_time = 3 SECONDS
 
@@ -849,7 +912,7 @@
 
 /obj/effect/proc_holder/ability/tinkerer/produce_drone
 	name = "Produce Drone"
-	desc = "Order a factory to produce a drone unit. Costs 3 capacity."
+	desc = "Order a factory to produce a drone unit. Costs 3 capacity, 100 metal."
 	action_icon_state = "produce_drone"
 	cooldown_time = 3 SECONDS
 
@@ -863,7 +926,7 @@
 
 /obj/effect/proc_holder/ability/tinkerer/produce_engineer
 	name = "Produce Engineer"
-	desc = "Order a factory to produce an engineer unit. Costs 4 capacity."
+	desc = "Order a factory to produce an engineer unit. Costs 4 capacity, 75 metal."
 	action_icon_state = "produce_engineer"
 	cooldown_time = 3 SECONDS
 
@@ -1187,3 +1250,89 @@
 
 /obj/structure/barricade/clan/blueprint/attackby(obj/item/I, mob/user, params)
 	return
+
+// Metal deposit structure
+/obj/structure/metal_deposit
+	name = "metal deposit"
+	desc = "A rich deposit of extractable metal resources."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "rock"
+	density = TRUE
+	anchored = TRUE
+	layer = EDGED_TURF_LAYER
+	max_integrity = 500
+	var/metal_amount = 500 // Starting metal in deposit
+	var/max_metal = 500
+
+/obj/structure/metal_deposit/Initialize()
+	. = ..()
+	metal_amount = rand(500, 1000)
+	max_metal = metal_amount
+	UpdateAppearance()
+
+/obj/structure/metal_deposit/examine(mob/user)
+	. = ..()
+	if(metal_amount > 0)
+		. += span_notice("Metal remaining: [metal_amount]/[max_metal]")
+	else
+		. += span_warning("This deposit has been exhausted.")
+
+/obj/structure/metal_deposit/proc/UpdateAppearance()
+	// Change appearance based on remaining metal
+	var/percentage = metal_amount / max_metal
+	if(percentage <= 0)
+		icon_state = "rock_empty"
+		desc = "An exhausted metal deposit."
+		density = FALSE
+	else if(percentage < 0.25)
+		icon_state = "rock_lowmid"
+	else if(percentage < 0.5)
+		icon_state = "rock_med"
+	else if(percentage < 0.75)
+		icon_state = "rock_highmid"
+	else
+		icon_state = "rock"
+
+/obj/structure/metal_deposit/proc/ExtractMetal(amount)
+	if(metal_amount <= 0)
+		return 0
+	
+	var/extracted = min(amount, metal_amount)
+	metal_amount -= extracted
+	UpdateAppearance()
+	
+	if(metal_amount <= 0)
+		visible_message(span_warning("[src] has been completely exhausted!"))
+		playsound(src, 'sound/effects/break_stone.ogg', 50, TRUE)
+	
+	return extracted
+
+/obj/structure/metal_deposit/attackby(obj/item/I, mob/user, params)
+	if(I.tool_behaviour == TOOL_MINING)
+		if(metal_amount <= 0)
+			to_chat(user, span_warning("This deposit is exhausted!"))
+			return
+		
+		to_chat(user, span_notice("You start extracting metal from [src]..."))
+		if(do_after(user, 40, target = src))
+			var/extracted = ExtractMetal(5)
+			if(extracted > 0)
+				new /obj/item/stack/sheet/metal(get_turf(user), extracted)
+				to_chat(user, span_notice("You extract [extracted] metal!"))
+				playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
+		return
+	
+	return ..()
+
+// Large metal deposit variant
+/obj/structure/metal_deposit/large
+	name = "large metal deposit"
+	desc = "An especially rich deposit of extractable metal resources."
+	icon_state = "rock_Crate"
+	max_integrity = 1000
+
+/obj/structure/metal_deposit/large/Initialize()
+	. = ..()
+	metal_amount = rand(1500, 2000)
+	max_metal = metal_amount
+	UpdateAppearance()
